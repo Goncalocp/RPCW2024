@@ -220,7 +220,8 @@ ttl = '''@prefix : <http://rpcw.di.uminho.pt/2024/plantas/> .
 '''
 
 for planta in bd:
-
+    if '/' in str(planta["Número de intervenções"]):
+        planta["Número de intervenções"] = 0
     registo = f'''
 ###  http://rpcw.di.uminho.pt/2024/plantas#{planta["Estado"]}
 :{planta["Estado"]} rdf:type owl:NamedIndividual ,
