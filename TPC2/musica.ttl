@@ -1,0 +1,4445 @@
+@prefix : <http://rpcw.di.uminho.pt/2024/musica/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://rpcw.di.uminho.pt/2024/musica/> .
+
+<http://rpcw.di.uminho.pt/2024/musica> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://rpcw.di.uminho.pt/2024/musica#doInstrumento
+:doInstrumento rdf:type owl:ObjectProperty ;
+               rdfs:domain :Curso ;
+               rdfs:range :Instrumento .
+
+
+###  http://rpcw.di.uminho.pt/2024/musica/estuda
+:estuda rdf:type owl:ObjectProperty ;
+        rdfs:domain :Aluno ;
+        rdfs:range :Curso .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://rpcw.di.uminho.pt/2024/musica/anoCurso
+:anoCurso rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Curso ;
+          rdfs:range xsd:int .
+
+
+###  http://rpcw.di.uminho.pt/2024/musica/dataNasc
+:dataNasc rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Aluno ;
+          rdfs:range xsd:string .
+
+
+###  http://rpcw.di.uminho.pt/2024/musica/designacao
+:designacao rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Curso ;
+            rdfs:range xsd:string .
+
+
+###  http://rpcw.di.uminho.pt/2024/musica/duracao
+:duracao rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Curso ;
+         rdfs:range xsd:int .
+
+
+###  http://rpcw.di.uminho.pt/2024/musica/nomeAluno
+:nomeAluno rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Aluno ;
+           rdfs:range xsd:string .
+
+
+###  http://rpcw.di.uminho.pt/2024/musica/nomeInstrumento
+:nomeInstrumento rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Instrumento ;
+                 rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://rpcw.di.uminho.pt/2024/musica/Aluno
+:Aluno rdf:type owl:Class .
+
+
+###  http://rpcw.di.uminho.pt/2024/musica/Curso
+:Curso rdf:type owl:Class .
+
+
+###  http://rpcw.di.uminho.pt/2024/musica/Instrumento
+:Instrumento rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://rpcw.di.uminho.pt/2024/musica#A1510
+:A1510 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB8 ;
+        :toca :Guitarra ;
+        :anoCurso 5 ;
+        :curso "CB8" ;
+        :dataNasc "1999-4-19" ;
+        :instrumento "Guitarra" ;
+        :nomeAluno "ADEMAR FONTES DE MAGALHAES GONCALVES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A32597
+:A32597 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS19 ;
+        :toca :Violoncelo ;
+        :anoCurso 7 ;
+        :curso "CS19" ;
+        :dataNasc "2004-9-5" ;
+        :instrumento "Violoncelo" ;
+        :nomeAluno "ADERITO NELSON MIRANDA DE OLIVEIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A36539
+:A36539 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS21 ;
+        :toca :Viola_de_Arco ;
+        :anoCurso 8 ;
+        :curso "CS21" ;
+        :dataNasc "2002-10-26" ;
+        :instrumento "Viola de Arco" ;
+        :nomeAluno "ADMILSON CESAR ANDRADE RODRIGUES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38165
+:A38165 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB5 ;
+        :toca :Fagote ;
+        :anoCurso 3 ;
+        :curso "CB5" ;
+        :dataNasc "1996-2-25" ;
+        :instrumento "Fagote" ;
+        :nomeAluno "AFONSO DELERUE ARRIAGA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38176
+:A38176 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB5 ;
+        :toca :Fagote ;
+        :anoCurso 5 ;
+        :curso "CB5" ;
+        :dataNasc "2000-7-18" ;
+        :instrumento "Fagote" ;
+        :nomeAluno "AGOSTINHO MANUEL ALVES DA SILVA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38196
+:A38196 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB14 ;
+        :toca :Saxofone ;
+        :anoCurso 3 ;
+        :curso "CB14" ;
+        :dataNasc "1997-12-7" ;
+        :instrumento "Saxofone" ;
+        :nomeAluno "ALEXANDRE COELHO CARVALHO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35271
+:A35271 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS6 ;
+        :toca :Flauta ;
+        :anoCurso 6 ;
+        :curso "CS6" ;
+        :dataNasc "2002-12-20" ;
+        :instrumento "Flauta" ;
+        :nomeAluno "ALEXANDRE JORGE CAMELO FARIA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38193
+:A38193 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB17 ;
+        :toca :Trompete ;
+        :anoCurso 5 ;
+        :curso "CB17" ;
+        :dataNasc "2001-2-2" ;
+        :instrumento "Trompete" ;
+        :nomeAluno "ALEXANDRE MANUEL PEREIRA DE MIRANDA PINTO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A18141
+:A18141 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB11 ;
+        :toca :Orgão ;
+        :anoCurso 2 ;
+        :curso "CB11" ;
+        :dataNasc "2001-6-23" ;
+        :instrumento "Orgão" ;
+        :nomeAluno "ALEXANDRE MIGUEL DA COSTA FERREIRA DOS SANTOS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38218
+:A38218 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS13 ;
+        :toca :Piano ;
+        :anoCurso 8 ;
+        :curso "CS13" ;
+        :dataNasc "2002-7-14" ;
+        :instrumento "Piano" ;
+        :nomeAluno "ALEXANDRINA MARIA FERREIRA LEMOS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A36487
+:A36487 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB17 ;
+        :toca :Trompete ;
+        :anoCurso 2 ;
+        :curso "CB17" ;
+        :dataNasc "1996-1-7" ;
+        :instrumento "Trompete" ;
+        :nomeAluno "ALI DOS REIS MOTA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35272
+:A35272 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB10 ;
+        :toca :Oboé ;
+        :anoCurso 3 ;
+        :curso "CB10" ;
+        :dataNasc "1997-11-7" ;
+        :instrumento "Oboé" ;
+        :nomeAluno "ANA LUISA PARREIRA NUNES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A27589
+:A27589 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS9 ;
+        :toca :Harpa ;
+        :anoCurso 6 ;
+        :curso "CS9" ;
+        :dataNasc "2002-1-13" ;
+        :instrumento "Harpa" ;
+        :nomeAluno "ANA MARGARIDA FIDALGO PINHEIRO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A25073
+:A25073 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS19 ;
+        :toca :Violoncelo ;
+        :anoCurso 8 ;
+        :curso "CS19" ;
+        :dataNasc "2003-12-12" ;
+        :instrumento "Violoncelo" ;
+        :nomeAluno "ANA MARGARIDA LIMA ALEM" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38169
+:A38169 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB4 ;
+        :toca :Eufónio ;
+        :anoCurso 5 ;
+        :curso "CB4" ;
+        :dataNasc "1999-6-5" ;
+        :instrumento "Eufónio" ;
+        :nomeAluno "ANDRE ABILIO NUNES ROCHA RODRIGUES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33822
+:A33822 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB1 ;
+        :toca :Clarinete ;
+        :anoCurso 3 ;
+        :curso "CB1" ;
+        :dataNasc "2001-11-13" ;
+        :instrumento "Clarinete" ;
+        :nomeAluno "ANDRE FERNANDES MARTINS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38214
+:A38214 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB9 ;
+        :toca :Harpa ;
+        :anoCurso 5 ;
+        :curso "CB9" ;
+        :dataNasc "1997-2-14" ;
+        :instrumento "Harpa" ;
+        :nomeAluno "ANDRE FILIPE DE SOUSA VIVEIROS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35274
+:A35274 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS21 ;
+        :toca :Viola_de_Arco ;
+        :anoCurso 8 ;
+        :curso "CS21" ;
+        :dataNasc "2003-7-20" ;
+        :instrumento "Viola de Arco" ;
+        :nomeAluno "ANDRE FILIPE OLIVEIRA MARTINS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A29871
+:A29871 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB14 ;
+        :toca :Saxofone ;
+        :anoCurso 1 ;
+        :curso "CB14" ;
+        :dataNasc "1997-8-1" ;
+        :instrumento "Saxofone" ;
+        :nomeAluno "ANDRE LEITE FERREIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38215
+:A38215 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB16 ;
+        :toca :Trompa ;
+        :anoCurso 2 ;
+        :curso "CB16" ;
+        :dataNasc "1998-5-28" ;
+        :instrumento "Trompa" ;
+        :nomeAluno "ANDRE RIBEIRO RODRIGUES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38117
+:A38117 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS19 ;
+        :toca :Violoncelo ;
+        :anoCurso 6 ;
+        :curso "CS19" ;
+        :dataNasc "2002-2-20" ;
+        :instrumento "Violoncelo" ;
+        :nomeAluno "ANTONIO ANDRE MARQUES RIBEIRO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35277
+:A35277 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS2 ;
+        :toca :Contrabaixo ;
+        :anoCurso 7 ;
+        :curso "CS2" ;
+        :dataNasc "2002-5-5" ;
+        :instrumento "Contrabaixo" ;
+        :nomeAluno "ANTONIO MANUEL MARTINS PINTO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35278
+:A35278 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB2 ;
+        :toca :Contrabaixo ;
+        :anoCurso 4 ;
+        :curso "CB2" ;
+        :dataNasc "2001-3-13" ;
+        :instrumento "Contrabaixo" ;
+        :nomeAluno "ANTONIO MANUEL RODRIGUES FERNANDES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38138
+:A38138 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB22 ;
+        :toca :Bandolim ;
+        :anoCurso 4 ;
+        :curso "CB22" ;
+        :dataNasc "1998-10-7" ;
+        :instrumento "Bandolim" ;
+        :nomeAluno "ANTONIO NUNO BACELAR MARTINS BARREIRO COVAS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35280
+:A35280 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB5 ;
+        :toca :Fagote ;
+        :anoCurso 4 ;
+        :curso "CB5" ;
+        :dataNasc "1997-2-10" ;
+        :instrumento "Fagote" ;
+        :nomeAluno "ANTONIO RICARDO PEREIRA GONCALVES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33057
+:A33057 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB8 ;
+        :toca :Guitarra ;
+        :anoCurso 2 ;
+        :curso "CB8" ;
+        :dataNasc "1999-7-5" ;
+        :instrumento "Guitarra" ;
+        :nomeAluno "ANTONIO RUI MIRANDA DE LEMOS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38143
+:A38143 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB3 ;
+        :toca :Corne_Inglês ;
+        :anoCurso 5 ;
+        :curso "CB3" ;
+        :dataNasc "2000-1-9" ;
+        :instrumento "Corne Inglês" ;
+        :nomeAluno "ANTONIO SERGIO MATOS SILVA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A30166
+:A30166 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB17 ;
+        :toca :Trompete ;
+        :anoCurso 5 ;
+        :curso "CB17" ;
+        :dataNasc "2001-9-6" ;
+        :instrumento "Trompete" ;
+        :nomeAluno "ANTONIO TIAGO MORGADO PEREIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A36971
+:A36971 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB22 ;
+        :toca :Bandolim ;
+        :anoCurso 3 ;
+        :curso "CB22" ;
+        :dataNasc "2001-4-2" ;
+        :instrumento "Bandolim" ;
+        :nomeAluno "AUGUSTO JORGE PEREIRA DA COSTA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38132
+:A38132 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS21 ;
+        :toca :Viola_de_Arco ;
+        :anoCurso 6 ;
+        :curso "CS21" ;
+        :dataNasc "2002-4-6" ;
+        :instrumento "Viola de Arco" ;
+        :nomeAluno "AVELINO JOSE DA COSTA REGO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33140
+:A33140 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS7 ;
+        :toca :Fliscorne ;
+        :anoCurso 6 ;
+        :curso "CS7" ;
+        :dataNasc "2005-2-11" ;
+        :instrumento "Fliscorne" ;
+        :nomeAluno "AVELINO RODRIGO ARAUJO SEMELHE DE SOUSA PINTO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33141
+:A33141 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB7 ;
+        :toca :Fliscorne ;
+        :anoCurso 5 ;
+        :curso "CB7" ;
+        :dataNasc "1997-8-23" ;
+        :instrumento "Fliscorne" ;
+        :nomeAluno "BARBARA ALEXANDRA EUSEBIO FREITAS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33291
+:A33291 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB8 ;
+        :toca :Guitarra ;
+        :anoCurso 5 ;
+        :curso "CB8" ;
+        :dataNasc "1996-9-28" ;
+        :instrumento "Guitarra" ;
+        :nomeAluno "BARBARA SOFIA ARAUJO DA SILVA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33142
+:A33142 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS1 ;
+        :toca :Clarinete ;
+        :anoCurso 7 ;
+        :curso "CS1" ;
+        :dataNasc "2004-11-16" ;
+        :instrumento "Clarinete" ;
+        :nomeAluno "BRUNO CESAR PEREIRA DA SILVA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A20044
+:A20044 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB9 ;
+        :toca :Harpa ;
+        :anoCurso 3 ;
+        :curso "CB9" ;
+        :dataNasc "1999-7-28" ;
+        :instrumento "Harpa" ;
+        :nomeAluno "BRUNO DE ALMEIDA RAMOS PEREIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35283
+:A35283 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB13 ;
+        :toca :Piano ;
+        :anoCurso 1 ;
+        :curso "CB13" ;
+        :dataNasc "1999-2-22" ;
+        :instrumento "Piano" ;
+        :nomeAluno "BRUNO EDGAR BERNARDO TEIXEIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35284
+:A35284 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS8 ;
+        :toca :Guitarra ;
+        :anoCurso 8 ;
+        :curso "CS8" ;
+        :dataNasc "2005-6-4" ;
+        :instrumento "Guitarra" ;
+        :nomeAluno "BRUNO EMANUEL TEIXEIRA DE CASTRO ARAUJO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38156
+:A38156 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB6 ;
+        :toca :Flauta ;
+        :anoCurso 4 ;
+        :curso "CB6" ;
+        :dataNasc "2000-6-11" ;
+        :instrumento "Flauta" ;
+        :nomeAluno "BRUNO FILIPE DA COSTA HERMENEGILDO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35285
+:A35285 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB8 ;
+        :toca :Guitarra ;
+        :anoCurso 3 ;
+        :curso "CB8" ;
+        :dataNasc "1999-4-14" ;
+        :instrumento "Guitarra" ;
+        :nomeAluno "BRUNO GABRIEL LEAL MACHADO DOS SANTOS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A36422
+:A36422 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB20 ;
+        :toca :Violino ;
+        :anoCurso 1 ;
+        :curso "CB20" ;
+        :dataNasc "1999-2-14" ;
+        :instrumento "Violino" ;
+        :nomeAluno "BRUNO JOSE DE MACEDO SOARES AMOR" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33143
+:A33143 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB3 ;
+        :toca :Corne_Inglês ;
+        :anoCurso 4 ;
+        :curso "CB3" ;
+        :dataNasc "1997-3-20" ;
+        :instrumento "Corne Inglês" ;
+        :nomeAluno "BRUNO MIGUEL CAMPOS RODRIGUES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33145
+:A33145 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB21 ;
+        :toca :Viola_de_Arco ;
+        :anoCurso 1 ;
+        :curso "CB21" ;
+        :dataNasc "1997-6-20" ;
+        :instrumento "Viola de Arco" ;
+        :nomeAluno "BRUNO MIGUEL FLORES DIAMANTINO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33146
+:A33146 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS18 ;
+        :toca :Tuba ;
+        :anoCurso 6 ;
+        :curso "CS18" ;
+        :dataNasc "2003-11-15" ;
+        :instrumento "Tuba" ;
+        :nomeAluno "BRUNO MIGUEL MAGALHAES AZEVEDO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33148
+:A33148 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB15 ;
+        :toca :Trombone ;
+        :anoCurso 3 ;
+        :curso "CB15" ;
+        :dataNasc "1998-3-21" ;
+        :instrumento "Trombone" ;
+        :nomeAluno "BRUNO MIGUEL TEIXEIRA PAIVA DE FARIA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38124
+:A38124 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB22 ;
+        :toca :Bandolim ;
+        :anoCurso 2 ;
+        :curso "CB22" ;
+        :dataNasc "2000-1-21" ;
+        :instrumento "Bandolim" ;
+        :nomeAluno "BRUNO RICARDO CUNHA MAGALHAES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A30176
+:A30176 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB18 ;
+        :toca :Tuba ;
+        :anoCurso 1 ;
+        :curso "CB18" ;
+        :dataNasc "1998-4-14" ;
+        :instrumento "Tuba" ;
+        :nomeAluno "BRUNO RICARDO DUARTE MAGALHAES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35808
+:A35808 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS7 ;
+        :toca :Fliscorne ;
+        :anoCurso 6 ;
+        :curso "CS7" ;
+        :dataNasc "2002-11-11" ;
+        :instrumento "Fliscorne" ;
+        :nomeAluno "CANDIDO MIGUEL REBELO BARROS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38126
+:A38126 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS16 ;
+        :toca :Trompa ;
+        :anoCurso 7 ;
+        :curso "CS16" ;
+        :dataNasc "2005-6-14" ;
+        :instrumento "Trompa" ;
+        :nomeAluno "CARLOS ALFREDO MACIEIRA DE FARIA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33689
+:A33689 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB2 ;
+        :toca :Contrabaixo ;
+        :anoCurso 2 ;
+        :curso "CB2" ;
+        :dataNasc "2001-5-10" ;
+        :instrumento "Contrabaixo" ;
+        :nomeAluno "CARLOS ANDRE BRITO RIBEIRO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38125
+:A38125 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS8 ;
+        :toca :Guitarra ;
+        :anoCurso 6 ;
+        :curso "CS8" ;
+        :dataNasc "2002-5-13" ;
+        :instrumento "Guitarra" ;
+        :nomeAluno "CARLOS CESAR MADUREIRA ROMANO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A24654
+:A24654 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS14 ;
+        :toca :Saxofone ;
+        :anoCurso 8 ;
+        :curso "CS14" ;
+        :dataNasc "2005-11-2" ;
+        :instrumento "Saxofone" ;
+        :nomeAluno "CARLOS DE SOUSA CABRAL BRANDAO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A20021
+:A20021 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB19 ;
+        :toca :Violoncelo ;
+        :anoCurso 4 ;
+        :curso "CB19" ;
+        :dataNasc "1999-12-4" ;
+        :instrumento "Violoncelo" ;
+        :nomeAluno "CARLOS JOSE DA CUNHA RIBEIRO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35291
+:A35291 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB15 ;
+        :toca :Trombone ;
+        :anoCurso 4 ;
+        :curso "CB15" ;
+        :dataNasc "1998-6-17" ;
+        :instrumento "Trombone" ;
+        :nomeAluno "CARLOS MIGUEL TAVARES LOPES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A34640
+:A34640 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS3 ;
+        :toca :Corne_Inglês ;
+        :anoCurso 7 ;
+        :curso "CS3" ;
+        :dataNasc "2002-8-9" ;
+        :instrumento "Corne Inglês" ;
+        :nomeAluno "CARLOS PRUDENCIO DO ESPIRITO CRISOSTOMO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38207
+:A38207 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS2 ;
+        :toca :Contrabaixo ;
+        :anoCurso 8 ;
+        :curso "CS2" ;
+        :dataNasc "2003-8-22" ;
+        :instrumento "Contrabaixo" ;
+        :nomeAluno "CATARINA ISABEL DE OLIVEIRA MATEUS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A32010
+:A32010 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS10 ;
+        :toca :Oboé ;
+        :anoCurso 6 ;
+        :curso "CS10" ;
+        :dataNasc "2005-9-1" ;
+        :instrumento "Oboé" ;
+        :nomeAluno "CATARINA SOFIA MARTINHO LUIS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35052
+:A35052 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB2 ;
+        :toca :Contrabaixo ;
+        :anoCurso 5 ;
+        :curso "CB2" ;
+        :dataNasc "1996-5-24" ;
+        :instrumento "Contrabaixo" ;
+        :nomeAluno "CESAR FILIPE DA CRUZ GOMES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35440
+:A35440 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS18 ;
+        :toca :Tuba ;
+        :anoCurso 6 ;
+        :curso "CS18" ;
+        :dataNasc "2002-6-26" ;
+        :instrumento "Tuba" ;
+        :nomeAluno "DANIEL BARBOSA ALVES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A32648
+:A32648 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS5 ;
+        :toca :Fagote ;
+        :anoCurso 8 ;
+        :curso "CS5" ;
+        :dataNasc "2002-1-23" ;
+        :instrumento "Fagote" ;
+        :nomeAluno "DANIEL FILIPE PERES FERREIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33152
+:A33152 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB20 ;
+        :toca :Violino ;
+        :anoCurso 5 ;
+        :curso "CB20" ;
+        :dataNasc "2001-10-12" ;
+        :instrumento "Violino" ;
+        :nomeAluno "DANIEL RICARDO DE CASTRO MENDES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38211
+:A38211 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS12 ;
+        :toca :Percussão ;
+        :anoCurso 8 ;
+        :curso "CS12" ;
+        :dataNasc "2003-8-16" ;
+        :instrumento "Percussão" ;
+        :nomeAluno "DANIEL TORRES GONCALVES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38210
+:A38210 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB5 ;
+        :toca :Fagote ;
+        :anoCurso 5 ;
+        :curso "CB5" ;
+        :dataNasc "1998-7-10" ;
+        :instrumento "Fagote" ;
+        :nomeAluno "DANIELA CRISTINA GARCIA TEIXEIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A22854
+:A22854 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB5 ;
+        :toca :Fagote ;
+        :anoCurso 2 ;
+        :curso "CB5" ;
+        :dataNasc "1999-3-10" ;
+        :instrumento "Fagote" ;
+        :nomeAluno "DAVI CARNEIRO PEREIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35293
+:A35293 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB6 ;
+        :toca :Flauta ;
+        :anoCurso 4 ;
+        :curso "CB6" ;
+        :dataNasc "1999-11-22" ;
+        :instrumento "Flauta" ;
+        :nomeAluno "DAVID DANIEL CARDOSO DE OLIVEIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35294
+:A35294 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB20 ;
+        :toca :Violino ;
+        :anoCurso 1 ;
+        :curso "CB20" ;
+        :dataNasc "1996-11-20" ;
+        :instrumento "Violino" ;
+        :nomeAluno "DIAMANTINO JOSE MADEIRA ABOBELEIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38166
+:A38166 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB19 ;
+        :toca :Violoncelo ;
+        :anoCurso 2 ;
+        :curso "CB19" ;
+        :dataNasc "2000-6-26" ;
+        :instrumento "Violoncelo" ;
+        :nomeAluno "DIOGO FILIPE DA SILVA CARDOSO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38164
+:A38164 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS8 ;
+        :toca :Guitarra ;
+        :anoCurso 6 ;
+        :curso "CS8" ;
+        :dataNasc "2004-8-28" ;
+        :instrumento "Guitarra" ;
+        :nomeAluno "DIOGO PAULO DA FONTE LAPA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38167
+:A38167 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS22 ;
+        :toca :Bandolim ;
+        :anoCurso 8 ;
+        :curso "CS22" ;
+        :dataNasc "2002-7-20" ;
+        :instrumento "Bandolim" ;
+        :nomeAluno "DUARTE ALEXANDRE DA CUNHA ALVES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33155
+:A33155 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS1 ;
+        :toca :Clarinete ;
+        :anoCurso 7 ;
+        :curso "CS1" ;
+        :dataNasc "2002-4-2" ;
+        :instrumento "Clarinete" ;
+        :nomeAluno "DUARTE FILIPE AFONSO CHAVES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35298
+:A35298 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB3 ;
+        :toca :Corne_Inglês ;
+        :anoCurso 4 ;
+        :curso "CB3" ;
+        :dataNasc "1999-5-10" ;
+        :instrumento "Corne Inglês" ;
+        :nomeAluno "DUARTE NUNO MALHEIRO DE BARREIRO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38190
+:A38190 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS15 ;
+        :toca :Trombone ;
+        :anoCurso 6 ;
+        :curso "CS15" ;
+        :dataNasc "2005-3-14" ;
+        :instrumento "Trombone" ;
+        :nomeAluno "ELISEU CARNEIRO DOS SANTOS ROCHA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35300
+:A35300 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB10 ;
+        :toca :Oboé ;
+        :anoCurso 5 ;
+        :curso "CB10" ;
+        :dataNasc "2001-2-15" ;
+        :instrumento "Oboé" ;
+        :nomeAluno "EMANUEL CERDEIRA MESQUITA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A30305
+:A30305 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS19 ;
+        :toca :Violoncelo ;
+        :anoCurso 7 ;
+        :curso "CS19" ;
+        :dataNasc "2004-4-15" ;
+        :instrumento "Violoncelo" ;
+        :nomeAluno "EMANUEL JOSE ANTUNES FERNANDES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A36757
+:A36757 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS8 ;
+        :toca :Guitarra ;
+        :anoCurso 7 ;
+        :curso "CS8" ;
+        :dataNasc "2002-6-6" ;
+        :instrumento "Guitarra" ;
+        :nomeAluno "ERNESTO MANUEL DA SILVA LOPES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33157
+:A33157 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS1 ;
+        :toca :Clarinete ;
+        :anoCurso 6 ;
+        :curso "CS1" ;
+        :dataNasc "2005-1-23" ;
+        :instrumento "Clarinete" ;
+        :nomeAluno "EURICO MANUEL FOLGADO AFONSO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A27608
+:A27608 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB15 ;
+        :toca :Trombone ;
+        :anoCurso 3 ;
+        :curso "CB15" ;
+        :dataNasc "1999-5-12" ;
+        :instrumento "Trombone" ;
+        :nomeAluno "EURICO MANUEL TELES MORAIS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35302
+:A35302 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB11 ;
+        :toca :Orgão ;
+        :anoCurso 2 ;
+        :curso "CB11" ;
+        :dataNasc "1996-8-19" ;
+        :instrumento "Orgão" ;
+        :nomeAluno "FABIO ROBERTO LEITE MATOS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33158
+:A33158 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS5 ;
+        :toca :Fagote ;
+        :anoCurso 7 ;
+        :curso "CS5" ;
+        :dataNasc "2003-1-11" ;
+        :instrumento "Fagote" ;
+        :nomeAluno "FAUSTO MIGUEL PACHECO FARIA VIANA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35465
+:A35465 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB19 ;
+        :toca :Violoncelo ;
+        :anoCurso 5 ;
+        :curso "CB19" ;
+        :dataNasc "1999-2-21" ;
+        :instrumento "Violoncelo" ;
+        :nomeAluno "FERNANDO ANTONIO ALVES LOPES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33858
+:A33858 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB13 ;
+        :toca :Piano ;
+        :anoCurso 5 ;
+        :curso "CB13" ;
+        :dataNasc "1999-7-13" ;
+        :instrumento "Piano" ;
+        :nomeAluno "FERNANDO JORGE PINTO LIMA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A26737
+:A26737 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS16 ;
+        :toca :Trompa ;
+        :anoCurso 7 ;
+        :curso "CS16" ;
+        :dataNasc "2005-7-26" ;
+        :instrumento "Trompa" ;
+        :nomeAluno "FERNANDO MIGUEL SOUSA LISBOA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A30187
+:A30187 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS9 ;
+        :toca :Harpa ;
+        :anoCurso 7 ;
+        :curso "CS9" ;
+        :dataNasc "2005-1-26" ;
+        :instrumento "Harpa" ;
+        :nomeAluno "FERNANDO SERGIO MADALENO PEREIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35303
+:A35303 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB1 ;
+        :toca :Clarinete ;
+        :anoCurso 5 ;
+        :curso "CB1" ;
+        :dataNasc "1999-5-8" ;
+        :instrumento "Clarinete" ;
+        :nomeAluno "FILIPE ANTONIO GONCALVES DA SILVA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A36445
+:A36445 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB22 ;
+        :toca :Bandolim ;
+        :anoCurso 5 ;
+        :curso "CB22" ;
+        :dataNasc "2001-9-25" ;
+        :instrumento "Bandolim" ;
+        :nomeAluno "FILIPE BARROSO DE OLIVEIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38595
+:A38595 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB2 ;
+        :toca :Contrabaixo ;
+        :anoCurso 1 ;
+        :curso "CB2" ;
+        :dataNasc "1999-4-2" ;
+        :instrumento "Contrabaixo" ;
+        :nomeAluno "FILIPE GONCALO GONCALVES DA COSTA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38187
+:A38187 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB10 ;
+        :toca :Oboé ;
+        :anoCurso 5 ;
+        :curso "CB10" ;
+        :dataNasc "1996-6-19" ;
+        :instrumento "Oboé" ;
+        :nomeAluno "FLAVIO MIGUEL XAVIER FERREIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A36424
+:A36424 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB11 ;
+        :toca :Orgão ;
+        :anoCurso 1 ;
+        :curso "CB11" ;
+        :dataNasc "2001-5-14" ;
+        :instrumento "Orgão" ;
+        :nomeAluno "FRANCISCO EURICO PINTO CORTEZ MARTINS LEITE" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35308
+:A35308 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB21 ;
+        :toca :Viola_de_Arco ;
+        :anoCurso 5 ;
+        :curso "CB21" ;
+        :dataNasc "1996-6-2" ;
+        :instrumento "Viola de Arco" ;
+        :nomeAluno "FRANCISCO JOSE MAIO LEITE" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35443
+:A35443 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS22 ;
+        :toca :Bandolim ;
+        :anoCurso 7 ;
+        :curso "CS22" ;
+        :dataNasc "2002-4-6" ;
+        :instrumento "Bandolim" ;
+        :nomeAluno "FRANCISCO JOSE MARTINS GOMES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A27616
+:A27616 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB21 ;
+        :toca :Viola_de_Arco ;
+        :anoCurso 3 ;
+        :curso "CB21" ;
+        :dataNasc "1996-7-3" ;
+        :instrumento "Viola de Arco" ;
+        :nomeAluno "FRANCISCO JOSE PRATA DA PAZ" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38163
+:A38163 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB2 ;
+        :toca :Contrabaixo ;
+        :anoCurso 2 ;
+        :curso "CB2" ;
+        :dataNasc "1996-4-23" ;
+        :instrumento "Contrabaixo" ;
+        :nomeAluno "GASPAR AUGUSTO SIMOES CORREIA VIEIRA LEITE" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A39288
+:A39288 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS15 ;
+        :toca :Trombone ;
+        :anoCurso 7 ;
+        :curso "CS15" ;
+        :dataNasc "2005-2-22" ;
+        :instrumento "Trombone" ;
+        :nomeAluno "GENILDO SOARES NEVES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33162
+:A33162 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS5 ;
+        :toca :Fagote ;
+        :anoCurso 8 ;
+        :curso "CS5" ;
+        :dataNasc "2003-3-25" ;
+        :instrumento "Fagote" ;
+        :nomeAluno "GONCALO LEAL MACHADO RIBEIRO PINTO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35311
+:A35311 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS22 ;
+        :toca :Bandolim ;
+        :anoCurso 6 ;
+        :curso "CS22" ;
+        :dataNasc "2005-3-5" ;
+        :instrumento "Bandolim" ;
+        :nomeAluno "GONCALO LUIS MALHEIRO DE OLIVEIRA NOVAIS MACHADO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A39508
+:A39508 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS5 ;
+        :toca :Fagote ;
+        :anoCurso 7 ;
+        :curso "CS5" ;
+        :dataNasc "2005-8-15" ;
+        :instrumento "Fagote" ;
+        :nomeAluno "GONCALO MANUEL CORREIA CALHEIROS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33163
+:A33163 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS21 ;
+        :toca :Viola_de_Arco ;
+        :anoCurso 6 ;
+        :curso "CS21" ;
+        :dataNasc "2004-4-6" ;
+        :instrumento "Viola de Arco" ;
+        :nomeAluno "GONCALO PAULO CUNHA CARDOSO FERREIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38174
+:A38174 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS12 ;
+        :toca :Percussão ;
+        :anoCurso 6 ;
+        :curso "CS12" ;
+        :dataNasc "2003-12-14" ;
+        :instrumento "Percussão" ;
+        :nomeAluno "GUILHERME REIS BARBOSA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33165
+:A33165 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS13 ;
+        :toca :Piano ;
+        :anoCurso 6 ;
+        :curso "CS13" ;
+        :dataNasc "2004-7-5" ;
+        :instrumento "Piano" ;
+        :nomeAluno "HELDER ARTUR PEIXOTO MAGALHAES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35312
+:A35312 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS13 ;
+        :toca :Piano ;
+        :anoCurso 7 ;
+        :curso "CS13" ;
+        :dataNasc "2002-4-11" ;
+        :instrumento "Piano" ;
+        :nomeAluno "HELDER FILIPE DE CASTRO MARQUES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38185
+:A38185 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB6 ;
+        :toca :Flauta ;
+        :anoCurso 3 ;
+        :curso "CB6" ;
+        :dataNasc "1996-6-21" ;
+        :instrumento "Flauta" ;
+        :nomeAluno "HELDER JOSE FERREIRA BARBOSA RIBEIRO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A39503
+:A39503 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS10 ;
+        :toca :Oboé ;
+        :anoCurso 7 ;
+        :curso "CS10" ;
+        :dataNasc "2005-3-4" ;
+        :instrumento "Oboé" ;
+        :nomeAluno "HELDER NUNO MARTINS DO VALE TOME" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A36758
+:A36758 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS21 ;
+        :toca :Viola_de_Arco ;
+        :anoCurso 6 ;
+        :curso "CS21" ;
+        :dataNasc "2003-4-20" ;
+        :instrumento "Viola de Arco" ;
+        :nomeAluno "HUGO ALEXANDRE PEREIRA TRIUNFANTE MARTINS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38197
+:A38197 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS8 ;
+        :toca :Guitarra ;
+        :anoCurso 6 ;
+        :curso "CS8" ;
+        :dataNasc "2004-8-6" ;
+        :instrumento "Guitarra" ;
+        :nomeAluno "HUGO ALEXANDRE SOBREIRO DE SEIXAS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33272
+:A33272 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB9 ;
+        :toca :Harpa ;
+        :anoCurso 4 ;
+        :curso "CB9" ;
+        :dataNasc "1998-2-21" ;
+        :instrumento "Harpa" ;
+        :nomeAluno "HUGO ANDRE PEIXOTO FREITAS PEREIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35315
+:A35315 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS6 ;
+        :toca :Flauta ;
+        :anoCurso 7 ;
+        :curso "CS6" ;
+        :dataNasc "2004-1-28" ;
+        :instrumento "Flauta" ;
+        :nomeAluno "HUGO EMANUEL QUEIROS TEIXEIRA DA SILVA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38202
+:A38202 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB6 ;
+        :toca :Flauta ;
+        :anoCurso 3 ;
+        :curso "CB6" ;
+        :dataNasc "2000-4-4" ;
+        :instrumento "Flauta" ;
+        :nomeAluno "HUGO FILIPE NASCIMENTO PEREIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35316
+:A35316 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB15 ;
+        :toca :Trombone ;
+        :anoCurso 3 ;
+        :curso "CB15" ;
+        :dataNasc "2001-2-21" ;
+        :instrumento "Trombone" ;
+        :nomeAluno "HUGO GUILHERME DOS SANTOS RIGOR" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35395
+:A35395 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB20 ;
+        :toca :Violino ;
+        :anoCurso 2 ;
+        :curso "CB20" ;
+        :dataNasc "1997-6-25" ;
+        :instrumento "Violino" ;
+        :nomeAluno "HUGO JOSE FERNANDES CARVALHO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38204
+:A38204 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB7 ;
+        :toca :Fliscorne ;
+        :anoCurso 1 ;
+        :curso "CB7" ;
+        :dataNasc "1997-10-2" ;
+        :instrumento "Fliscorne" ;
+        :nomeAluno "HUGO JOSE PEREIRA PACHECO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A26208
+:A26208 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB22 ;
+        :toca :Bandolim ;
+        :anoCurso 5 ;
+        :curso "CB22" ;
+        :dataNasc "1998-7-8" ;
+        :instrumento "Bandolim" ;
+        :nomeAluno "IGOR MURILO DE ALMEIDA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33703
+:A33703 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB22 ;
+        :toca :Bandolim ;
+        :anoCurso 1 ;
+        :curso "CB22" ;
+        :dataNasc "1996-10-28" ;
+        :instrumento "Bandolim" ;
+        :nomeAluno "ISABEL MARIA ROSENDO CARDOSO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38134
+:A38134 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS17 ;
+        :toca :Trompete ;
+        :anoCurso 8 ;
+        :curso "CS17" ;
+        :dataNasc "2002-6-10" ;
+        :instrumento "Trompete" ;
+        :nomeAluno "IVO MANUEL DANTAS MONTEIRO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35318
+:A35318 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS14 ;
+        :toca :Saxofone ;
+        :anoCurso 6 ;
+        :curso "CS14" ;
+        :dataNasc "2004-4-25" ;
+        :instrumento "Saxofone" ;
+        :nomeAluno "JASON PETER COSTA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33168
+:A33168 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB9 ;
+        :toca :Harpa ;
+        :anoCurso 4 ;
+        :curso "CB9" ;
+        :dataNasc "2000-10-13" ;
+        :instrumento "Harpa" ;
+        :nomeAluno "JOANA SOUTO DE MIRANDA GONZALEZ" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35319
+:A35319 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS19 ;
+        :toca :Violoncelo ;
+        :anoCurso 8 ;
+        :curso "CS19" ;
+        :dataNasc "2004-6-12" ;
+        :instrumento "Violoncelo" ;
+        :nomeAluno "JOAO ALEXANDRE VAZ OLIVEIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35320
+:A35320 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB19 ;
+        :toca :Violoncelo ;
+        :anoCurso 1 ;
+        :curso "CB19" ;
+        :dataNasc "2001-2-9" ;
+        :instrumento "Violoncelo" ;
+        :nomeAluno "JOAO ANTONIO LAVRADOR VILANOVA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A32753
+:A32753 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB5 ;
+        :toca :Fagote ;
+        :anoCurso 5 ;
+        :curso "CB5" ;
+        :dataNasc "1998-11-26" ;
+        :instrumento "Fagote" ;
+        :nomeAluno "JOAO ARNALDO FREITAS DE ABREU" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38180
+:A38180 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS7 ;
+        :toca :Fliscorne ;
+        :anoCurso 7 ;
+        :curso "CS7" ;
+        :dataNasc "2005-11-9" ;
+        :instrumento "Fliscorne" ;
+        :nomeAluno "JOAO CARLOS AZEVEDO SALGADO GUIMARAES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35321
+:A35321 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB21 ;
+        :toca :Viola_de_Arco ;
+        :anoCurso 4 ;
+        :curso "CB21" ;
+        :dataNasc "1996-3-27" ;
+        :instrumento "Viola de Arco" ;
+        :nomeAluno "JOAO FILIPE FONTES MACHADO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35322
+:A35322 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS9 ;
+        :toca :Harpa ;
+        :anoCurso 8 ;
+        :curso "CS9" ;
+        :dataNasc "2005-5-17" ;
+        :instrumento "Harpa" ;
+        :nomeAluno "JOAO GILBERTO LAMARAO DA SILVA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38133
+:A38133 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB15 ;
+        :toca :Trombone ;
+        :anoCurso 1 ;
+        :curso "CB15" ;
+        :dataNasc "1998-3-7" ;
+        :instrumento "Trombone" ;
+        :nomeAluno "JOAO GONCALO BOTICA RIBEIRO DA SILVA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A30201
+:A30201 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS7 ;
+        :toca :Fliscorne ;
+        :anoCurso 6 ;
+        :curso "CS7" ;
+        :dataNasc "2005-3-5" ;
+        :instrumento "Fliscorne" ;
+        :nomeAluno "JOAO GUILHERME RABACA CAMPOS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38123
+:A38123 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB3 ;
+        :toca :Corne_Inglês ;
+        :anoCurso 4 ;
+        :curso "CB3" ;
+        :dataNasc "1998-7-26" ;
+        :instrumento "Corne Inglês" ;
+        :nomeAluno "JOAO MANUEL DA SILVA SANCHES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A34935
+:A34935 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS1 ;
+        :toca :Clarinete ;
+        :anoCurso 7 ;
+        :curso "CS1" ;
+        :dataNasc "2003-2-17" ;
+        :instrumento "Clarinete" ;
+        :nomeAluno "JOAO MANUEL DE CAMPOS GONCALVES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35323
+:A35323 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB4 ;
+        :toca :Eufónio ;
+        :anoCurso 5 ;
+        :curso "CB4" ;
+        :dataNasc "1998-1-16" ;
+        :instrumento "Eufónio" ;
+        :nomeAluno "JOAO MARIO MENDES DE OLIVEIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33172
+:A33172 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB21 ;
+        :toca :Viola_de_Arco ;
+        :anoCurso 3 ;
+        :curso "CB21" ;
+        :dataNasc "1999-2-11" ;
+        :instrumento "Viola de Arco" ;
+        :nomeAluno "JOAO MIGUEL RAPOSO DA SILVA MARQUES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38191
+:A38191 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB8 ;
+        :toca :Guitarra ;
+        :anoCurso 5 ;
+        :curso "CB8" ;
+        :dataNasc "1997-3-21" ;
+        :instrumento "Guitarra" ;
+        :nomeAluno "JOAO MIGUEL RODRIGUES BATISTA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38186
+:A38186 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS22 ;
+        :toca :Bandolim ;
+        :anoCurso 7 ;
+        :curso "CS22" ;
+        :dataNasc "2003-5-3" ;
+        :instrumento "Bandolim" ;
+        :nomeAluno "JOAO NUNO MARQUES DOS SANTOS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A39750
+:A39750 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB2 ;
+        :toca :Contrabaixo ;
+        :anoCurso 2 ;
+        :curso "CB2" ;
+        :dataNasc "1997-3-5" ;
+        :instrumento "Contrabaixo" ;
+        :nomeAluno "JOAO PAULO BARBOSA OLIVEIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A22662
+:A22662 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS12 ;
+        :toca :Percussão ;
+        :anoCurso 8 ;
+        :curso "CS12" ;
+        :dataNasc "2005-10-12" ;
+        :instrumento "Percussão" ;
+        :nomeAluno "JOAO PAULO CARRAPATO ALMEIDA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35325
+:A35325 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS9 ;
+        :toca :Harpa ;
+        :anoCurso 8 ;
+        :curso "CS9" ;
+        :dataNasc "2004-9-25" ;
+        :instrumento "Harpa" ;
+        :nomeAluno "JOAO PAULO COELHO GOMES TEIXEIRA E OLIVEIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A17855
+:A17855 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS5 ;
+        :toca :Fagote ;
+        :anoCurso 8 ;
+        :curso "CS5" ;
+        :dataNasc "2004-9-1" ;
+        :instrumento "Fagote" ;
+        :nomeAluno "JOAO PAULO DA SILVA CASTRO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38175
+:A38175 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB6 ;
+        :toca :Flauta ;
+        :anoCurso 4 ;
+        :curso "CB6" ;
+        :dataNasc "2001-5-26" ;
+        :instrumento "Flauta" ;
+        :nomeAluno "JOAO PAULO DA SILVA GOMES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33173
+:A33173 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS20 ;
+        :toca :Violino ;
+        :anoCurso 8 ;
+        :curso "CS20" ;
+        :dataNasc "2003-1-2" ;
+        :instrumento "Violino" ;
+        :nomeAluno "JOAO PAULO MINHAVA PEIXOTO ASSIS CARDOSO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A39622
+:A39622 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS19 ;
+        :toca :Violoncelo ;
+        :anoCurso 6 ;
+        :curso "CS19" ;
+        :dataNasc "2002-1-6" ;
+        :instrumento "Violoncelo" ;
+        :nomeAluno "JOAO PAULO SILVA DE VASCONCELOS GUSMAO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33175
+:A33175 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB22 ;
+        :toca :Bandolim ;
+        :anoCurso 2 ;
+        :curso "CB22" ;
+        :dataNasc "2001-10-25" ;
+        :instrumento "Bandolim" ;
+        :nomeAluno "JOAO PEDRO BACAO COELHO DE BARROS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A18938
+:A18938 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS13 ;
+        :toca :Piano ;
+        :anoCurso 6 ;
+        :curso "CS13" ;
+        :dataNasc "2003-10-28" ;
+        :instrumento "Piano" ;
+        :nomeAluno "JOAO PEDRO BRITO ANTUNES GUIMARAES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33176
+:A33176 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS20 ;
+        :toca :Violino ;
+        :anoCurso 8 ;
+        :curso "CS20" ;
+        :dataNasc "2004-6-26" ;
+        :instrumento "Violino" ;
+        :nomeAluno "JOAO PEDRO GOMES FERNANDES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35832
+:A35832 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS12 ;
+        :toca :Percussão ;
+        :anoCurso 7 ;
+        :curso "CS12" ;
+        :dataNasc "2002-5-1" ;
+        :instrumento "Percussão" ;
+        :nomeAluno "JOAO PEDRO GONCALVES DE CARVALHO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38170
+:A38170 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS17 ;
+        :toca :Trompete ;
+        :anoCurso 6 ;
+        :curso "CS17" ;
+        :dataNasc "2003-4-19" ;
+        :instrumento "Trompete" ;
+        :nomeAluno "JOAO PEDRO OLIVEIRA PEREIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A36425
+:A36425 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS20 ;
+        :toca :Violino ;
+        :anoCurso 6 ;
+        :curso "CS20" ;
+        :dataNasc "2002-6-6" ;
+        :instrumento "Violino" ;
+        :nomeAluno "JOAO PEDRO ROBALO ESPINHO PEREIRA DA SILVA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38212
+:A38212 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB4 ;
+        :toca :Eufónio ;
+        :anoCurso 2 ;
+        :curso "CB4" ;
+        :dataNasc "1998-5-3" ;
+        :instrumento "Eufónio" ;
+        :nomeAluno "JOAO PEDRO SILVA ARAUJO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38220
+:A38220 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB8 ;
+        :toca :Guitarra ;
+        :anoCurso 3 ;
+        :curso "CB8" ;
+        :dataNasc "1999-11-4" ;
+        :instrumento "Guitarra" ;
+        :nomeAluno "JOAO RAFAEL FERREIRA VELOSO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38199
+:A38199 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB5 ;
+        :toca :Fagote ;
+        :anoCurso 1 ;
+        :curso "CB5" ;
+        :dataNasc "1999-3-26" ;
+        :instrumento "Fagote" ;
+        :nomeAluno "JOAO RICARDO DA SILVA CAMPOS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38198
+:A38198 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB14 ;
+        :toca :Saxofone ;
+        :anoCurso 2 ;
+        :curso "CB14" ;
+        :dataNasc "2001-10-15" ;
+        :instrumento "Saxofone" ;
+        :nomeAluno "JOAQUIM MACHADO GONCALVES SAMPAIO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35328
+:A35328 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB19 ;
+        :toca :Violoncelo ;
+        :anoCurso 1 ;
+        :curso "CB19" ;
+        :dataNasc "1997-4-17" ;
+        :instrumento "Violoncelo" ;
+        :nomeAluno "JOEL ARAUJO ROCHA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38157
+:A38157 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS21 ;
+        :toca :Viola_de_Arco ;
+        :anoCurso 7 ;
+        :curso "CS21" ;
+        :dataNasc "2003-7-15" ;
+        :instrumento "Viola de Arco" ;
+        :nomeAluno "JOEL HUMBERTO DA SILVA BEIRAO DO VALE CARVALHO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A20464
+:A20464 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS21 ;
+        :toca :Viola_de_Arco ;
+        :anoCurso 7 ;
+        :curso "CS21" ;
+        :dataNasc "2004-3-22" ;
+        :instrumento "Viola de Arco" ;
+        :nomeAluno "JOEL TITO DA CRUZ PINTO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38139
+:A38139 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB7 ;
+        :toca :Fliscorne ;
+        :anoCurso 4 ;
+        :curso "CB7" ;
+        :dataNasc "1997-4-7" ;
+        :instrumento "Fliscorne" ;
+        :nomeAluno "JORGE ALBERTO FARIA MIRANDA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35330
+:A35330 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS13 ;
+        :toca :Piano ;
+        :anoCurso 8 ;
+        :curso "CS13" ;
+        :dataNasc "2002-8-24" ;
+        :instrumento "Piano" ;
+        :nomeAluno "JORGE ANDRE ALVES DE MELO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A16409
+:A16409 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS10 ;
+        :toca :Oboé ;
+        :anoCurso 8 ;
+        :curso "CS10" ;
+        :dataNasc "2005-2-18" ;
+        :instrumento "Oboé" ;
+        :nomeAluno "JORGE MANUEL DE CASTRO MAIO GOMES DA COSTA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33709
+:A33709 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS12 ;
+        :toca :Percussão ;
+        :anoCurso 7 ;
+        :curso "CS12" ;
+        :dataNasc "2005-8-2" ;
+        :instrumento "Percussão" ;
+        :nomeAluno "JORGE MANUEL VIANA RIBEIRO MARTINS FORTE" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A30209
+:A30209 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB15 ;
+        :toca :Trombone ;
+        :anoCurso 1 ;
+        :curso "CB15" ;
+        :dataNasc "1997-4-26" ;
+        :instrumento "Trombone" ;
+        :nomeAluno "JORGE MIGUEL GONCALVES DA SILVA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A21008
+:A21008 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB2 ;
+        :toca :Contrabaixo ;
+        :anoCurso 3 ;
+        :curso "CB2" ;
+        :dataNasc "1998-6-11" ;
+        :instrumento "Contrabaixo" ;
+        :nomeAluno "JORGE MIGUEL SILVA MELO PEREIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35331
+:A35331 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS22 ;
+        :toca :Bandolim ;
+        :anoCurso 7 ;
+        :curso "CS22" ;
+        :dataNasc "2003-3-20" ;
+        :instrumento "Bandolim" ;
+        :nomeAluno "JOSE ALEXANDRE DE CARVALHO AMORIM" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38189
+:A38189 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB3 ;
+        :toca :Corne_Inglês ;
+        :anoCurso 2 ;
+        :curso "CB3" ;
+        :dataNasc "1998-8-3" ;
+        :instrumento "Corne Inglês" ;
+        :nomeAluno "JOSE ANTONIO DA CUNHA E SILVA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A19705
+:A19705 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS11 ;
+        :toca :Orgão ;
+        :anoCurso 7 ;
+        :curso "CS11" ;
+        :dataNasc "2004-1-12" ;
+        :instrumento "Orgão" ;
+        :nomeAluno "JOSE ANTONIO PEREIRA CIBRAO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A30211
+:A30211 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB5 ;
+        :toca :Fagote ;
+        :anoCurso 5 ;
+        :curso "CB5" ;
+        :dataNasc "1997-6-3" ;
+        :instrumento "Fagote" ;
+        :nomeAluno "JOSE CARLOS CARVALHO DOS SANTOS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A30212
+:A30212 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB10 ;
+        :toca :Oboé ;
+        :anoCurso 5 ;
+        :curso "CB10" ;
+        :dataNasc "2001-4-6" ;
+        :instrumento "Oboé" ;
+        :nomeAluno "JOSE CARLOS DA ROCHA MACHADO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A36960
+:A36960 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB17 ;
+        :toca :Trompete ;
+        :anoCurso 5 ;
+        :curso "CB17" ;
+        :dataNasc "1999-9-13" ;
+        :instrumento "Trompete" ;
+        :nomeAluno "JOSE CARLOS DE FREITAS FONTAO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A34434
+:A34434 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS13 ;
+        :toca :Piano ;
+        :anoCurso 7 ;
+        :curso "CS13" ;
+        :dataNasc "2004-7-1" ;
+        :instrumento "Piano" ;
+        :nomeAluno "JOSE CARLOS MARQUES DIAS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35332
+:A35332 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB13 ;
+        :toca :Piano ;
+        :anoCurso 5 ;
+        :curso "CB13" ;
+        :dataNasc "2001-11-5" ;
+        :instrumento "Piano" ;
+        :nomeAluno "JOSE DIOGO RIBEIRO LIZ DE ALMEIDA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A39506
+:A39506 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB18 ;
+        :toca :Tuba ;
+        :anoCurso 5 ;
+        :curso "CB18" ;
+        :dataNasc "1999-6-1" ;
+        :instrumento "Tuba" ;
+        :nomeAluno "JOSE EDUARDO CORREIA CALHEIROS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A36761
+:A36761 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB14 ;
+        :toca :Saxofone ;
+        :anoCurso 1 ;
+        :curso "CB14" ;
+        :dataNasc "2001-12-11" ;
+        :instrumento "Saxofone" ;
+        :nomeAluno "JOSE EDUARDO TEIXEIRA RITO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38224
+:A38224 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB12 ;
+        :toca :Percussão ;
+        :anoCurso 3 ;
+        :curso "CB12" ;
+        :dataNasc "1999-2-12" ;
+        :instrumento "Percussão" ;
+        :nomeAluno "JOSE FILIPE HENRIQUES VILAS BOAS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35333
+:A35333 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB19 ;
+        :toca :Violoncelo ;
+        :anoCurso 4 ;
+        :curso "CB19" ;
+        :dataNasc "1999-11-9" ;
+        :instrumento "Violoncelo" ;
+        :nomeAluno "JOSE FILIPE QUEIJO FERNANDES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A23916
+:A23916 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB3 ;
+        :toca :Corne_Inglês ;
+        :anoCurso 2 ;
+        :curso "CB3" ;
+        :dataNasc "1997-9-4" ;
+        :instrumento "Corne Inglês" ;
+        :nomeAluno "JOSE GRACA DA NOBREGA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38222
+:A38222 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS17 ;
+        :toca :Trompete ;
+        :anoCurso 6 ;
+        :curso "CS17" ;
+        :dataNasc "2002-8-4" ;
+        :instrumento "Trompete" ;
+        :nomeAluno "JOSE LUIS CARDOSO SILVA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38205
+:A38205 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB3 ;
+        :toca :Corne_Inglês ;
+        :anoCurso 5 ;
+        :curso "CB3" ;
+        :dataNasc "1996-2-19" ;
+        :instrumento "Corne Inglês" ;
+        :nomeAluno "JOSE LUIS LOPES DE ARAUJO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A27629
+:A27629 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS22 ;
+        :toca :Bandolim ;
+        :anoCurso 6 ;
+        :curso "CS22" ;
+        :dataNasc "2002-8-25" ;
+        :instrumento "Bandolim" ;
+        :nomeAluno "JOSE LUIS PINTO MONTEIRO ALVES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38206
+:A38206 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS9 ;
+        :toca :Harpa ;
+        :anoCurso 8 ;
+        :curso "CS9" ;
+        :dataNasc "2005-4-11" ;
+        :instrumento "Harpa" ;
+        :nomeAluno "JOSE MANUEL ARAUJO SOARES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35398
+:A35398 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS6 ;
+        :toca :Flauta ;
+        :anoCurso 7 ;
+        :curso "CS6" ;
+        :dataNasc "2005-10-19" ;
+        :instrumento "Flauta" ;
+        :nomeAluno "JOSE MANUEL ESTEVES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A32480
+:A32480 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB10 ;
+        :toca :Oboé ;
+        :anoCurso 3 ;
+        :curso "CB10" ;
+        :dataNasc "1999-5-10" ;
+        :instrumento "Oboé" ;
+        :nomeAluno "JOSE MANUEL LIMA GANDARELA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A30213
+:A30213 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB16 ;
+        :toca :Trompa ;
+        :anoCurso 5 ;
+        :curso "CB16" ;
+        :dataNasc "2001-1-4" ;
+        :instrumento "Trompa" ;
+        :nomeAluno "JOSE MANUEL LOUREIRO DE AZEVEDO TEIXEIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A22670
+:A22670 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB1 ;
+        :toca :Clarinete ;
+        :anoCurso 5 ;
+        :curso "CB1" ;
+        :dataNasc "1999-10-28" ;
+        :instrumento "Clarinete" ;
+        :nomeAluno "JOSE MANUEL TEIXEIRA FERNANDES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33182
+:A33182 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS18 ;
+        :toca :Tuba ;
+        :anoCurso 7 ;
+        :curso "CS18" ;
+        :dataNasc "2005-8-14" ;
+        :instrumento "Tuba" ;
+        :nomeAluno "JOSE MIGUEL DOS SANTOS FERRAZ" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A28722
+:A28722 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS3 ;
+        :toca :Corne_Inglês ;
+        :anoCurso 6 ;
+        :curso "CS3" ;
+        :dataNasc "2003-10-26" ;
+        :instrumento "Corne Inglês" ;
+        :nomeAluno "JOSE MIGUEL FERREIRA PONTES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38121
+:A38121 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS9 ;
+        :toca :Harpa ;
+        :anoCurso 6 ;
+        :curso "CS9" ;
+        :dataNasc "2003-1-26" ;
+        :instrumento "Harpa" ;
+        :nomeAluno "JOSE MIGUEL RODRIGUES OLIVEIRA DA SILVA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35334
+:A35334 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB19 ;
+        :toca :Violoncelo ;
+        :anoCurso 1 ;
+        :curso "CB19" ;
+        :dataNasc "2001-9-20" ;
+        :instrumento "Violoncelo" ;
+        :nomeAluno "JOSE MIGUEL SILVA PEIXOTO DE CARVALHO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38136
+:A38136 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB9 ;
+        :toca :Harpa ;
+        :anoCurso 1 ;
+        :curso "CB9" ;
+        :dataNasc "1998-6-7" ;
+        :instrumento "Harpa" ;
+        :nomeAluno "JOSE NUNO MARTINS PINTO FRAGA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35335
+:A35335 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB1 ;
+        :toca :Clarinete ;
+        :anoCurso 4 ;
+        :curso "CB1" ;
+        :dataNasc "1996-9-26" ;
+        :instrumento "Clarinete" ;
+        :nomeAluno "JOSE PAULO CARNEIRO DE MELO MAMEDE" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35337
+:A35337 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS6 ;
+        :toca :Flauta ;
+        :anoCurso 8 ;
+        :curso "CS6" ;
+        :dataNasc "2003-12-11" ;
+        :instrumento "Flauta" ;
+        :nomeAluno "JOSE PEDRO DOMINGUES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38142
+:A38142 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB21 ;
+        :toca :Viola_de_Arco ;
+        :anoCurso 1 ;
+        :curso "CB21" ;
+        :dataNasc "1996-12-15" ;
+        :instrumento "Viola de Arco" ;
+        :nomeAluno "JOSE PEDRO FARIA E VASCONCELOS CORREIA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38140
+:A38140 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS14 ;
+        :toca :Saxofone ;
+        :anoCurso 6 ;
+        :curso "CS14" ;
+        :dataNasc "2002-9-5" ;
+        :instrumento "Saxofone" ;
+        :nomeAluno "JOSE PEDRO MACHADO GOMES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38137
+:A38137 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB5 ;
+        :toca :Fagote ;
+        :anoCurso 5 ;
+        :curso "CB5" ;
+        :dataNasc "2000-2-23" ;
+        :instrumento "Fagote" ;
+        :nomeAluno "JOSE PEDRO RIBEIRO DA ARAUJO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38128
+:A38128 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS4 ;
+        :toca :Eufónio ;
+        :anoCurso 8 ;
+        :curso "CS4" ;
+        :dataNasc "2005-6-13" ;
+        :instrumento "Eufónio" ;
+        :nomeAluno "JOSE PEDRO RODRIGUES MAGALHAES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A30214
+:A30214 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB12 ;
+        :toca :Percussão ;
+        :anoCurso 2 ;
+        :curso "CB12" ;
+        :dataNasc "2001-3-15" ;
+        :instrumento "Percussão" ;
+        :nomeAluno "JOSE PEDRO SILVA DE OLIVEIRA CARVALHO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A23508
+:A23508 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB15 ;
+        :toca :Trombone ;
+        :anoCurso 3 ;
+        :curso "CB15" ;
+        :dataNasc "1998-4-7" ;
+        :instrumento "Trombone" ;
+        :nomeAluno "JOSE ROMEU FERNANDES PINTO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38155
+:A38155 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB12 ;
+        :toca :Percussão ;
+        :anoCurso 4 ;
+        :curso "CB12" ;
+        :dataNasc "1996-9-16" ;
+        :instrumento "Percussão" ;
+        :nomeAluno "JULIO ANDRE RODRIGUES ARAUJO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35843
+:A35843 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS19 ;
+        :toca :Violoncelo ;
+        :anoCurso 8 ;
+        :curso "CS19" ;
+        :dataNasc "2002-3-9" ;
+        :instrumento "Violoncelo" ;
+        :nomeAluno "LARA SOFIA ALPOIM MIRANDA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38150
+:A38150 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB5 ;
+        :toca :Fagote ;
+        :anoCurso 3 ;
+        :curso "CB5" ;
+        :dataNasc "1999-4-27" ;
+        :instrumento "Fagote" ;
+        :nomeAluno "LEANDRO EMANUEL DA SILVA SALGADO BARBOSA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A34035
+:A34035 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS9 ;
+        :toca :Harpa ;
+        :anoCurso 6 ;
+        :curso "CS9" ;
+        :dataNasc "2005-2-27" ;
+        :instrumento "Harpa" ;
+        :nomeAluno "LEONOR ISABEL CONSTANTINO CAEIRO BOGA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A24839
+:A24839 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS5 ;
+        :toca :Fagote ;
+        :anoCurso 7 ;
+        :curso "CS5" ;
+        :dataNasc "2003-12-16" ;
+        :instrumento "Fagote" ;
+        :nomeAluno "LEONOR ISABEL FERREIRA DE MELO OSORIO ARAUJO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35339
+:A35339 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS2 ;
+        :toca :Contrabaixo ;
+        :anoCurso 6 ;
+        :curso "CS2" ;
+        :dataNasc "2004-6-23" ;
+        :instrumento "Contrabaixo" ;
+        :nomeAluno "LIDIA NOGUEIRA LARANJEIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35340
+:A35340 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB21 ;
+        :toca :Viola_de_Arco ;
+        :anoCurso 4 ;
+        :curso "CB21" ;
+        :dataNasc "1999-2-22" ;
+        :instrumento "Viola de Arco" ;
+        :nomeAluno "LILIANA SOLANGE SEQUEIRA HENRIQUES DE MACEDO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33650
+:A33650 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB16 ;
+        :toca :Trompa ;
+        :anoCurso 2 ;
+        :curso "CB16" ;
+        :dataNasc "2000-7-24" ;
+        :instrumento "Trompa" ;
+        :nomeAluno "LUIS ANDRE DA CUNHA MARQUES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35342
+:A35342 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS14 ;
+        :toca :Saxofone ;
+        :anoCurso 6 ;
+        :curso "CS14" ;
+        :dataNasc "2002-2-20" ;
+        :instrumento "Saxofone" ;
+        :nomeAluno "LUIS CARLOS GONCALO LEONARDO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38223
+:A38223 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB3 ;
+        :toca :Corne_Inglês ;
+        :anoCurso 5 ;
+        :curso "CB3" ;
+        :dataNasc "1998-8-13" ;
+        :instrumento "Corne Inglês" ;
+        :nomeAluno "LUIS DIOGO MONTEIRO DUARTE COUTO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A39341
+:A39341 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS8 ;
+        :toca :Guitarra ;
+        :anoCurso 6 ;
+        :curso "CS8" ;
+        :dataNasc "2003-11-28" ;
+        :instrumento "Guitarra" ;
+        :nomeAluno "LUIS FERNANDO ROMANEL RODRIGUES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A39408
+:A39408 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB7 ;
+        :toca :Fliscorne ;
+        :anoCurso 2 ;
+        :curso "CB7" ;
+        :dataNasc "2000-3-16" ;
+        :instrumento "Fliscorne" ;
+        :nomeAluno "LUIS FILIPE FARIA MONTEIRO CAPELO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33186
+:A33186 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS10 ;
+        :toca :Oboé ;
+        :anoCurso 7 ;
+        :curso "CS10" ;
+        :dataNasc "2002-8-10" ;
+        :instrumento "Oboé" ;
+        :nomeAluno "LUIS FILIPE GAMA PAIS CABRAL" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38219
+:A38219 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS18 ;
+        :toca :Tuba ;
+        :anoCurso 7 ;
+        :curso "CS18" ;
+        :dataNasc "2005-11-4" ;
+        :instrumento "Tuba" ;
+        :nomeAluno "LUIS FILIPE PEREIRA GONCALVES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A29631
+:A29631 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB5 ;
+        :toca :Fagote ;
+        :anoCurso 1 ;
+        :curso "CB5" ;
+        :dataNasc "2001-6-19" ;
+        :instrumento "Fagote" ;
+        :nomeAluno "LUIS FILIPE RIBEIRO NOVAIS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A39747
+:A39747 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS10 ;
+        :toca :Oboé ;
+        :anoCurso 7 ;
+        :curso "CS10" ;
+        :dataNasc "2005-5-19" ;
+        :instrumento "Oboé" ;
+        :nomeAluno "LUIS PEDRO FERREIRA LEITE DOS SANTOS ALEIXO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33188
+:A33188 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS15 ;
+        :toca :Trombone ;
+        :anoCurso 7 ;
+        :curso "CS15" ;
+        :dataNasc "2002-3-12" ;
+        :instrumento "Trombone" ;
+        :nomeAluno "LUIS PEDRO LOPES PEREIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38172
+:A38172 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB1 ;
+        :toca :Clarinete ;
+        :anoCurso 3 ;
+        :curso "CB1" ;
+        :dataNasc "2000-2-21" ;
+        :instrumento "Clarinete" ;
+        :nomeAluno "LUIS TIAGO AFONSO MASCARENHAS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38168
+:A38168 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS8 ;
+        :toca :Guitarra ;
+        :anoCurso 6 ;
+        :curso "CS8" ;
+        :dataNasc "2005-8-2" ;
+        :instrumento "Guitarra" ;
+        :nomeAluno "LUIZ ALBERTO DE CASTRO SANTOS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38254
+:A38254 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB16 ;
+        :toca :Trompa ;
+        :anoCurso 1 ;
+        :curso "CB16" ;
+        :dataNasc "2001-4-27" ;
+        :instrumento "Trompa" ;
+        :nomeAluno "MANUEL DOMINGOS DE CARVALHO FELGUEIRAS DA SILVA SANTOS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A30219
+:A30219 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB4 ;
+        :toca :Eufónio ;
+        :anoCurso 3 ;
+        :curso "CB4" ;
+        :dataNasc "2001-3-16" ;
+        :instrumento "Eufónio" ;
+        :nomeAluno "MANUEL FERNANDO SOTO MAIOR FRANQUEIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35348
+:A35348 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS8 ;
+        :toca :Guitarra ;
+        :anoCurso 7 ;
+        :curso "CS8" ;
+        :dataNasc "2002-2-24" ;
+        :instrumento "Guitarra" ;
+        :nomeAluno "MANUEL JOSE GOMES MEIRELES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A27637
+:A27637 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB18 ;
+        :toca :Tuba ;
+        :anoCurso 4 ;
+        :curso "CB18" ;
+        :dataNasc "1999-12-22" ;
+        :instrumento "Tuba" ;
+        :nomeAluno "MANUEL JOSE TORRES SOUSA DA CUNHA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A29004
+:A29004 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB1 ;
+        :toca :Clarinete ;
+        :anoCurso 2 ;
+        :curso "CB1" ;
+        :dataNasc "1999-4-22" ;
+        :instrumento "Clarinete" ;
+        :nomeAluno "MARANGAZE JOAQUIM MUNHEPE MULHANGA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35349
+:A35349 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB6 ;
+        :toca :Flauta ;
+        :anoCurso 2 ;
+        :curso "CB6" ;
+        :dataNasc "1997-1-26" ;
+        :instrumento "Flauta" ;
+        :nomeAluno "MARCIA MARLENE DE ALMEIDA MARTINS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35350
+:A35350 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB22 ;
+        :toca :Bandolim ;
+        :anoCurso 3 ;
+        :curso "CB22" ;
+        :dataNasc "1996-11-20" ;
+        :instrumento "Bandolim" ;
+        :nomeAluno "MARCIAL COELHO GOMES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A39406
+:A39406 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS8 ;
+        :toca :Guitarra ;
+        :anoCurso 7 ;
+        :curso "CS8" ;
+        :dataNasc "2003-6-22" ;
+        :instrumento "Guitarra" ;
+        :nomeAluno "MARCO ALEXANDRE AGUIAR VAZ" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A29011
+:A29011 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB2 ;
+        :toca :Contrabaixo ;
+        :anoCurso 2 ;
+        :curso "CB2" ;
+        :dataNasc "1998-12-22" ;
+        :instrumento "Contrabaixo" ;
+        :nomeAluno "MARCO ALEXANDRE BARREIRA MEDEIROS TEIXEIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38178
+:A38178 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB2 ;
+        :toca :Contrabaixo ;
+        :anoCurso 2 ;
+        :curso "CB2" ;
+        :dataNasc "1999-6-9" ;
+        :instrumento "Contrabaixo" ;
+        :nomeAluno "MARCO ALEXANDRE TEIXEIRA PALOS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38152
+:A38152 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS16 ;
+        :toca :Trompa ;
+        :anoCurso 7 ;
+        :curso "CS16" ;
+        :dataNasc "2005-5-14" ;
+        :instrumento "Trompa" ;
+        :nomeAluno "MARCO ANTONIO SAMPAIO FREITAS DE CASTRO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38179
+:A38179 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS15 ;
+        :toca :Trombone ;
+        :anoCurso 6 ;
+        :curso "CS15" ;
+        :dataNasc "2003-11-13" ;
+        :instrumento "Trombone" ;
+        :nomeAluno "MARCO ANTONIO TEIXEIRA MARTINS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A22685
+:A22685 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS12 ;
+        :toca :Percussão ;
+        :anoCurso 7 ;
+        :curso "CS12" ;
+        :dataNasc "2004-8-28" ;
+        :instrumento "Percussão" ;
+        :nomeAluno "MARCO FRANCISCO DA SILVA LIZARDO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A22688
+:A22688 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB8 ;
+        :toca :Guitarra ;
+        :anoCurso 4 ;
+        :curso "CB8" ;
+        :dataNasc "2001-4-3" ;
+        :instrumento "Guitarra" ;
+        :nomeAluno "MARCO RICARDO BARBOSA COELHO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A36864
+:A36864 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS11 ;
+        :toca :Orgão ;
+        :anoCurso 7 ;
+        :curso "CS11" ;
+        :dataNasc "2003-7-19" ;
+        :instrumento "Orgão" ;
+        :nomeAluno "MARIA BEATRIZ ALVES DE SA CAMPOS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38184
+:A38184 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS7 ;
+        :toca :Fliscorne ;
+        :anoCurso 8 ;
+        :curso "CS7" ;
+        :dataNasc "2005-10-1" ;
+        :instrumento "Fliscorne" ;
+        :nomeAluno "MARIA CRISTINA CARNEIRO BARREIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A12753
+:A12753 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB16 ;
+        :toca :Trompa ;
+        :anoCurso 5 ;
+        :curso "CB16" ;
+        :dataNasc "1998-3-8" ;
+        :instrumento "Trompa" ;
+        :nomeAluno "MARIA LUISA VILLAVERDE MACHADO FERNANDES NOVAIS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38161
+:A38161 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS4 ;
+        :toca :Eufónio ;
+        :anoCurso 6 ;
+        :curso "CS4" ;
+        :dataNasc "2002-6-24" ;
+        :instrumento "Eufónio" ;
+        :nomeAluno "MARIANA PEREIRA NEVES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38171
+:A38171 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS22 ;
+        :toca :Bandolim ;
+        :anoCurso 7 ;
+        :curso "CS22" ;
+        :dataNasc "2005-12-22" ;
+        :instrumento "Bandolim" ;
+        :nomeAluno "MARIO ANDRE PATRICIO TEIXEIRA JULIO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38194
+:A38194 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB11 ;
+        :toca :Orgão ;
+        :anoCurso 5 ;
+        :curso "CB11" ;
+        :dataNasc "1999-7-23" ;
+        :instrumento "Orgão" ;
+        :nomeAluno "MARIO DA FONTE LAMEIRAS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A23544
+:A23544 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB3 ;
+        :toca :Corne_Inglês ;
+        :anoCurso 4 ;
+        :curso "CB3" ;
+        :dataNasc "2000-3-12" ;
+        :instrumento "Corne Inglês" ;
+        :nomeAluno "MARIO RUI ANUNCIACAO MONTEIRO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A29048
+:A29048 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB2 ;
+        :toca :Contrabaixo ;
+        :anoCurso 2 ;
+        :curso "CB2" ;
+        :dataNasc "1996-2-14" ;
+        :instrumento "Contrabaixo" ;
+        :nomeAluno "MARIO RUI RIBEIRO FIALHO DA CONCEICAO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A36454
+:A36454 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB15 ;
+        :toca :Trombone ;
+        :anoCurso 1 ;
+        :curso "CB15" ;
+        :dataNasc "1999-4-17" ;
+        :instrumento "Trombone" ;
+        :nomeAluno "MICHEL FERREIRA PINTO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35352
+:A35352 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB8 ;
+        :toca :Guitarra ;
+        :anoCurso 3 ;
+        :curso "CB8" ;
+        :dataNasc "2001-4-14" ;
+        :instrumento "Guitarra" ;
+        :nomeAluno "MIGUEL AFONSO PIRES DA ROSA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38217
+:A38217 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB8 ;
+        :toca :Guitarra ;
+        :anoCurso 2 ;
+        :curso "CB8" ;
+        :dataNasc "2001-4-13" ;
+        :instrumento "Guitarra" ;
+        :nomeAluno "MIGUEL ANGELO MARQUES DE MATOS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38209
+:A38209 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS17 ;
+        :toca :Trompete ;
+        :anoCurso 6 ;
+        :curso "CS17" ;
+        :dataNasc "2005-9-24" ;
+        :instrumento "Trompete" ;
+        :nomeAluno "MIGUEL ANGELO PINTO MARQUES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A30226
+:A30226 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS3 ;
+        :toca :Corne_Inglês ;
+        :anoCurso 7 ;
+        :curso "CS3" ;
+        :dataNasc "2002-3-12" ;
+        :instrumento "Corne Inglês" ;
+        :nomeAluno "MIGUEL ANGELO RIBEIRO DE SOUSA E SILVA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38221
+:A38221 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB13 ;
+        :toca :Piano ;
+        :anoCurso 1 ;
+        :curso "CB13" ;
+        :dataNasc "1996-2-13" ;
+        :instrumento "Piano" ;
+        :nomeAluno "MIGUEL ANGELO VIVAS GOMES ALVES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A21432
+:A21432 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS9 ;
+        :toca :Harpa ;
+        :anoCurso 7 ;
+        :curso "CS9" ;
+        :dataNasc "2004-12-14" ;
+        :instrumento "Harpa" ;
+        :nomeAluno "MIGUEL MANUEL GOMES RODRIGUES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A39342
+:A39342 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB22 ;
+        :toca :Bandolim ;
+        :anoCurso 2 ;
+        :curso "CB22" ;
+        :dataNasc "2001-11-27" ;
+        :instrumento "Bandolim" ;
+        :nomeAluno "MIGUEL PEDRO AMARAL FIGUEIREDO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A32608
+:A32608 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB19 ;
+        :toca :Violoncelo ;
+        :anoCurso 5 ;
+        :curso "CB19" ;
+        :dataNasc "2000-7-17" ;
+        :instrumento "Violoncelo" ;
+        :nomeAluno "MIGUEL PEDRO DE ALMEIDA FERREIRA CORREIA DOURADO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33195
+:A33195 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS16 ;
+        :toca :Trompa ;
+        :anoCurso 7 ;
+        :curso "CS16" ;
+        :dataNasc "2004-10-18" ;
+        :instrumento "Trompa" ;
+        :nomeAluno "MIGUEL PINTO DE SOUSA MARQUES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A22695
+:A22695 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS5 ;
+        :toca :Fagote ;
+        :anoCurso 7 ;
+        :curso "CS5" ;
+        :dataNasc "2004-6-23" ;
+        :instrumento "Fagote" ;
+        :nomeAluno "NANCY DO SAMEIRO SILVERIO LAVANDEIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38216
+:A38216 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB13 ;
+        :toca :Piano ;
+        :anoCurso 5 ;
+        :curso "CB13" ;
+        :dataNasc "1997-4-19" ;
+        :instrumento "Piano" ;
+        :nomeAluno "NELSON DE SOUSA E SILVA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33196
+:A33196 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS8 ;
+        :toca :Guitarra ;
+        :anoCurso 8 ;
+        :curso "CS8" ;
+        :dataNasc "2004-5-24" ;
+        :instrumento "Guitarra" ;
+        :nomeAluno "NELSON FILIPE COELHO DE MOURA SOUSA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33420
+:A33420 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB9 ;
+        :toca :Harpa ;
+        :anoCurso 5 ;
+        :curso "CB9" ;
+        :dataNasc "2000-11-19" ;
+        :instrumento "Harpa" ;
+        :nomeAluno "NELSON LEANDRO BARBOSA CARNEIRO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38195
+:A38195 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS12 ;
+        :toca :Percussão ;
+        :anoCurso 7 ;
+        :curso "CS12" ;
+        :dataNasc "2005-10-12" ;
+        :instrumento "Percussão" ;
+        :nomeAluno "NELSON TAVARES CUNHA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33727
+:A33727 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB21 ;
+        :toca :Viola_de_Arco ;
+        :anoCurso 1 ;
+        :curso "CB21" ;
+        :dataNasc "1999-5-13" ;
+        :instrumento "Viola de Arco" ;
+        :nomeAluno "NUNO FILIPE ANTUNES DA SILVA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33127
+:A33127 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB19 ;
+        :toca :Violoncelo ;
+        :anoCurso 5 ;
+        :curso "CB19" ;
+        :dataNasc "1996-10-16" ;
+        :instrumento "Violoncelo" ;
+        :nomeAluno "NUNO FILIPE MAGALHAES SANTOS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A24784
+:A24784 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB17 ;
+        :toca :Trompete ;
+        :anoCurso 3 ;
+        :curso "CB17" ;
+        :dataNasc "1996-12-9" ;
+        :instrumento "Trompete" ;
+        :nomeAluno "NUNO FILIPE MARQUES MOREIRA RIBEIRO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38208
+:A38208 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB1 ;
+        :toca :Clarinete ;
+        :anoCurso 5 ;
+        :curso "CB1" ;
+        :dataNasc "1997-8-27" ;
+        :instrumento "Clarinete" ;
+        :nomeAluno "NUNO GONCALO BETTENCOURT DA CRUZ CORREIA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38203
+:A38203 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS9 ;
+        :toca :Harpa ;
+        :anoCurso 8 ;
+        :curso "CS9" ;
+        :dataNasc "2003-6-23" ;
+        :instrumento "Harpa" ;
+        :nomeAluno "NUNO JORGE FERREIRA GUIMARAES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A15619
+:A15619 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS2 ;
+        :toca :Contrabaixo ;
+        :anoCurso 8 ;
+        :curso "CS2" ;
+        :dataNasc "2002-5-18" ;
+        :instrumento "Contrabaixo" ;
+        :nomeAluno "NUNO MIGUEL AFONSO CARVALHO DE MOURA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35355
+:A35355 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB16 ;
+        :toca :Trompa ;
+        :anoCurso 2 ;
+        :curso "CB16" ;
+        :dataNasc "1998-5-8" ;
+        :instrumento "Trompa" ;
+        :nomeAluno "NUNO MIGUEL MACHADO ALVES COSTA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33437
+:A33437 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB22 ;
+        :toca :Bandolim ;
+        :anoCurso 3 ;
+        :curso "CB22" ;
+        :dataNasc "2000-10-3" ;
+        :instrumento "Bandolim" ;
+        :nomeAluno "NUNO MIGUEL MARQUES GOMES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A22701
+:A22701 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB9 ;
+        :toca :Harpa ;
+        :anoCurso 5 ;
+        :curso "CB9" ;
+        :dataNasc "1996-1-17" ;
+        :instrumento "Harpa" ;
+        :nomeAluno "NUNO MIGUEL MARTINS CASANOVA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A27645
+:A27645 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB3 ;
+        :toca :Corne_Inglês ;
+        :anoCurso 3 ;
+        :curso "CB3" ;
+        :dataNasc "1997-7-13" ;
+        :instrumento "Corne Inglês" ;
+        :nomeAluno "NUNO MIGUEL OLIVEIRA SILVA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A29282
+:A29282 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB4 ;
+        :toca :Eufónio ;
+        :anoCurso 2 ;
+        :curso "CB4" ;
+        :dataNasc "1999-11-1" ;
+        :instrumento "Eufónio" ;
+        :nomeAluno "NUNO VIRIATO MACEDO FERREIRA DE CARVALHO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38120
+:A38120 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS11 ;
+        :toca :Orgão ;
+        :anoCurso 8 ;
+        :curso "CS11" ;
+        :dataNasc "2004-10-17" ;
+        :instrumento "Orgão" ;
+        :nomeAluno "OCTAVIO DAVID DA CONCEICAO JACINTO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A14539
+:A14539 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB16 ;
+        :toca :Trompa ;
+        :anoCurso 3 ;
+        :curso "CB16" ;
+        :dataNasc "2000-10-6" ;
+        :instrumento "Trompa" ;
+        :nomeAluno "ORLANDO JORGE GONCALVES PINTO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33280
+:A33280 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB14 ;
+        :toca :Saxofone ;
+        :anoCurso 1 ;
+        :curso "CB14" ;
+        :dataNasc "2001-2-7" ;
+        :instrumento "Saxofone" ;
+        :nomeAluno "PAULO BRUNO DA SILVA VIDES FERNANDES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A34508
+:A34508 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS9 ;
+        :toca :Harpa ;
+        :anoCurso 6 ;
+        :curso "CS9" ;
+        :dataNasc "2004-9-6" ;
+        :instrumento "Harpa" ;
+        :nomeAluno "PAULO CESAR ALMEIDA DE SA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A27577
+:A27577 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB11 ;
+        :toca :Orgão ;
+        :anoCurso 4 ;
+        :curso "CB11" ;
+        :dataNasc "1996-7-18" ;
+        :instrumento "Orgão" ;
+        :nomeAluno "PAULO CESAR DE CARVALHO LOPES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A39938
+:A39938 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB5 ;
+        :toca :Fagote ;
+        :anoCurso 5 ;
+        :curso "CB5" ;
+        :dataNasc "1997-11-15" ;
+        :instrumento "Fagote" ;
+        :nomeAluno "PAULO CESAR ROMANEL RODRIGUES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33204
+:A33204 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS8 ;
+        :toca :Guitarra ;
+        :anoCurso 7 ;
+        :curso "CS8" ;
+        :dataNasc "2003-2-23" ;
+        :instrumento "Guitarra" ;
+        :nomeAluno "PAULO EDUARDO MIRANDA CAMPOS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38122
+:A38122 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS19 ;
+        :toca :Violoncelo ;
+        :anoCurso 7 ;
+        :curso "CS19" ;
+        :dataNasc "2002-10-10" ;
+        :instrumento "Violoncelo" ;
+        :nomeAluno "PAULO JORGE ASSIS DE SOUSA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35357
+:A35357 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS2 ;
+        :toca :Contrabaixo ;
+        :anoCurso 6 ;
+        :curso "CS2" ;
+        :dataNasc "2004-5-18" ;
+        :instrumento "Contrabaixo" ;
+        :nomeAluno "PAULO JORGE FERNANDES DE SOUSA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A30238
+:A30238 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS21 ;
+        :toca :Viola_de_Arco ;
+        :anoCurso 6 ;
+        :curso "CS21" ;
+        :dataNasc "2003-11-21" ;
+        :instrumento "Viola de Arco" ;
+        :nomeAluno "PAULO JORGE SOARES MENDES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A39407
+:A39407 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS10 ;
+        :toca :Oboé ;
+        :anoCurso 7 ;
+        :curso "CS10" ;
+        :dataNasc "2003-12-24" ;
+        :instrumento "Oboé" ;
+        :nomeAluno "PAULO MANUEL RIBEIRO NOVAIS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33209
+:A33209 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB1 ;
+        :toca :Clarinete ;
+        :anoCurso 5 ;
+        :curso "CB1" ;
+        :dataNasc "2001-8-7" ;
+        :instrumento "Clarinete" ;
+        :nomeAluno "PAULO MIGUEL SA MORAIS PIRES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A36476
+:A36476 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB1 ;
+        :toca :Clarinete ;
+        :anoCurso 1 ;
+        :curso "CB1" ;
+        :dataNasc "1998-10-27" ;
+        :instrumento "Clarinete" ;
+        :nomeAluno "PEDRO ALEXANDRE FERREIRA VILACA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35360
+:A35360 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB20 ;
+        :toca :Violino ;
+        :anoCurso 3 ;
+        :curso "CB20" ;
+        :dataNasc "2001-9-24" ;
+        :instrumento "Violino" ;
+        :nomeAluno "PEDRO DANIEL FERREIRA DE CARVALHO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A21711
+:A21711 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB21 ;
+        :toca :Viola_de_Arco ;
+        :anoCurso 4 ;
+        :curso "CB21" ;
+        :dataNasc "1999-9-27" ;
+        :instrumento "Viola de Arco" ;
+        :nomeAluno "PEDRO DAVID ALVES MARTINHO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A32652
+:A32652 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS15 ;
+        :toca :Trombone ;
+        :anoCurso 7 ;
+        :curso "CS15" ;
+        :dataNasc "2005-9-18" ;
+        :instrumento "Trombone" ;
+        :nomeAluno "PEDRO DUARTE CARDOSO LOPES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A36969
+:A36969 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS17 ;
+        :toca :Trompete ;
+        :anoCurso 8 ;
+        :curso "CS17" ;
+        :dataNasc "2005-6-16" ;
+        :instrumento "Trompete" ;
+        :nomeAluno "PEDRO EMANUEL FERNANDES LOPES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33213
+:A33213 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS6 ;
+        :toca :Flauta ;
+        :anoCurso 6 ;
+        :curso "CS6" ;
+        :dataNasc "2005-4-14" ;
+        :instrumento "Flauta" ;
+        :nomeAluno "PEDRO GUIMARAES DE FREITAS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A30241
+:A30241 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB6 ;
+        :toca :Flauta ;
+        :anoCurso 3 ;
+        :curso "CB6" ;
+        :dataNasc "1999-6-1" ;
+        :instrumento "Flauta" ;
+        :nomeAluno "PEDRO HENRIQUE GONCALVES GERAZ RODRIGUES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33214
+:A33214 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB21 ;
+        :toca :Viola_de_Arco ;
+        :anoCurso 4 ;
+        :curso "CB21" ;
+        :dataNasc "1996-10-6" ;
+        :instrumento "Viola de Arco" ;
+        :nomeAluno "PEDRO JORGE OSORIO MARINHO OLIVEIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38116
+:A38116 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS16 ;
+        :toca :Trompa ;
+        :anoCurso 6 ;
+        :curso "CS16" ;
+        :dataNasc "2003-3-11" ;
+        :instrumento "Trompa" ;
+        :nomeAluno "PEDRO JOSE MARTINS FARIA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35144
+:A35144 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB17 ;
+        :toca :Trompete ;
+        :anoCurso 2 ;
+        :curso "CB17" ;
+        :dataNasc "1997-8-25" ;
+        :instrumento "Trompete" ;
+        :nomeAluno "PEDRO MANUEL DE AMORIM MAGALHAES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38118
+:A38118 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB1 ;
+        :toca :Clarinete ;
+        :anoCurso 3 ;
+        :curso "CB1" ;
+        :dataNasc "2000-9-21" ;
+        :instrumento "Clarinete" ;
+        :nomeAluno "PEDRO MANUEL LOPES PATRICIO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A27658
+:A27658 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS3 ;
+        :toca :Corne_Inglês ;
+        :anoCurso 6 ;
+        :curso "CS3" ;
+        :dataNasc "2002-1-20" ;
+        :instrumento "Corne Inglês" ;
+        :nomeAluno "PEDRO MIGUEL ARAUJO MOTA LOPES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38159
+:A38159 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS1 ;
+        :toca :Clarinete ;
+        :anoCurso 8 ;
+        :curso "CS1" ;
+        :dataNasc "2005-6-21" ;
+        :instrumento "Clarinete" ;
+        :nomeAluno "PEDRO MIGUEL AZEVEDO DE OLIVEIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35363
+:A35363 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB11 ;
+        :toca :Orgão ;
+        :anoCurso 1 ;
+        :curso "CB11" ;
+        :dataNasc "1998-2-14" ;
+        :instrumento "Orgão" ;
+        :nomeAluno "PEDRO MIGUEL DA SILVA ARAUJO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A25383
+:A25383 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB12 ;
+        :toca :Percussão ;
+        :anoCurso 5 ;
+        :curso "CB12" ;
+        :dataNasc "1997-3-8" ;
+        :instrumento "Percussão" ;
+        :nomeAluno "PEDRO MIGUEL MARTINS FERNANDES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35364
+:A35364 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB7 ;
+        :toca :Fliscorne ;
+        :anoCurso 3 ;
+        :curso "CB7" ;
+        :dataNasc "2000-8-16" ;
+        :instrumento "Fliscorne" ;
+        :nomeAluno "PEDRO MIGUEL MEIRA DAS NEVES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33524
+:A33524 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS13 ;
+        :toca :Piano ;
+        :anoCurso 8 ;
+        :curso "CS13" ;
+        :dataNasc "2004-10-3" ;
+        :instrumento "Piano" ;
+        :nomeAluno "PEDRO MIGUEL PAES MACHADO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35855
+:A35855 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB6 ;
+        :toca :Flauta ;
+        :anoCurso 2 ;
+        :curso "CB6" ;
+        :dataNasc "2001-3-24" ;
+        :instrumento "Flauta" ;
+        :nomeAluno "PEDRO MIGUEL PINTO RIBEIRO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38147
+:A38147 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB19 ;
+        :toca :Violoncelo ;
+        :anoCurso 2 ;
+        :curso "CB19" ;
+        :dataNasc "1997-3-22" ;
+        :instrumento "Violoncelo" ;
+        :nomeAluno "PEDRO MIGUEL RAMOS MADEIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33281
+:A33281 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB22 ;
+        :toca :Bandolim ;
+        :anoCurso 4 ;
+        :curso "CB22" ;
+        :dataNasc "2000-2-11" ;
+        :instrumento "Bandolim" ;
+        :nomeAluno "PEDRO MIGUEL SOARES PINTO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A30243
+:A30243 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB15 ;
+        :toca :Trombone ;
+        :anoCurso 4 ;
+        :curso "CB15" ;
+        :dataNasc "1999-2-24" ;
+        :instrumento "Trombone" ;
+        :nomeAluno "PEDRO MIGUEL VEIGA DA SILVA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38149
+:A38149 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS8 ;
+        :toca :Guitarra ;
+        :anoCurso 7 ;
+        :curso "CS8" ;
+        :dataNasc "2003-2-8" ;
+        :instrumento "Guitarra" ;
+        :nomeAluno "PEDRO SILVESTRE MENESES MAGALHAES COELHO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38160
+:A38160 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS17 ;
+        :toca :Trompete ;
+        :anoCurso 8 ;
+        :curso "CS17" ;
+        :dataNasc "2002-3-7" ;
+        :instrumento "Trompete" ;
+        :nomeAluno "PEDRO TIAGO AMORIM DE BRITO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33082
+:A33082 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB20 ;
+        :toca :Violino ;
+        :anoCurso 3 ;
+        :curso "CB20" ;
+        :dataNasc "1996-4-27" ;
+        :instrumento "Violino" ;
+        :nomeAluno "PEDRO TIAGO DIAS GONCALVES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38154
+:A38154 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB2 ;
+        :toca :Contrabaixo ;
+        :anoCurso 5 ;
+        :curso "CB2" ;
+        :dataNasc "1998-1-22" ;
+        :instrumento "Contrabaixo" ;
+        :nomeAluno "RAFAEL DE CASTRO CARREIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38158
+:A38158 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB9 ;
+        :toca :Harpa ;
+        :anoCurso 3 ;
+        :curso "CB9" ;
+        :dataNasc "1996-7-1" ;
+        :instrumento "Harpa" ;
+        :nomeAluno "RAUL GRACIANO OLIVEIRA RODRIGUES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A30015
+:A30015 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS11 ;
+        :toca :Orgão ;
+        :anoCurso 7 ;
+        :curso "CS11" ;
+        :dataNasc "2002-10-17" ;
+        :instrumento "Orgão" ;
+        :nomeAluno "RENATO CESAR ALMEIDA FIGUEIREDO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A39509
+:A39509 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB10 ;
+        :toca :Oboé ;
+        :anoCurso 3 ;
+        :curso "CB10" ;
+        :dataNasc "1997-4-17" ;
+        :instrumento "Oboé" ;
+        :nomeAluno "RICARDO ANDRE RODRIGUES AFONSO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38153
+:A38153 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB7 ;
+        :toca :Fliscorne ;
+        :anoCurso 5 ;
+        :curso "CB7" ;
+        :dataNasc "1996-2-22" ;
+        :instrumento "Fliscorne" ;
+        :nomeAluno "RICARDO ARAUJO CARVALHO VILACA MOREIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38151
+:A38151 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB11 ;
+        :toca :Orgão ;
+        :anoCurso 2 ;
+        :curso "CB11" ;
+        :dataNasc "2001-4-5" ;
+        :instrumento "Orgão" ;
+        :nomeAluno "RICARDO FERNANDO LIRA DE MESQUITA LACHADO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38129
+:A38129 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS11 ;
+        :toca :Orgão ;
+        :anoCurso 8 ;
+        :curso "CS11" ;
+        :dataNasc "2003-10-8" ;
+        :instrumento "Orgão" ;
+        :nomeAluno "RICARDO GOMES DE FARIA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33222
+:A33222 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB4 ;
+        :toca :Eufónio ;
+        :anoCurso 5 ;
+        :curso "CB4" ;
+        :dataNasc "1997-7-10" ;
+        :instrumento "Eufónio" ;
+        :nomeAluno "RICARDO JORGE ALMEIDA DE MAGALHAES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38130
+:A38130 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS9 ;
+        :toca :Harpa ;
+        :anoCurso 6 ;
+        :curso "CS9" ;
+        :dataNasc "2004-10-21" ;
+        :instrumento "Harpa" ;
+        :nomeAluno "RICARDO JORGE RODRIGUES SEPULVEDA MARQUES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A34435
+:A34435 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB18 ;
+        :toca :Tuba ;
+        :anoCurso 1 ;
+        :curso "CB18" ;
+        :dataNasc "1998-8-15" ;
+        :instrumento "Tuba" ;
+        :nomeAluno "RICARDO JOSE FERREIRA DIAS DE OLIVEIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A19550
+:A19550 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB20 ;
+        :toca :Violino ;
+        :anoCurso 1 ;
+        :curso "CB20" ;
+        :dataNasc "1997-11-5" ;
+        :instrumento "Violino" ;
+        :nomeAluno "RICARDO MANUEL RODRIGUES DE OLIVEIRA DIMAS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35366
+:A35366 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB5 ;
+        :toca :Fagote ;
+        :anoCurso 5 ;
+        :curso "CB5" ;
+        :dataNasc "1996-6-14" ;
+        :instrumento "Fagote" ;
+        :nomeAluno "RICARDO MANUEL VIANA MAGALHAES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A22721
+:A22721 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS22 ;
+        :toca :Bandolim ;
+        :anoCurso 7 ;
+        :curso "CS22" ;
+        :dataNasc "2003-12-20" ;
+        :instrumento "Bandolim" ;
+        :nomeAluno "RICARDO NUNO MOREIRA CASTILHO FERREIRA LOPES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A30254
+:A30254 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB20 ;
+        :toca :Violino ;
+        :anoCurso 2 ;
+        :curso "CB20" ;
+        :dataNasc "2001-2-27" ;
+        :instrumento "Violino" ;
+        :nomeAluno "ROQUE MANUEL DE CARVALHO TEIXEIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A18770
+:A18770 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS14 ;
+        :toca :Saxofone ;
+        :anoCurso 6 ;
+        :curso "CS14" ;
+        :dataNasc "2004-9-2" ;
+        :instrumento "Saxofone" ;
+        :nomeAluno "ROSA ALEXANDRA AZEVEDO GUIMARAES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38141
+:A38141 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB19 ;
+        :toca :Violoncelo ;
+        :anoCurso 4 ;
+        :curso "CB19" ;
+        :dataNasc "1999-10-20" ;
+        :instrumento "Violoncelo" ;
+        :nomeAluno "RUBEN FILIPE CARDOSO DA FONSECA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38200
+:A38200 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS20 ;
+        :toca :Violino ;
+        :anoCurso 8 ;
+        :curso "CS20" ;
+        :dataNasc "2003-12-14" ;
+        :instrumento "Violino" ;
+        :nomeAluno "RUI ALEXANDRE SERRANO DE MOURA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A36764
+:A36764 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS2 ;
+        :toca :Contrabaixo ;
+        :anoCurso 6 ;
+        :curso "CS2" ;
+        :dataNasc "2002-12-8" ;
+        :instrumento "Contrabaixo" ;
+        :nomeAluno "RUI ANDRE FERREIRA SILVA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38135
+:A38135 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB20 ;
+        :toca :Violino ;
+        :anoCurso 4 ;
+        :curso "CB20" ;
+        :dataNasc "1997-10-2" ;
+        :instrumento "Violino" ;
+        :nomeAluno "RUI ANDRE LEITE RIBEIRO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A39944
+:A39944 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB9 ;
+        :toca :Harpa ;
+        :anoCurso 2 ;
+        :curso "CB9" ;
+        :dataNasc "2000-5-25" ;
+        :instrumento "Harpa" ;
+        :nomeAluno "RUI ANTONIO PEIXOTO DE ABREU" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38148
+:A38148 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB4 ;
+        :toca :Eufónio ;
+        :anoCurso 5 ;
+        :curso "CB4" ;
+        :dataNasc "1997-4-27" ;
+        :instrumento "Eufónio" ;
+        :nomeAluno "RUI DOMINGOS GUIMARAES SALGADO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33228
+:A33228 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB16 ;
+        :toca :Trompa ;
+        :anoCurso 2 ;
+        :curso "CB16" ;
+        :dataNasc "1996-6-20" ;
+        :instrumento "Trompa" ;
+        :nomeAluno "RUI FILIPE BARROS TAVARES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38146
+:A38146 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB18 ;
+        :toca :Tuba ;
+        :anoCurso 2 ;
+        :curso "CB18" ;
+        :dataNasc "1999-6-8" ;
+        :instrumento "Tuba" ;
+        :nomeAluno "RUI FILIPE TORRES ALEXANDRE" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38908
+:A38908 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB8 ;
+        :toca :Guitarra ;
+        :anoCurso 3 ;
+        :curso "CB8" ;
+        :dataNasc "1996-5-7" ;
+        :instrumento "Guitarra" ;
+        :nomeAluno "RUI JORGE DE OLIVEIRA PEREIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35371
+:A35371 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB9 ;
+        :toca :Harpa ;
+        :anoCurso 2 ;
+        :curso "CB9" ;
+        :dataNasc "1999-7-7" ;
+        :instrumento "Harpa" ;
+        :nomeAluno "RUI JORGE GUIMARAES MACHADO RODRIGUES VALENTE" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A24875
+:A24875 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS19 ;
+        :toca :Violoncelo ;
+        :anoCurso 6 ;
+        :curso "CS19" ;
+        :dataNasc "2005-11-23" ;
+        :instrumento "Violoncelo" ;
+        :nomeAluno "RUI MANUEL COUTO DA SILVA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A37029
+:A37029 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB22 ;
+        :toca :Bandolim ;
+        :anoCurso 1 ;
+        :curso "CB22" ;
+        :dataNasc "1996-12-16" ;
+        :instrumento "Bandolim" ;
+        :nomeAluno "RUI MANUEL DA SILVA PEREIRA NEIVA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33229
+:A33229 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB4 ;
+        :toca :Eufónio ;
+        :anoCurso 4 ;
+        :curso "CB4" ;
+        :dataNasc "2000-1-19" ;
+        :instrumento "Eufónio" ;
+        :nomeAluno "RUI MANUEL SILVA OLIVEIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38119
+:A38119 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS5 ;
+        :toca :Fagote ;
+        :anoCurso 6 ;
+        :curso "CS5" ;
+        :dataNasc "2005-6-5" ;
+        :instrumento "Fagote" ;
+        :nomeAluno "RUI MIGUEL DA SILVA ABREU" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A24876
+:A24876 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB16 ;
+        :toca :Trompa ;
+        :anoCurso 4 ;
+        :curso "CB16" ;
+        :dataNasc "2000-4-19" ;
+        :instrumento "Trompa" ;
+        :nomeAluno "RUI MIGUEL ESCUDEIRO DA COSTA AGUIAR" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A29253
+:A29253 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB9 ;
+        :toca :Harpa ;
+        :anoCurso 3 ;
+        :curso "CB9" ;
+        :dataNasc "1997-2-6" ;
+        :instrumento "Harpa" ;
+        :nomeAluno "RUI MIGUEL FERNANDES VARELA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A25868
+:A25868 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB9 ;
+        :toca :Harpa ;
+        :anoCurso 2 ;
+        :curso "CB9" ;
+        :dataNasc "2001-5-10" ;
+        :instrumento "Harpa" ;
+        :nomeAluno "RUI MIGUEL MORAIS LOPES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A28735
+:A28735 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS4 ;
+        :toca :Eufónio ;
+        :anoCurso 7 ;
+        :curso "CS4" ;
+        :dataNasc "2002-6-6" ;
+        :instrumento "Eufónio" ;
+        :nomeAluno "RUI MIGUEL NOVAIS CASTRO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A27673
+:A27673 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB1 ;
+        :toca :Clarinete ;
+        :anoCurso 4 ;
+        :curso "CB1" ;
+        :dataNasc "1999-8-13" ;
+        :instrumento "Clarinete" ;
+        :nomeAluno "RUI MIGUEL PEREIRA OLIVEIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35372
+:A35372 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB8 ;
+        :toca :Guitarra ;
+        :anoCurso 1 ;
+        :curso "CB8" ;
+        :dataNasc "1997-12-7" ;
+        :instrumento "Guitarra" ;
+        :nomeAluno "RUI PEDRO ANDIAS DUARTE" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33234
+:A33234 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB4 ;
+        :toca :Eufónio ;
+        :anoCurso 3 ;
+        :curso "CB4" ;
+        :dataNasc "2000-10-15" ;
+        :instrumento "Eufónio" ;
+        :nomeAluno "SANDRA MARIA OLIVEIRA CARVALHO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A36765
+:A36765 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB9 ;
+        :toca :Harpa ;
+        :anoCurso 4 ;
+        :curso "CB9" ;
+        :dataNasc "1997-4-18" ;
+        :instrumento "Harpa" ;
+        :nomeAluno "SANDRA MARIA TELES FEIO ALMEIDA FAZENDEIRO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38173
+:A38173 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB11 ;
+        :toca :Orgão ;
+        :anoCurso 2 ;
+        :curso "CB11" ;
+        :dataNasc "1997-12-1" ;
+        :instrumento "Orgão" ;
+        :nomeAluno "SEBASTIAO MONTEIRO SIMOES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38183
+:A38183 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB10 ;
+        :toca :Oboé ;
+        :anoCurso 2 ;
+        :curso "CB10" ;
+        :dataNasc "1998-1-22" ;
+        :instrumento "Oboé" ;
+        :nomeAluno "SERGIO BRANCO AMORIM" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33235
+:A33235 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB14 ;
+        :toca :Saxofone ;
+        :anoCurso 5 ;
+        :curso "CB14" ;
+        :dataNasc "1997-10-25" ;
+        :instrumento "Saxofone" ;
+        :nomeAluno "SERGIO DE ALMEIDA PAIVA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A39343
+:A39343 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS19 ;
+        :toca :Violoncelo ;
+        :anoCurso 6 ;
+        :curso "CS19" ;
+        :dataNasc "2002-10-23" ;
+        :instrumento "Violoncelo" ;
+        :nomeAluno "SERGIO FELICIANO FERREIRA JACOME" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A39410
+:A39410 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB12 ;
+        :toca :Percussão ;
+        :anoCurso 3 ;
+        :curso "CB12" ;
+        :dataNasc "1996-5-26" ;
+        :instrumento "Percussão" ;
+        :nomeAluno "SERGIO FILIPE PEREIRA DA FELICIDADE" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35374
+:A35374 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB2 ;
+        :toca :Contrabaixo ;
+        :anoCurso 1 ;
+        :curso "CB2" ;
+        :dataNasc "2000-9-21" ;
+        :instrumento "Contrabaixo" ;
+        :nomeAluno "SERGIO MANUEL PEREIRA BARREIRO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A24885
+:A24885 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB9 ;
+        :toca :Harpa ;
+        :anoCurso 4 ;
+        :curso "CB9" ;
+        :dataNasc "1999-3-2" ;
+        :instrumento "Harpa" ;
+        :nomeAluno "SERGIO MANUEL RUIVO CARDOSO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38177
+:A38177 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB4 ;
+        :toca :Eufónio ;
+        :anoCurso 1 ;
+        :curso "CB4" ;
+        :dataNasc "1999-8-21" ;
+        :instrumento "Eufónio" ;
+        :nomeAluno "SERGIO NUNO CLARO GOMES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35375
+:A35375 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS20 ;
+        :toca :Violino ;
+        :anoCurso 8 ;
+        :curso "CS20" ;
+        :dataNasc "2005-5-25" ;
+        :instrumento "Violino" ;
+        :nomeAluno "SERGIO RICARDO TEIXEIRA ANDIAS MIRANDA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38181
+:A38181 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS13 ;
+        :toca :Piano ;
+        :anoCurso 7 ;
+        :curso "CS13" ;
+        :dataNasc "2003-6-21" ;
+        :instrumento "Piano" ;
+        :nomeAluno "SOFIA DA CONCEICAO ALVES MENDES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33238
+:A33238 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS18 ;
+        :toca :Tuba ;
+        :anoCurso 6 ;
+        :curso "CS18" ;
+        :dataNasc "2004-7-20" ;
+        :instrumento "Tuba" ;
+        :nomeAluno "SONIA ANDREA GARRIDO DE SA EIRAS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35376
+:A35376 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB21 ;
+        :toca :Viola_de_Arco ;
+        :anoCurso 2 ;
+        :curso "CB21" ;
+        :dataNasc "1997-3-23" ;
+        :instrumento "Viola de Arco" ;
+        :nomeAluno "TELMA DE FATIMA PIRES DE SA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38131
+:A38131 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS21 ;
+        :toca :Viola_de_Arco ;
+        :anoCurso 8 ;
+        :curso "CS21" ;
+        :dataNasc "2004-4-15" ;
+        :instrumento "Viola de Arco" ;
+        :nomeAluno "TIAGO DANIEL CERQUEIRA BOTELHO DA SILVA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33240
+:A33240 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB21 ;
+        :toca :Viola_de_Arco ;
+        :anoCurso 3 ;
+        :curso "CB21" ;
+        :dataNasc "1997-4-9" ;
+        :instrumento "Viola de Arco" ;
+        :nomeAluno "TIAGO JORGE GOMES DA SILVA ARAUJO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38144
+:A38144 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB6 ;
+        :toca :Flauta ;
+        :anoCurso 4 ;
+        :curso "CB6" ;
+        :dataNasc "1999-12-24" ;
+        :instrumento "Flauta" ;
+        :nomeAluno "TIAGO LEANDRO DE CASTRO RIBEIRO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38145
+:A38145 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS12 ;
+        :toca :Percussão ;
+        :anoCurso 7 ;
+        :curso "CS12" ;
+        :dataNasc "2003-12-8" ;
+        :instrumento "Percussão" ;
+        :nomeAluno "TIAGO MIGUEL SOARES FERNANDES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A29254
+:A29254 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS8 ;
+        :toca :Guitarra ;
+        :anoCurso 6 ;
+        :curso "CS8" ;
+        :dataNasc "2002-5-3" ;
+        :instrumento "Guitarra" ;
+        :nomeAluno "TITO JOSE FERREIRA DE SOUSA LOPES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35418
+:A35418 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB22 ;
+        :toca :Bandolim ;
+        :anoCurso 3 ;
+        :curso "CB22" ;
+        :dataNasc "1997-7-11" ;
+        :instrumento "Bandolim" ;
+        :nomeAluno "VALTER MIGUEL OLIVEIRA VILAR" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38127
+:A38127 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS5 ;
+        :toca :Fagote ;
+        :anoCurso 8 ;
+        :curso "CS5" ;
+        :dataNasc "2003-11-21" ;
+        :instrumento "Fagote" ;
+        :nomeAluno "VANESSA ALZIRA ABRUNHOSA CARNEIRO DE CASTRO FIDALGO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33282
+:A33282 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB17 ;
+        :toca :Trompete ;
+        :anoCurso 2 ;
+        :curso "CB17" ;
+        :dataNasc "2000-5-4" ;
+        :instrumento "Trompete" ;
+        :nomeAluno "VIRGILIO ABRANTES VINHA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A30266
+:A30266 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS10 ;
+        :toca :Oboé ;
+        :anoCurso 7 ;
+        :curso "CS10" ;
+        :dataNasc "2002-2-7" ;
+        :instrumento "Oboé" ;
+        :nomeAluno "VITOR CARLOS TEIXEIRA PIMENTEL" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35377
+:A35377 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB7 ;
+        :toca :Fliscorne ;
+        :anoCurso 4 ;
+        :curso "CB7" ;
+        :dataNasc "1996-3-11" ;
+        :instrumento "Fliscorne" ;
+        :nomeAluno "VITOR DA COSTA PINHEIRO" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38192
+:A38192 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS1 ;
+        :toca :Clarinete ;
+        :anoCurso 6 ;
+        :curso "CS1" ;
+        :dataNasc "2005-12-4" ;
+        :instrumento "Clarinete" ;
+        :nomeAluno "VITOR HUGO DA SILVA NOGUEIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A35378
+:A35378 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB16 ;
+        :toca :Trompa ;
+        :anoCurso 1 ;
+        :curso "CB16" ;
+        :dataNasc "1998-3-23" ;
+        :instrumento "Trompa" ;
+        :nomeAluno "VITOR HUGO PEREIRA DA SILVA MOREIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A38182
+:A38182 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB22 ;
+        :toca :Bandolim ;
+        :anoCurso 4 ;
+        :curso "CB22" ;
+        :dataNasc "1998-5-2" ;
+        :instrumento "Bandolim" ;
+        :nomeAluno "VITOR MANUEL ALVES DA ROCHA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A36773
+:A36773 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS22 ;
+        :toca :Bandolim ;
+        :anoCurso 6 ;
+        :curso "CS22" ;
+        :dataNasc "2004-6-28" ;
+        :instrumento "Bandolim" ;
+        :nomeAluno "VITOR MANUEL CARVALHO RODRIGUES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A39671
+:A39671 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB13 ;
+        :toca :Piano ;
+        :anoCurso 1 ;
+        :curso "CB13" ;
+        :dataNasc "1999-8-9" ;
+        :instrumento "Piano" ;
+        :nomeAluno "VITOR MANUEL PINTO LOPES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A27648
+:A27648 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB4 ;
+        :toca :Eufónio ;
+        :anoCurso 5 ;
+        :curso "CB4" ;
+        :dataNasc "1996-12-24" ;
+        :instrumento "Eufónio" ;
+        :nomeAluno "NUNO RAMOS MATOS" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A27620
+:A27620 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB21 ;
+        :toca :Viola_de_Arco ;
+        :anoCurso 1 ;
+        :curso "CB21" ;
+        :dataNasc "1997-6-6" ;
+        :instrumento "Viola de Arco" ;
+        :nomeAluno "JOAO ANDRE FARIA LOPES" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A33199
+:A33199 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB10 ;
+        :toca :Oboé ;
+        :anoCurso 1 ;
+        :curso "CB10" ;
+        :dataNasc "1999-3-16" ;
+        :instrumento "Oboé" ;
+        :nomeAluno "NUNO FILIPE MENDES PEREIRA" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#AE-939
+:AE-939 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS1 ;
+        :toca :Clarinete ;
+        :anoCurso 6 ;
+        :curso "CS1" ;
+        :dataNasc "2003-6-27" ;
+        :instrumento "Clarinete" ;
+        :nomeAluno "Jorge Gonzalez y Hurtado de Mendoza" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#AE-922
+:AE-922 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CS6 ;
+        :toca :Flauta ;
+        :anoCurso 8 ;
+        :curso "CS6" ;
+        :dataNasc "2005-9-17" ;
+        :instrumento "Flauta" ;
+        :nomeAluno "Brais Hernandez Facal" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#AE-907
+:AE-907 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB7 ;
+        :toca :Fliscorne ;
+        :anoCurso 3 ;
+        :curso "CB7" ;
+        :dataNasc "2000-4-20" ;
+        :instrumento "Fliscorne" ;
+        :nomeAluno "Oscar Lopez Garcia" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#A4140
+:A4140 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :estuda :CB14 ;
+        :toca :Saxofone ;
+        :anoCurso 5 ;
+        :curso "CB14" ;
+        :dataNasc "1967-02-01" ;
+        :instrumento "Saxofone" ;
+        :nomeAluno "José Carlos Ramalho" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CB1
+:CB1 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Básico de Clarinete" ;
+     :duracao "5" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CS23
+:CS23 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Supletivo de Clarinete" ;
+     :duracao "3" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CB2
+:CB2 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Básico de Contrabaixo" ;
+     :duracao "5" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CS24
+:CS24 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Supletivo de Contrabaixo" ;
+     :duracao "3" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CB3
+:CB3 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Básico de Corne Inglês" ;
+     :duracao "5" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CS25
+:CS25 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Supletivo de Corne Inglês" ;
+     :duracao "3" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CB4
+:CB4 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Básico de Eufónio" ;
+     :duracao "5" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CS26
+:CS26 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Supletivo de Eufónio" ;
+     :duracao "3" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CB5
+:CB5 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Básico de Fagote" ;
+     :duracao "5" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CS27
+:CS27 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Supletivo de Fagote" ;
+     :duracao "3" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CB6
+:CB6 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Básico de Flauta" ;
+     :duracao "5" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CS28
+:CS28 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Supletivo de Flauta" ;
+     :duracao "3" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CB7
+:CB7 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Básico de Fliscorne" ;
+     :duracao "5" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CS29
+:CS29 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Supletivo de Fliscorne" ;
+     :duracao "3" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CB8
+:CB8 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Básico de Guitarra" ;
+     :duracao "5" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CS30
+:CS30 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Supletivo de Guitarra" ;
+     :duracao "3" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CB9
+:CB9 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Básico de Harpa" ;
+     :duracao "5" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CS31
+:CS31 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Supletivo de Harpa" ;
+     :duracao "3" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CB10
+:CB10 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Básico de Oboé" ;
+     :duracao "5" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CS32
+:CS32 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Supletivo de Oboé" ;
+     :duracao "3" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CB11
+:CB11 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Básico de Orgão" ;
+     :duracao "5" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CS33
+:CS33 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Supletivo de Orgão" ;
+     :duracao "3" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CB12
+:CB12 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Básico de Percussão" ;
+     :duracao "5" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CS34
+:CS34 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Supletivo de Percussão" ;
+     :duracao "3" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CB13
+:CB13 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Básico de Piano" ;
+     :duracao "5" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CS35
+:CS35 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Supletivo de Piano" ;
+     :duracao "3" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CB14
+:CB14 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Básico de Saxofone" ;
+     :duracao "5" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CS36
+:CS36 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Supletivo de Saxofone" ;
+     :duracao "3" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CB15
+:CB15 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Básico de Trombone" ;
+     :duracao "5" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CS37
+:CS37 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Supletivo de Trombone" ;
+     :duracao "3" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CB16
+:CB16 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Básico de Trompa" ;
+     :duracao "5" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CS38
+:CS38 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Supletivo de Trompa" ;
+     :duracao "3" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CB17
+:CB17 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Básico de Trompete" ;
+     :duracao "5" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CS39
+:CS39 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Supletivo de Trompete" ;
+     :duracao "3" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CB18
+:CB18 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Básico de Tuba" ;
+     :duracao "5" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CS40
+:CS40 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Supletivo de Tuba" ;
+     :duracao "3" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CB19
+:CB19 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Básico de Violoncelo" ;
+     :duracao "5" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CS41
+:CS41 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Supletivo de Violoncelo" ;
+     :duracao "3" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CB20
+:CB20 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Básico de Violino" ;
+     :duracao "5" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CS42
+:CS42 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Supletivo de Violino" ;
+     :duracao "3" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CB21
+:CB21 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Básico de Viola de Arco" ;
+     :duracao "5" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CS43
+:CS43 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Supletivo de Viola de Arco" ;
+     :duracao "3" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CB22
+:CB22 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Básico de Bandolim" ;
+     :duracao "5" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#CS44
+:CS44 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :designacao "Curso Supletivo de Bandolim" ;
+     :duracao "3" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#I1
+:I1 rdf:type owl:NamedIndividual ,
+             :Instrumento ;
+    :nomeInstrumento "Clarinete" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#I2
+:I2 rdf:type owl:NamedIndividual ,
+             :Instrumento ;
+    :nomeInstrumento "Contrabaixo" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#I3
+:I3 rdf:type owl:NamedIndividual ,
+             :Instrumento ;
+    :nomeInstrumento "Corne Inglês" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#I4
+:I4 rdf:type owl:NamedIndividual ,
+             :Instrumento ;
+    :nomeInstrumento "Eufónio" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#I5
+:I5 rdf:type owl:NamedIndividual ,
+             :Instrumento ;
+    :nomeInstrumento "Fagote" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#I6
+:I6 rdf:type owl:NamedIndividual ,
+             :Instrumento ;
+    :nomeInstrumento "Flauta" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#I7
+:I7 rdf:type owl:NamedIndividual ,
+             :Instrumento ;
+    :nomeInstrumento "Fliscorne" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#I8
+:I8 rdf:type owl:NamedIndividual ,
+             :Instrumento ;
+    :nomeInstrumento "Guitarra" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#I9
+:I9 rdf:type owl:NamedIndividual ,
+             :Instrumento ;
+    :nomeInstrumento "Harpa" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#I10
+:I10 rdf:type owl:NamedIndividual ,
+             :Instrumento ;
+    :nomeInstrumento "Oboé" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#I11
+:I11 rdf:type owl:NamedIndividual ,
+             :Instrumento ;
+    :nomeInstrumento "Orgão" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#I12
+:I12 rdf:type owl:NamedIndividual ,
+             :Instrumento ;
+    :nomeInstrumento "Percussão" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#I13
+:I13 rdf:type owl:NamedIndividual ,
+             :Instrumento ;
+    :nomeInstrumento "Piano" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#I14
+:I14 rdf:type owl:NamedIndividual ,
+             :Instrumento ;
+    :nomeInstrumento "Saxofone" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#I15
+:I15 rdf:type owl:NamedIndividual ,
+             :Instrumento ;
+    :nomeInstrumento "Trombone" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#I16
+:I16 rdf:type owl:NamedIndividual ,
+             :Instrumento ;
+    :nomeInstrumento "Trompa" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#I17
+:I17 rdf:type owl:NamedIndividual ,
+             :Instrumento ;
+    :nomeInstrumento "Trompete" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#I18
+:I18 rdf:type owl:NamedIndividual ,
+             :Instrumento ;
+    :nomeInstrumento "Tuba" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#I19
+:I19 rdf:type owl:NamedIndividual ,
+             :Instrumento ;
+    :nomeInstrumento "Violoncelo" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#I20
+:I20 rdf:type owl:NamedIndividual ,
+             :Instrumento ;
+    :nomeInstrumento "Violino" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#I21
+:I21 rdf:type owl:NamedIndividual ,
+             :Instrumento ;
+    :nomeInstrumento "Viola de Arco" .
+
+###  http://rpcw.di.uminho.pt/2024/musica#I22
+:I22 rdf:type owl:NamedIndividual ,
+             :Instrumento ;
+    :nomeInstrumento "Bandolim" .
+
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
