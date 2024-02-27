@@ -36,7 +36,7 @@ ttl = '''@prefix : <http://rpcw.di.uminho.pt/2024/musica/> .
 
 ###  http://rpcw.di.uminho.pt/2024/musica/anoCurso
 :anoCurso rdf:type owl:DatatypeProperty ;
-          rdfs:domain :Curso ;
+          rdfs:domain :Aluno ;
           rdfs:range xsd:int .
 
 
