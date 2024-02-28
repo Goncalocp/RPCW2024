@@ -1,0 +1,47 @@
+1. Quais as cidades de um determinado distrito?
+
+
+PREFIX : <http://rpcw.di.uminho.pt/2024/mapaVirtual/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?cidade WHERE{
+    ?cidade :distrito "nomeDistrito" .
+}
+
+
+2. Distribuição de cidades por distrito?
+
+
+PREFIX : <http://rpcw.di.uminho.pt/2024/mapaVirtual/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?distrito (COUNT (distinct ?cidade) as ?ncidades) WHERE{
+    ?cidade :distrito ?distrito .
+} GROUP BY ?distrito
+ORDER BY ?distrito
+
+
+3. Quantas cidades se podem atingir a partir do Porto?
+
+
+PREFIX : <http://rpcw.di.uminho.pt/2024/mapaVirtual/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT (COUNT (DISTINCT ?destino) AS ?numDestino) WHERE {
+    ?cidade :distrito "Porto" .
+    ?s :origem ?cidade ;
+       :destino ?destino .
+}
+
+
+4. Quais as cidades com população acima de um determinado valor?
+
+
+PREFIX : <http://rpcw.di.uminho.pt/2024/mapaVirtual/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?cidade ?nome ?populacao WHERE {
+    ?cidade :populacao ?populacao .
+    ?cidade :nome ?nome
+    FILTER (?populacao > valor)
+} ORDER BY ?populacao
