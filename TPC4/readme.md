@@ -6,4 +6,3 @@
 
 * Criação do repositório no Graphdb
 * Criação do website para a ontologia
-

@@ -12,4 +12,3 @@
     * Distribuição de cidades por distrito?
     * Quantas cidades se podem atingir a partir do Porto?
     * Quais as cidades com população acima de um determinado valor?
-
