@@ -2,7 +2,7 @@
 
 * Dataset: Mapa virtual
 
-**TPC2**
+**TPC3**
 
 * A partir do dataset criar uma ontologia no Protégé;
 * Escrever script em Python para povoar a ontologia;
