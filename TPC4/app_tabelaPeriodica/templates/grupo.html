@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8"/>
+        <title></title>
+        <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/w3.css') }}"/>    
+    </header>
+    <body>
+        <div class="w3-card-4">
+            <header class="w3-container w3-purple">
+                <h1>Tabela Periódica</h1>
+                <h2>Grupo</h2>
+            </header>
+            <div class="w3-container">
+                <p><b>Nome:</b>
+                    {% if data.dados[0].nome %}
+                            {% set group_name = data.dados[0].nome.value.split('#')[-1] %}
+                            {{ group_name }}
+                    {% else %}
+                            -
+                    {% endif %}
+
+                </p>
+                <p><b>Número:</b>
+                    {% if data.dados[0].num %}
+                            {{ data.dados[0].num.value }}
+                    {% else %}
+                            -
+                    {% endif %}
+                </p>
+            </div>
+            <div class="w3-container">
+                <p><b>Elementos</b>
+                    {% for entry in data.dados %}
+                        <p> &emsp; &emsp; <a href="/elemento/{{entry.elnome.value}}">{{ entry.elnome.value }}</a></p>
+                    {% endfor %}
+                </p>
+            </div>
+            <div>
+                <h6 style="text-align: right;"><a href="/">Página Inicial</a> | <a href="/elementos">Elementos</a> | <a href="/grupos">Grupos</a> &emsp;</h6>
+            </div>
+            <footer class="w3-container w3-purple w3-bottom">
+                <h5 style="text-align: center;">Gerado por RPCW2024 em {{ data.data }}</h5>
+            </footer>
+        </div>
+    </body>
+</html>
