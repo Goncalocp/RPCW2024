@@ -1,0 +1,795 @@
+{
+    "filmes": [
+        {
+            "uri": "http://dbpedia.org/resource/Ca-bau-kan",
+            "nome": "Ca-bau-kan",
+            "diretor": "http://dbpedia.org/resource/Nia_Dinata",
+            "escritor": "http://dbpedia.org/resource/Nia_Dinata",
+            "musico": "http://dbpedia.org/resource/Andi_Rianto",
+            "duracao": "7200.0",
+            "elenco": [
+                "http://dbpedia.org/resource/Niniek_L._Karim",
+                "http://dbpedia.org/resource/Ferry_Salim",
+                "http://dbpedia.org/resource/Lola_Amaria"
+            ]
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Cab_Calloway's_Jitterbug_Party",
+            "nome": "Cab Calloway's Jitterbug Party",
+            "diretor": "http://dbpedia.org/resource/Fred_Waller",
+            "escritor": "http://dbpedia.org/resource/Fred_Rath_(screenwriter)",
+            "musico": "http://dbpedia.org/resource/Cab_Calloway",
+            "duracao": "480.0",
+            "elenco": [
+                "http://dbpedia.org/resource/Cab_Calloway"
+            ]
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Patrie_(1946_film)",
+            "nome": "Patrie (1946 film)",
+            "diretor": "http://dbpedia.org/resource/Louis_Daquin",
+            "escritor": "http://dbpedia.org/resource/Charles_Spaak",
+            "musico": "http://dbpedia.org/resource/Jean_Wiener",
+            "duracao": "6000.0",
+            "elenco": [
+                "http://dbpedia.org/resource/Jean_Desailly",
+                "http://dbpedia.org/resource/Maria_Mauban",
+                "http://dbpedia.org/resource/Pierre_Blanchar"
+            ]
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Patrie_(1946_film)",
+            "nome": "Patrie (1946 film)",
+            "diretor": "http://dbpedia.org/resource/Louis_Daquin",
+            "escritor": "http://dbpedia.org/resource/Pierre_Bost",
+            "musico": "http://dbpedia.org/resource/Jean_Wiener",
+            "duracao": "6000.0",
+            "elenco": [
+                "http://dbpedia.org/resource/Jean_Desailly",
+                "http://dbpedia.org/resource/Maria_Mauban",
+                "http://dbpedia.org/resource/Pierre_Blanchar"
+            ]
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Goa_(2010_film)",
+            "nome": "Goa (2010 film)",
+            "diretor": "http://dbpedia.org/resource/Venkat_Prabhu",
+            "escritor": "http://dbpedia.org/resource/Venkat_Prabhu",
+            "musico": "http://dbpedia.org/resource/Yuvan_Shankar_Raja",
+            "duracao": "9840.0",
+            "elenco": [
+                "http://dbpedia.org/resource/Sampath_Raj",
+                "http://dbpedia.org/resource/Aravind_Akash",
+                "http://dbpedia.org/resource/Vaibhav_Reddy",
+                "http://dbpedia.org/resource/Sneha_(actress)",
+                "http://dbpedia.org/resource/Jai_(actor)",
+                "http://dbpedia.org/resource/Piaa_Bajpai",
+                "http://dbpedia.org/resource/Premji_Amaran"
+            ]
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Goal!_(film)",
+            "nome": "Goal! (film)",
+            "diretor": "http://dbpedia.org/resource/Danny_Cannon",
+            "escritor": "http://dbpedia.org/resource/Adrian_Butchart",
+            "musico": "http://dbpedia.org/resource/Graeme_Revell",
+            "duracao": "7080.0",
+            "elenco": [
+                "http://dbpedia.org/resource/Anna_Friel",
+                "http://dbpedia.org/resource/Stephen_Dillane",
+                "http://dbpedia.org/resource/Alessandro_Nivola",
+                "http://dbpedia.org/resource/Kuno_Becker",
+                "http://dbpedia.org/resource/Marcel_Iure\u015f"
+            ]
+        },
+        {
+            "uri": "http://dbpedia.org/resource/The_Twilight_Saga_(film_series)",
+            "nome": "The Twilight Saga (film series)",
+            "diretor": "http://dbpedia.org/resource/Catherine_Hardwicke",
+            "escritor": "http://dbpedia.org/resource/Melissa_Rosenberg",
+            "musico": "http://dbpedia.org/resource/Howard_Shore",
+            "duracao": "38040.0",
+            "elenco": [
+                "http://dbpedia.org/resource/Robert_Pattinson",
+                "http://dbpedia.org/resource/Billy_Burke_(actor)",
+                "http://dbpedia.org/resource/Booboo_Stewart",
+                "http://dbpedia.org/resource/Peter_Facinelli",
+                "http://dbpedia.org/resource/Christopher_Heyerdahl",
+                "http://dbpedia.org/resource/Elizabeth_Reaser",
+                "http://dbpedia.org/resource/Anna_Kendrick",
+                "http://dbpedia.org/resource/Mackenzie_Foy",
+                "http://dbpedia.org/resource/Bronson_Pelletier",
+                "http://dbpedia.org/resource/Bryce_Dallas_Howard",
+                "http://dbpedia.org/resource/Dakota_Fanning",
+                "http://dbpedia.org/resource/Nikki_Reed",
+                "http://dbpedia.org/resource/Jackson_Rathbone",
+                "http://dbpedia.org/resource/Taylor_Lautner",
+                "http://dbpedia.org/resource/Ashley_Greene",
+                "http://dbpedia.org/resource/Kellan_Lutz",
+                "http://dbpedia.org/resource/Kristen_Stewart",
+                "http://dbpedia.org/resource/Michael_Sheen",
+                "http://dbpedia.org/resource/Rachelle_Lefevre"
+            ]
+        },
+        {
+            "uri": "http://dbpedia.org/resource/The_Twilight_Saga_(film_series)",
+            "nome": "The Twilight Saga (film series)",
+            "diretor": "http://dbpedia.org/resource/Bill_Condon",
+            "escritor": "http://dbpedia.org/resource/Melissa_Rosenberg",
+            "musico": "http://dbpedia.org/resource/Alexandre_Desplat",
+            "duracao": "36420.0",
+            "elenco": [
+                "http://dbpedia.org/resource/Robert_Pattinson",
+                "http://dbpedia.org/resource/Billy_Burke_(actor)",
+                "http://dbpedia.org/resource/Booboo_Stewart",
+                "http://dbpedia.org/resource/Peter_Facinelli",
+                "http://dbpedia.org/resource/Christopher_Heyerdahl",
+                "http://dbpedia.org/resource/Elizabeth_Reaser",
+                "http://dbpedia.org/resource/Anna_Kendrick",
+                "http://dbpedia.org/resource/Mackenzie_Foy",
+                "http://dbpedia.org/resource/Bronson_Pelletier",
+                "http://dbpedia.org/resource/Bryce_Dallas_Howard",
+                "http://dbpedia.org/resource/Dakota_Fanning",
+                "http://dbpedia.org/resource/Nikki_Reed",
+                "http://dbpedia.org/resource/Jackson_Rathbone",
+                "http://dbpedia.org/resource/Taylor_Lautner",
+                "http://dbpedia.org/resource/Ashley_Greene",
+                "http://dbpedia.org/resource/Kellan_Lutz",
+                "http://dbpedia.org/resource/Kristen_Stewart",
+                "http://dbpedia.org/resource/Michael_Sheen",
+                "http://dbpedia.org/resource/Rachelle_Lefevre"
+            ]
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Police_Story_2_(2007_film)",
+            "nome": "Police Story 2 (2007 film)",
+            "diretor": "http://dbpedia.org/resource/Thriller_Manju",
+            "escritor": "http://dbpedia.org/resource/Thriller_Manju",
+            "musico": "http://dbpedia.org/resource/R._P._Patnaik",
+            "duracao": "9960.0",
+            "elenco": [
+                "http://dbpedia.org/resource/Rockline_Venkatesh",
+                "http://dbpedia.org/resource/P._J._Sarma",
+                "http://dbpedia.org/resource/Sai_Kumar_(Kannada_actor)"
+            ]
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Pope_Joan_(1972_film)",
+            "nome": "Pope Joan (1972 film)",
+            "diretor": "http://dbpedia.org/resource/Michael_Anderson_(director)",
+            "escritor": "http://dbpedia.org/resource/John_Briley",
+            "musico": "http://dbpedia.org/resource/Maurice_Jarre",
+            "duracao": "7920.0",
+            "elenco": [
+                "http://dbpedia.org/resource/Franco_Nero",
+                "http://dbpedia.org/resource/Liv_Ullmann",
+                "http://dbpedia.org/resource/Olivia_de_Havilland"
+            ]
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Ainthaam_Padai",
+            "nome": "Ainthaam Padai",
+            "diretor": "http://dbpedia.org/resource/Badri_(director)",
+            "escritor": "http://dbpedia.org/resource/Badri_(director)",
+            "musico": "http://dbpedia.org/resource/D._Imman",
+            "duracao": "9120.0",
+            "elenco": [
+                "http://dbpedia.org/resource/Vivek_(actor)",
+                "http://dbpedia.org/resource/Mukesh_(actor)",
+                "http://dbpedia.org/resource/Simran_(actress)",
+                "http://dbpedia.org/resource/Nassar_(actor)",
+                "http://dbpedia.org/resource/Sundar_C"
+            ]
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Ainthu_Ainthu_Ainthu",
+            "nome": "Ainthu Ainthu Ainthu",
+            "diretor": "http://dbpedia.org/resource/Sasi_(director)",
+            "escritor": "http://dbpedia.org/resource/Sasi_(director)",
+            "musico": "http://dbpedia.org/resource/Simon_K_King",
+            "duracao": "8820.0",
+            "elenco": [
+                "http://dbpedia.org/resource/Bharath_(actor)",
+                "http://dbpedia.org/resource/Erica_Fernandes",
+                "http://dbpedia.org/resource/Chandini_Sreedharan"
+            ]
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Hendtheer_Darbar",
+            "nome": "Hendtheer Darbar",
+            "diretor": "http://dbpedia.org/resource/V._Sekhar",
+            "escritor": "http://dbpedia.org/resource/V._Sekhar",
+            "musico": "http://dbpedia.org/resource/Sadhu_Kokila",
+            "duracao": "9540.0",
+            "elenco": [
+                "http://dbpedia.org/resource/Meena_(actress)",
+                "http://dbpedia.org/resource/Ramesh_Aravind"
+            ]
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Hendthi_Helidare_Kelabeku",
+            "nome": "Hendthi Helidare Kelabeku",
+            "diretor": "http://dbpedia.org/resource/Relangi_Narasimha_Rao",
+            "escritor": "http://dbpedia.org/resource/Relangi_Narasimha_Rao",
+            "musico": "http://dbpedia.org/resource/Chakravarthy_(music_composer)",
+            "duracao": "8940.0",
+            "elenco": [
+                "http://dbpedia.org/resource/Malashri",
+                "http://dbpedia.org/resource/Dwarakish",
+                "http://dbpedia.org/resource/Harish_Kumar_(actor)"
+            ]
+        },
+        {
+            "uri": "http://dbpedia.org/resource/U-Boat_39",
+            "nome": "U-Boat 39",
+            "diretor": "http://dbpedia.org/resource/Hampe_Faustman",
+            "escritor": "http://dbpedia.org/resource/Herbert_Grevenius",
+            "musico": "http://dbpedia.org/resource/Carl-Olof_Anderberg",
+            "duracao": "5100.0",
+            "elenco": [
+                "http://dbpedia.org/resource/Eva_Dahlbeck",
+                "http://dbpedia.org/resource/Karl-Arne_Holmsten",
+                "http://dbpedia.org/resource/Gunnel_Brostr\u00f6m"
+            ]
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Yegor_Bulychyov_and_Others",
+            "nome": "Yegor Bulychyov and Others",
+            "diretor": "http://dbpedia.org/resource/Sergei_Solovyov_(film_director)",
+            "escritor": "http://dbpedia.org/resource/Maxim_Gorky",
+            "musico": "http://dbpedia.org/resource/Isaac_Schwartz",
+            "duracao": "5100.0",
+            "elenco": [
+                "http://dbpedia.org/resource/Maya_Bulgakova",
+                "http://dbpedia.org/resource/Anatoli_Romashin",
+                "http://dbpedia.org/resource/Yekaterina_Vasilyeva",
+                "http://dbpedia.org/resource/Yevgeny_Steblov",
+                "http://dbpedia.org/resource/Mikhail_Ulyanov",
+                "http://dbpedia.org/resource/Zinaida_Slavina"
+            ]
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Somebody_Up_There_Likes_Me_(1956_film)",
+            "nome": "Somebody Up There Likes Me (1956 film)",
+            "diretor": "http://dbpedia.org/resource/Robert_Wise",
+            "escritor": "http://dbpedia.org/resource/Ernest_Lehman",
+            "musico": "http://dbpedia.org/resource/Bronislau_Kaper",
+            "duracao": "6840.0",
+            "elenco": [
+                "http://dbpedia.org/resource/Paul_Newman",
+                "http://dbpedia.org/resource/Everett_Sloane",
+                "http://dbpedia.org/resource/Pier_Angeli"
+            ]
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Somebody_Up_There_Likes_Me_(2012_film)",
+            "nome": "Somebody Up There Likes Me (2012 film)",
+            "diretor": "http://dbpedia.org/resource/Bob_Byington",
+            "escritor": "http://dbpedia.org/resource/Bob_Byington",
+            "musico": "http://dbpedia.org/resource/Chris_Baio",
+            "duracao": "4560.0",
+            "elenco": [
+                "http://dbpedia.org/resource/Jonathan_Togo",
+                "http://dbpedia.org/resource/Nick_Offerman",
+                "http://dbpedia.org/resource/Jess_Weixler"
+            ]
+        },
+        {
+            "uri": "http://dbpedia.org/resource/The_Turkey_(film)",
+            "nome": "The Turkey (film)",
+            "diretor": "http://dbpedia.org/resource/Claude_Barma",
+            "escritor": "http://dbpedia.org/resource/Georges_Feydeau",
+            "musico": "http://dbpedia.org/resource/G\u00e9rard_Calvi",
+            "duracao": "5100.0",
+            "elenco": [
+                "http://dbpedia.org/resource/Jacqueline_Pierreux",
+                "http://dbpedia.org/resource/Nadine_Alari",
+                "http://dbpedia.org/resource/Denise_Provence"
+            ]
+        },
+        {
+            "uri": "http://dbpedia.org/resource/The_Two_Sisters_(1950_film)",
+            "nome": "The Two Sisters (1950 film)",
+            "diretor": "http://dbpedia.org/resource/Mario_Volpe_(director)",
+            "escritor": "http://dbpedia.org/resource/Mario_Volpe_(director)",
+            "musico": "http://dbpedia.org/resource/Gino_Filippini",
+            "duracao": "4920.0",
+            "elenco": [
+                "http://dbpedia.org/resource/Vera_Carmi",
+                "http://dbpedia.org/resource/Enzo_Fiermonte",
+                "http://dbpedia.org/resource/Checco_Durante"
+            ]
+        }
+    ],
+    "atores": [
+        {
+            "uri": "http://dbpedia.org/resource/Niniek_L._Karim",
+            "nome": "Niniek L. Karim",
+            "resumo": "Niniek L. Karim (born 14 January 1949) is an Indonesian actress who has won two Citra Awards for Best Supporting Actress."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Ferry_Salim"
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Lola_Amaria"
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Cab_Calloway",
+            "nome": "Cab Calloway",
+            "resumo": "Cabell Calloway III (December 25, 1907 \u2013 November 18, 1994) was an American singer, songwriter, bandleader, conductor and dancer. He was associated with the Cotton Club in Harlem, where he was a regular performer and became a popular vocalist of the swing era. His niche of mixing jazz and vaudeville won him acclaim during a career that spanned over 65 years. Calloway was a master of energetic scat singing and led one of the most popular dance bands in the United States from the early 1930s to the late 1940s. His band included trumpeters Dizzy Gillespie, Jonah Jones, and Adolphus \"Doc\" Cheatham, saxophonists Ben Webster and Leon \"Chu\" Berry, guitarist Danny Barker, bassist Milt Hinton, and drummer Cozy Cole. Calloway had several hit records in the 1930s and 1940s, becoming known as the \"Hi-de-ho\" man of jazz for his most famous song, \"Minnie the Moocher\", originally recorded in 1931. He reached the Billboard charts in five consecutive decades (1930s\u20131970s). Calloway also made several stage, film, and television appearances until his death in 1994 at the age of 86. He had roles in Stormy Weather (1943), Porgy and Bess (1953), The Cincinnati Kid (1965), and Hello Dolly! (1967). His career saw renewed interest when he appeared in the 1980 film The Blues Brothers. Calloway was the first African-American musician to sell a million records from a single and to have a nationally syndicated radio show. In 1993, Calloway received the National Medal of Arts from the United States Congress. He posthumously received the Grammy Lifetime Achievement Award in 2008. His song \"Minnie the Moocher\" was inducted into the Grammy Hall of Fame in 1999, and added to the Library of Congress' National Recording Registry in 2019. He is also inducted into the Big Band and Jazz Hall of Fame and the International Jazz Hall of Fame."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Jean_Desailly",
+            "nome": "Jean Desailly",
+            "resumo": "Jean Desailly (24 August 1920 \u2013 11 June 2008) was a French actor. He was a member of the Com\u00e9die-Fran\u00e7aise from 1942 to 1946, and later participated in about 90 movies."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Maria_Mauban",
+            "nome": "Maria Mauban",
+            "resumo": "Maria Mauban (10 May 1924 \u2013 26 August 2014) was a French actress. She appeared in around fifty films and television series during her career. in 1950 she starred in the British Egyptian-set crime film Cairo Road. The same year she appeared in the Ealing Studios film Cage of Gold. In 1954 she appeared in Roberto Rossellini's Journey to Italy. She was married to the industrialist Jean Versini and then to the actor Claude Dauphin. They had two children, the actor Jean-Claude Dauphin and Elena Adriana Negru. Maria Mauban died on 26 August 2014."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Pierre_Blanchar",
+            "nome": "Pierre Blanchar",
+            "resumo": "Pierre Blanchar (30 June 1892 \u2013 21 November 1963) was a French actor. He appeared in more than 50 films between 1922 and 1961. Blanchar was married to actress Marthe Vinot, with whom he had a daughter, actress Dominique Blanchar. He played Napoleon in the 1938 British film A Royal Divorce alongside Ruth Chatterton as Josephine. He later appeared alongside Mich\u00e8le Morgan in the 1946 film Pastoral Symphony."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Jean_Desailly",
+            "nome": "Jean Desailly",
+            "resumo": "Jean Desailly (24 August 1920 \u2013 11 June 2008) was a French actor. He was a member of the Com\u00e9die-Fran\u00e7aise from 1942 to 1946, and later participated in about 90 movies."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Maria_Mauban",
+            "nome": "Maria Mauban",
+            "resumo": "Maria Mauban (10 May 1924 \u2013 26 August 2014) was a French actress. She appeared in around fifty films and television series during her career. in 1950 she starred in the British Egyptian-set crime film Cairo Road. The same year she appeared in the Ealing Studios film Cage of Gold. In 1954 she appeared in Roberto Rossellini's Journey to Italy. She was married to the industrialist Jean Versini and then to the actor Claude Dauphin. They had two children, the actor Jean-Claude Dauphin and Elena Adriana Negru. Maria Mauban died on 26 August 2014."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Pierre_Blanchar",
+            "nome": "Pierre Blanchar",
+            "resumo": "Pierre Blanchar (30 June 1892 \u2013 21 November 1963) was a French actor. He appeared in more than 50 films between 1922 and 1961. Blanchar was married to actress Marthe Vinot, with whom he had a daughter, actress Dominique Blanchar. He played Napoleon in the 1938 British film A Royal Divorce alongside Ruth Chatterton as Josephine. He later appeared alongside Mich\u00e8le Morgan in the 1946 film Pastoral Symphony."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Sampath_Raj",
+            "nome": "Sampath Raj",
+            "resumo": "Sampath Raj (born 25 December 1968) is an Indian actor who works predominantly in Tamil and Telugu films, in addition to Kannada and Malayalam films. He is best known for appearing in each film of director Venkat Prabhu's trilogy, consisting of Chennai 600028, Saroja and Goa. He has also acted in supporting roles in various other films. He is mostly known in negative roles. He has played a brief role as Ekambram in Malgudi Days for the episode \"Neighbors Help\", which was directed by Kavitha Lankesh. After a sabbatical, he returned to Kannada cinema with the film Shourya (2010)."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Aravind_Akash",
+            "nome": "Aravind Akash",
+            "resumo": "Aravind Akash is an Indian actor and dancer who predominantly works in the South Indian film industry. He rose to fame through 2002 Malayalam film Nandanam portraying the role of Lord Krishna. He has also been a judge for a few TV shows in Malayalam and Tamil."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Vaibhav_Reddy",
+            "nome": "Vaibhav Reddy",
+            "resumo": "Sumanth Reddy (born 21 April 1978), better known as Vaibhav, is an Indian actor who works primarily in Tamil film industry. He made his debut with the Telugu film Godava (2007) under his father, A. Kodandarami Reddy's direction. He is best known for his performances in Venkat Prabhu films Saroja (2008), Goa (2010), Mankatha (2011), Aambala (2015), Chennai 600028 (2016), Aranmanai 2 (2016) and Meyaadha Maan (2017)."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Sneha_(actress)",
+            "nome": "Sneha (actress)",
+            "resumo": "Suhasini Rajaram Naidu (born 12 October 1981), known by her stage name Sneha, is an Indian actress who works primarily in Tamil film industry and Telugu film industry. She made her debut with Malayalam movie Ingane Oru NilapakshiShe debuted in Telugu in the year 2001 with the film Priyamaina Neeku. She has won Tamil state film Awards and some regional awards for her acting in some of her films."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Jai_(actor)",
+            "nome": "Jai (actor)",
+            "resumo": "Jai Sampath is an Indian actor and musician working in Tamil films. The nephew of noted composer Deva & the cousin of Srikanth Deva, Jai had made his acting debut in a supporting role in Bagavathi (2002). In 2007, he successfully auditioned for a leading role in Venkat Prabhu's sports film Chennai 600028. His movie Subramaniapuram (2008) was also a big success, and Jai was praised for his performance. Jai subsequently garnered more praise for diverse roles, including a villager on holiday in Goa (2010), a timid factory worker in Engaeyum Eppothum (2011) and a customer care executive in the romantic drama Raja Rani (2013), which became his biggest commercial successful film. He made his debut as a singer in the film Jarugandi (2018)."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Piaa_Bajpai",
+            "nome": "Piaa Bajpai"
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Premji_Amaran",
+            "nome": "Premji Amaran"
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Anna_Friel",
+            "nome": "Anna Friel",
+            "resumo": "Anna Louise Friel (born 12 July 1976) is an English actress. Born in Rochdale, Greater Manchester, she has been acting professionally since age 13. Friel achieved fame with her portrayal of Beth Jordache on the British soap opera Brookside (1993\u20131995), and came to international prominence when she played Charlotte \"Chuck\" Charles on ABC's Pushing Daisies (2007\u20132009). She is the recipient of several accolades, including an International Emmy Award, a Drama Desk Award, a National Television Award, an RTS Award, and an honorary degree, as well as nominations for BAFTA Award, Golden Globe Award, Satellite Award, Saturn Award, Genie Award and Czech Lion Award. Friel made her film debut in The Land Girls (1998). She has since appeared in various features, such as A Midsummer Night's Dream, Rogue Trader (both 1999), Sunset Strip (2000), Me Without You (2001), Timeline (2003), Goal! (2005) and its sequel (2007), Bathory (2008), Land of the Lost (2009), London Boulevard, You Will Meet a Tall Dark Stranger (both 2010), Limitless (2011), The Look of Love (2013), The Cleanse, I.T. (both 2016), and Books of Blood (2020). Outside film, Friel has starred in numerous British and American television series, such as The Jury (2004), Odyssey (2015), The Girlfriend Experience (2017), Butterfly (2018), and Marcella (2016\u20132020). Her stage work includes Patrick Marber's Closer (Broadway, 1999), and West End productions of Breakfast at Tiffany's (2009) and Uncle Vanya (2012)."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Stephen_Dillane",
+            "nome": "Stephen Dillane",
+            "resumo": "Stephen John Dillane (/d\u026a\u02c8le\u026an/; born 27 March 1957) is a British actor. He is best known for his roles as Leonard Woolf in the 2002 film The Hours, Stannis Baratheon in Game of Thrones, and Thomas Jefferson in the 2008 HBO miniseries John Adams, a part which earned him a Primetime Emmy nomination. An experienced stage actor who has been called an \"actor's actor\", Dillane won a Tony Award for his lead performance in Tom Stoppard's play The Real Thing (2000) and gave critically acclaimed performances in Angels in America (1993), Hamlet (1990), and a one-man Macbeth (2005). His television work has additionally garnered him BAFTA and International Emmy Awards for best actor."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Alessandro_Nivola",
+            "nome": "Alessandro Nivola",
+            "resumo": "Alessandro Antine Nivola (born June 28, 1972) is an American actor. He has been nominated for a Tony Award and an Independent Spirit Award and has won a Screen Actors Guild Award, a British Independent Film Award (BIFA), and the Best Actor Award at the 2017 Tribeca Film Festival among others. As a producer he runs King Bee Productions which made two seasons of the HBO comedy Doll & Em and the Independent Spirit Award nominated feature film To Dust."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Kuno_Becker",
+            "nome": "Kuno Becker",
+            "resumo": "Eduardo Kuno Becker Paz (born January 14, 1978) professionally known as Kuno Becker, is a Mexican actor and film director who has worked in telenovelas, Mexican cinema, and U.S. cinema. He is best known for his portrayal of Ruben Berrizabal in So\u00f1adoras, and Santiago Mu\u00f1ez in the football film Goal! and its sequels and The Lightning McQueen into Latin Spanish in Cars, Cars 2 and Cars 3. He also starred as Drew Ramos on the American drama series Dallas."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Marcel_Iure\u015f",
+            "nome": "Marcel Iure\u015f"
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Robert_Pattinson",
+            "nome": "Robert Pattinson",
+            "resumo": "Robert Douglas Thomas Pattinson (born 13 May 1986) is an English actor. Known for starring in both big-budget and independent films, Pattinson has ranked among the world's highest-paid actors. In 2010, Time magazine named him one of the 100 most influential people in the world, and he was featured in the Forbes Celebrity 100 list. After starting to act in a London theatre club at age 15, Pattinson began his film career by playing Cedric Diggory in the fantasy film Harry Potter and the Goblet of Fire (2005). He gained worldwide recognition for portraying Edward Cullen in The Twilight Saga film series (2008\u20132012), which grossed over $3.3 billion worldwide. After starring in the romantic dramas Remember Me (2010) and Water for Elephants (2011), Pattinson began working in independent films from auteur directors. He received praise for his starring roles in David Cronenberg's thriller Cosmopolis (2012), James Gray's adventure drama The Lost City of Z (2016), the Safdie Brothers' crime drama Good Time (2017), Claire Denis' science-fiction drama High Life (2018), and Robert Eggers' psychological horror film The Lighthouse (2019). He returned to mainstream films with a leading role in Christopher Nolan's spy film Tenet (2020), and starred as Batman in Matt Reeves' superhero film The Batman (2022). Aside from acting, Pattinson plays music and has sung on several soundtracks for film. He supports several charities, including the GO Campaign, and has been the face of Dior Homme fragrance since 2013."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Billy_Burke_(actor)",
+            "nome": "Billy Burke (actor)",
+            "resumo": "William Albert Burke (born November 25, 1966) is an American actor. He is known for his role as Charlie Swan in Twilight and its sequels. In 2011, he played Cesaire in Red Riding Hood. In 2012, he was cast as one of the lead characters, Miles Matheson, in the NBC science-fiction series Revolution. From 2015 to 2017, he starred in the CBS series Zoo. He has also appeared in the supernatural horror film Lights Out (2016) and the thriller Breaking In (2018)."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Booboo_Stewart",
+            "nome": "Booboo Stewart",
+            "resumo": "Nils Allen \"Booboo\" Stewart Jr. (born January 21, 1994) is an American actor. He is known for playing Seth Clearwater in The Twilight Saga, Warpath in X-Men: Days of Future Past, Jay in the Disney television film franchise Descendants and Willie in Julie and the Phantoms."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Peter_Facinelli",
+            "nome": "Peter Facinelli",
+            "resumo": "Peter Facinelli (born November 26, 1973) is an American actor and film and television producer. He starred as Donovan \"Van\" Ray on the Fox series Fastlane from 2002 to 2003. He played Dr. Carlisle Cullen in the film adaptations of the Twilight novel series, and is also known for his role as Mike Dexter in the 1998 film Can't Hardly Wait. Facinelli was a regular on the Showtime comedy-drama series Nurse Jackie, portraying the role of Dr. Fitch \"Coop\" Cooper. He portrayed Maxwell Lord on the first season of the TV series Supergirl."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Christopher_Heyerdahl",
+            "nome": "Christopher Heyerdahl",
+            "resumo": "Christopher Heyerdahl (born September 18, 1963) is a Canadian actor who portrayed Alastair in Supernatural, the Wraith Todd in Stargate Atlantis, Sam in Van Helsing, \"Swede\" in Hell on Wheels, and Marcus in The Twilight Saga."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Elizabeth_Reaser",
+            "nome": "Elizabeth Reaser",
+            "resumo": "Elizabeth Ann Reaser (born July 2, 1975) is an American film, television, and stage actress. Her work includes the films Stay, The Family Stone, Sweet Land, Against the Current, The Twilight Saga, Young Adult, and Ouija: Origin of Evil, and the TV series Saved, Grey's Anatomy, The Ex-List, The Good Wife, True Detective, The Handmaid's Tale, and The Haunting of Hill House."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Anna_Kendrick",
+            "nome": "Anna Kendrick",
+            "resumo": "Anna Cooke Kendrick (born August 9, 1985) is an American actress. She has received various accolades, including a Satellite Award, five Teen Choice Awards, three MTV Movie Awards, and nominations for an Academy Award, a Primetime Emmy Award and a Tony Award; making her one of the youngest people to be nominated for the \"Triple Crown of Acting\" and the youngest person to do so without winning. Kendrick began her career performing in theater productions at a young age. Her first starring role was in the 1998 Broadway musical High Society, for which she earned a nomination for the Tony Award for Best Featured Actress in a Musical. She made her film debut in the musical comedy Camp (2003), and rose to prominence for her role in The Twilight Saga (2008\u20132012). She achieved further recognition for the comedy-drama film Up in the Air (2009), which earned her a nomination for the Academy Award for Best Supporting Actress, and for her starring role in the Pitch Perfect film series (2012\u201317). Kendrick also had prominent roles in films such as the action comedy Scott Pilgrim vs. the World (2010), the comedy drama 50/50 (2011), the crime drama End of Watch (2012), the musical fantasy Into the Woods (2014), the drama Cake (2014), the comedy Mike and Dave Need Wedding Dates (2016), the animated comedy Trolls (2016), the comic thriller A Simple Favor (2018), the fantasy comedy Noelle (2019), and the animated sequel Trolls World Tour (2020). She also sang on various soundtracks for her films, as well as at events like the 2013 Kennedy Center Honors and the 2015 Academy Awards, and published a memoir, Scrappy Little Nobody, in 2016."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Mackenzie_Foy",
+            "nome": "Mackenzie Foy",
+            "resumo": "Mackenzie Christine Foy (born November 10, 2000) is an American actress and model. She is known for portraying Renesmee Cullen in the 2012 film The Twilight Saga: Breaking Dawn \u2013 Part 2, which earned her a Young Artist Award nomination as Best Supporting Young Actress in a Feature Film. She portrayed young Murphy in the 2014 space epic Interstellar, for which she received a Saturn Award for Best Performance by a Younger Actor among other awards nominations. She starred as Clara in Disney's 2018 film The Nutcracker and the Four Realms."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Bronson_Pelletier",
+            "nome": "Bronson Pelletier",
+            "resumo": "Bronson Pelletier (born December 31, 1986) is a Canadian actor. He is perhaps best known for his roles as Jack Sinclair in renegadepress.com (2004\u20132008) and as Jared Cameron in The Twilight Saga film series."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Bryce_Dallas_Howard",
+            "nome": "Bryce Dallas Howard",
+            "resumo": "Bryce Dallas Howard (born March 2, 1981) is an American actress and director. Howard was born in Los Angeles and attended New York University's Tisch School of the Arts, initially leaving in 2002 to take roles on Broadway but officially graduating in 2020. While portraying Rosalind in a 2003 production of As You Like It, Howard caught the attention of director M. Night Shyamalan, who cast her as the blind daughter of a local chief in the psychological thriller The Village (2004). She later starred in the leading role of a naiad who escapes from a fantasy world in Shyamalan's fantasy thriller Lady in the Water (2006). Howard's performance in Kenneth Branagh's As You Like It (2006) earned her a Golden Globe Award nomination and she subsequently appeared as Gwen Stacy in Sam Raimi's superhero film Spider-Man 3 (2007). She went on to appear as Kate Connor in the action film Terminator Salvation (2009) and as Victoria in the fantasy film The Twilight Saga: Eclipse (2010), both of which were financially successful but garnered mixed reviews from critics. Howard's roles as a \"fair-weather\" girlfriend in the comedy-drama 50/50 (2011) and as a racist socialite in the period-drama The Help (2011) brought her praise. Recognition of Howard widened when she co-starred as Claire Dearing in the adventure film Jurassic World (2015), and its sequels Jurassic World: Fallen Kingdom (2018) and Jurassic World Dominion (2022), the first two of which rank as her most-commercially-successful films. She also portrayed a forest ranger in the adventure film Pete's Dragon (2016) and Sheila Dwight, Elton John's mother, in the biopic Rocketman (2019), voicing Yaddle in Tales of the Jedi (2022). Howard's work as a director includes the documentary Dads (2019), and episodes of the Disney+ space fantasy series The Mandalorian (2019\u2013) and The Book of Boba Fett (2022). Her father is actor and filmmaker Ron Howard and she is married to actor Seth Gabel, with whom she has two children."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Dakota_Fanning",
+            "nome": "Dakota Fanning",
+            "resumo": "Hannah Dakota Fanning (born February 23, 1994) is an American actress. She rose to prominence at the age of seven for her performance as Lucy Dawson in the drama film I Am Sam (2001), for which she received a Screen Actors Guild Award nomination at the age of eight, making her the youngest nominee in SAG history. Fanning played major roles as a child actress in the films Uptown Girls (2003), The Cat in the Hat (2003), Man on Fire (2004), War of the Worlds (2005), Dreamer (2005), and Charlotte's Web (2006), and the eponymous character in Coraline (2009). Fanning followed with more mature roles, playing Lewellen in Hounddog (2007), Lily in The Secret Life of Bees (2008), Cherie Currie in The Runaways (2010) and Jane in The Twilight Saga (2009\u20132012). Throughout the 2010s, she continued appearing in independent productions such as the dramas Now Is Good (2012) and Night Moves (2013), the comedy-drama Very Good Girls (2013), and the biographical film Effie Gray (2014). In 2018, she appeared in the heist comedy Ocean's 8 and had a starring role in the period drama series The Alienist. She has since portrayed Manson girl Squeaky Fromme in the Quentin Tarantino film Once Upon a Time in Hollywood (2019) and First Daughter Susan Ford in the Showtime biographical drama series The First Lady (2022)."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Nikki_Reed",
+            "nome": "Nikki Reed",
+            "resumo": "Nicole Houston Reed (born May 17, 1988) is an American actress known for her portrayal of vampire Rosalie Hale in The Twilight Saga (2008\u20132012). She became known in 2003, after the release of the film Thirteen, directed by Catherine Hardwicke, for which she was credited with Hardwicke as a co-writer of the screenplay, and in which she played a lead role. The film earned Reed an Independent Spirit Award for Best Debut Performance, as well as several nominations."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Jackson_Rathbone",
+            "nome": "Jackson Rathbone",
+            "resumo": "Monroe Jackson Rathbone V (born December 14, 1984) is an American actor, singer, and musician best known for his role as Jasper Hale in The Twilight Saga film series. From 2008 to 2012, he was the vocalist and occasional guitarist, bassist, drummer, and keyboardist of the funk rock band 100 Monkeys."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Taylor_Lautner",
+            "nome": "Taylor Lautner",
+            "resumo": "Taylor Daniel Lautner (/\u02c8la\u028atn\u0259r/; born February 11, 1992) is an American actor. He is best known for playing shapeshifter Jacob Black in The Twilight Saga film series. Lautner began his acting career playing bit parts in comedy series such as The Bernie Mac Show (2003) and My Wife and Kids (2004), before having voice roles in television series like What's New, Scooby-Doo? (2005) and Danny Phantom (2005). In 2005, he appeared in the film Cheaper by the Dozen 2 and starred in The Adventures of Sharkboy and Lavagirl in 3-D. He also starred in the 2011 action film Abduction. From 2014 to 2018, Lautner starred in the BBC sitcom Cuckoo as the son of the titular character. In 2016, he played a leading role, Dr. Cassidy Cascade, in the second season of FOX black comedy series Scream Queens. The late 2000s saw Lautner become a teen idol and sex symbol, after extensively changing his physique to keep the role of Jacob Black in further Twilight installments, and generating media attention for his looks. In 2010, he was ranked second on Glamour's \"The 50 Sexiest Men of 2010\" list, and fourth on People's \"Most Amazing Bodies\" list. Also in the same year, Lautner was named the highest-paid teenage actor in Hollywood."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Ashley_Greene",
+            "nome": "Ashley Greene",
+            "resumo": "Ashley Michele Greene Khoury (born February 21, 1987) is an American actress. She is known for playing Alice Cullen in the film adaptations of Stephenie Meyer's Twilight novels."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Kellan_Lutz",
+            "nome": "Kellan Lutz",
+            "resumo": "Kellan Christopher Lutz (born March 15, 1985) is an American actor and model. He made his film debut in Stick It (2006), and is best known for playing Emmett Cullen in The Twilight Saga film series (2008\u20132012). He has since played Poseidon in the 2011 film Immortals, voiced the title character in the 2013 animated film Tarzan, played John Smilee in The Expendables 3 (2014), and Hercules in The Legend of Hercules (2014). He co-starred in the CBS thriller series FBI: Most Wanted (2020\u20132021)."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Kristen_Stewart",
+            "nome": "Kristen Stewart",
+            "resumo": "Kristen Jaymes Stewart (born April 9, 1990) is an American actress. The world's highest-paid actress in 2012, she has received various accolades, including a British Academy Film Award and a C\u00e9sar Award, in addition to nominations for an Academy Award and a Golden Globe Award. Born and raised in Los Angeles to parents who both worked in the entertainment industry, Stewart first gained notice at age 12 for her role as the daughter of Jodie Foster's character in David Fincher's thriller Panic Room (2002), which earned her a Young Artist Award nomination. She subsequently starred in Speak (2004), Catch That Kid (2004), Zathura: A Space Adventure (2005), and Into the Wild (2007). She went on to achieve global stardom for her role as Bella Swan in The Twilight Saga film series (2008\u20132012), which ranks among the highest-grossing film franchises; for the role, she was awarded the BAFTA Rising Star Award in 2010. After starring in the fantasy film Snow White and the Huntsman (2012), Stewart eschewed roles in big-budget films in favor of independent productions in the years following. She took on roles in the dramas Camp X-Ray (2014) and Still Alice (2014), and the science fiction romance Equals (2016). In 2015, she was acclaimed for her performance in Olivier Assayas' drama film Clouds of Sils Maria, which won her the C\u00e9sar Award for Best Supporting Actress. Stewart reunited with Assayas the following year in the supernatural thriller Personal Shopper (2016) and made her directorial debut with the short film Come Swim (2017). She returned to mainstream Hollywood with leading roles in the action film Charlie's Angels (2019) and the romantic comedy film Happiest Season (2020). Stewart's portrayal of Diana, Princess of Wales in Pablo Larra\u00edn's biographical drama Spencer (2021) earned her widespread critical acclaim and a nomination for the Academy Award for Best Actress."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Michael_Sheen",
+            "nome": "Michael Sheen",
+            "resumo": "Michael Christopher Sheen (born 5 February 1969) is a Welsh actor, television producer and political activist. After training at London's Royal Academy of Dramatic Art (RADA), he worked mainly in theatre throughout the 1990s with stage roles in Romeo and Juliet (1992), Don't Fool with Love (1993), Peer Gynt (1994), The Seagull (1995), The Homecoming (1997), and Henry V (1997). His performances in Amadeus at the Old Vic and Look Back in Anger at the National Theatre were nominated for Olivier Awards in 1998 and 1999, respectively. In 2003, he was nominated for a third Olivier Award for his performance in Caligula at the Donmar Warehouse. Sheen has become better known as a screen actor since the 2000s, in particular through his roles in various biographical films. For writer Peter Morgan, he starred in a trilogy of films as UK prime minister Tony Blair\u2014the television film The Deal in 2003, The Queen (2006), and The Special Relationship (2010)\u2014earning him nominations for both a BAFTA Award and an Emmy. He was also nominated for a BAFTA as the troubled comic actor Kenneth Williams in BBC Four's 2006 Fantabulosa!, and was nominated for a fourth Olivier Award in 2006 for portraying the broadcaster David Frost in Frost/Nixon, a role he revisited in the 2008 film adaptation of the play. He starred as the controversial football manager Brian Clough in The Damned United (2009). Since 2009, Sheen had a wider variety of roles. In 2009, he appeared in two fantasy films, Underworld: Rise of the Lycans and The Twilight Saga: New Moon, and in 2010, he made a four-episode guest appearance in the NBC comedy 30 Rock. He appeared in the science-fiction film Tron: Legacy (2010) and Woody Allen's romantic comedy Midnight in Paris (2011). He directed and starred in National Theatre Wales's The Passion. From late 2011 until early 2012, he played the title role in Hamlet at the Young Vic. He played a lead role in The Twilight Saga: Breaking Dawn Part 2 in 2012. In 2013, he received a Golden Globe nomination for his role in Showtime's television drama Masters of Sex. Sheen played an incarcerated serial killer surgeon in Fox's 2019 drama Prodigal Son (2019), Aziraphale in the 2019 BBC/Amazon Studios miniseries Good Omens, and appeared as Chris Tarrant in Quiz. He played himself in the quarantine comedy show Staged with Good Omens co-star David Tennant throughout the COVID-19 lockdown. Sheen is politically engaged, and in 2017 he returned his OBE after conducting research on Wales's relationship with England."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Rachelle_Lefevre",
+            "nome": "Rachelle Lefevre",
+            "resumo": "Rachelle Marie Lef\u00e8vre (/l\u0259\u02c8f\u025bv/, French: [\u0281a\u0283\u025bl ma\u0281i l\u0259f\u025bv\u0281]; born February 1, 1979) is a Canadian actress. She has starred in the television series Big Wolf on Campus and had recurring roles in What About Brian, Boston Legal, and Swingtown. She played the vampire Victoria in the first two films of the Twilight saga. In 2011, she starred in the ABC medical drama Off the Map, followed by the CBS series A Gifted Man (2011\u20132012) and Under the Dome (2013\u20132015)."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Robert_Pattinson",
+            "nome": "Robert Pattinson",
+            "resumo": "Robert Douglas Thomas Pattinson (born 13 May 1986) is an English actor. Known for starring in both big-budget and independent films, Pattinson has ranked among the world's highest-paid actors. In 2010, Time magazine named him one of the 100 most influential people in the world, and he was featured in the Forbes Celebrity 100 list. After starting to act in a London theatre club at age 15, Pattinson began his film career by playing Cedric Diggory in the fantasy film Harry Potter and the Goblet of Fire (2005). He gained worldwide recognition for portraying Edward Cullen in The Twilight Saga film series (2008\u20132012), which grossed over $3.3 billion worldwide. After starring in the romantic dramas Remember Me (2010) and Water for Elephants (2011), Pattinson began working in independent films from auteur directors. He received praise for his starring roles in David Cronenberg's thriller Cosmopolis (2012), James Gray's adventure drama The Lost City of Z (2016), the Safdie Brothers' crime drama Good Time (2017), Claire Denis' science-fiction drama High Life (2018), and Robert Eggers' psychological horror film The Lighthouse (2019). He returned to mainstream films with a leading role in Christopher Nolan's spy film Tenet (2020), and starred as Batman in Matt Reeves' superhero film The Batman (2022). Aside from acting, Pattinson plays music and has sung on several soundtracks for film. He supports several charities, including the GO Campaign, and has been the face of Dior Homme fragrance since 2013."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Billy_Burke_(actor)",
+            "nome": "Billy Burke (actor)",
+            "resumo": "William Albert Burke (born November 25, 1966) is an American actor. He is known for his role as Charlie Swan in Twilight and its sequels. In 2011, he played Cesaire in Red Riding Hood. In 2012, he was cast as one of the lead characters, Miles Matheson, in the NBC science-fiction series Revolution. From 2015 to 2017, he starred in the CBS series Zoo. He has also appeared in the supernatural horror film Lights Out (2016) and the thriller Breaking In (2018)."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Booboo_Stewart",
+            "nome": "Booboo Stewart",
+            "resumo": "Nils Allen \"Booboo\" Stewart Jr. (born January 21, 1994) is an American actor. He is known for playing Seth Clearwater in The Twilight Saga, Warpath in X-Men: Days of Future Past, Jay in the Disney television film franchise Descendants and Willie in Julie and the Phantoms."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Peter_Facinelli",
+            "nome": "Peter Facinelli",
+            "resumo": "Peter Facinelli (born November 26, 1973) is an American actor and film and television producer. He starred as Donovan \"Van\" Ray on the Fox series Fastlane from 2002 to 2003. He played Dr. Carlisle Cullen in the film adaptations of the Twilight novel series, and is also known for his role as Mike Dexter in the 1998 film Can't Hardly Wait. Facinelli was a regular on the Showtime comedy-drama series Nurse Jackie, portraying the role of Dr. Fitch \"Coop\" Cooper. He portrayed Maxwell Lord on the first season of the TV series Supergirl."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Christopher_Heyerdahl",
+            "nome": "Christopher Heyerdahl",
+            "resumo": "Christopher Heyerdahl (born September 18, 1963) is a Canadian actor who portrayed Alastair in Supernatural, the Wraith Todd in Stargate Atlantis, Sam in Van Helsing, \"Swede\" in Hell on Wheels, and Marcus in The Twilight Saga."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Elizabeth_Reaser",
+            "nome": "Elizabeth Reaser",
+            "resumo": "Elizabeth Ann Reaser (born July 2, 1975) is an American film, television, and stage actress. Her work includes the films Stay, The Family Stone, Sweet Land, Against the Current, The Twilight Saga, Young Adult, and Ouija: Origin of Evil, and the TV series Saved, Grey's Anatomy, The Ex-List, The Good Wife, True Detective, The Handmaid's Tale, and The Haunting of Hill House."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Anna_Kendrick",
+            "nome": "Anna Kendrick",
+            "resumo": "Anna Cooke Kendrick (born August 9, 1985) is an American actress. She has received various accolades, including a Satellite Award, five Teen Choice Awards, three MTV Movie Awards, and nominations for an Academy Award, a Primetime Emmy Award and a Tony Award; making her one of the youngest people to be nominated for the \"Triple Crown of Acting\" and the youngest person to do so without winning. Kendrick began her career performing in theater productions at a young age. Her first starring role was in the 1998 Broadway musical High Society, for which she earned a nomination for the Tony Award for Best Featured Actress in a Musical. She made her film debut in the musical comedy Camp (2003), and rose to prominence for her role in The Twilight Saga (2008\u20132012). She achieved further recognition for the comedy-drama film Up in the Air (2009), which earned her a nomination for the Academy Award for Best Supporting Actress, and for her starring role in the Pitch Perfect film series (2012\u201317). Kendrick also had prominent roles in films such as the action comedy Scott Pilgrim vs. the World (2010), the comedy drama 50/50 (2011), the crime drama End of Watch (2012), the musical fantasy Into the Woods (2014), the drama Cake (2014), the comedy Mike and Dave Need Wedding Dates (2016), the animated comedy Trolls (2016), the comic thriller A Simple Favor (2018), the fantasy comedy Noelle (2019), and the animated sequel Trolls World Tour (2020). She also sang on various soundtracks for her films, as well as at events like the 2013 Kennedy Center Honors and the 2015 Academy Awards, and published a memoir, Scrappy Little Nobody, in 2016."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Mackenzie_Foy",
+            "nome": "Mackenzie Foy",
+            "resumo": "Mackenzie Christine Foy (born November 10, 2000) is an American actress and model. She is known for portraying Renesmee Cullen in the 2012 film The Twilight Saga: Breaking Dawn \u2013 Part 2, which earned her a Young Artist Award nomination as Best Supporting Young Actress in a Feature Film. She portrayed young Murphy in the 2014 space epic Interstellar, for which she received a Saturn Award for Best Performance by a Younger Actor among other awards nominations. She starred as Clara in Disney's 2018 film The Nutcracker and the Four Realms."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Bronson_Pelletier",
+            "nome": "Bronson Pelletier",
+            "resumo": "Bronson Pelletier (born December 31, 1986) is a Canadian actor. He is perhaps best known for his roles as Jack Sinclair in renegadepress.com (2004\u20132008) and as Jared Cameron in The Twilight Saga film series."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Bryce_Dallas_Howard",
+            "nome": "Bryce Dallas Howard",
+            "resumo": "Bryce Dallas Howard (born March 2, 1981) is an American actress and director. Howard was born in Los Angeles and attended New York University's Tisch School of the Arts, initially leaving in 2002 to take roles on Broadway but officially graduating in 2020. While portraying Rosalind in a 2003 production of As You Like It, Howard caught the attention of director M. Night Shyamalan, who cast her as the blind daughter of a local chief in the psychological thriller The Village (2004). She later starred in the leading role of a naiad who escapes from a fantasy world in Shyamalan's fantasy thriller Lady in the Water (2006). Howard's performance in Kenneth Branagh's As You Like It (2006) earned her a Golden Globe Award nomination and she subsequently appeared as Gwen Stacy in Sam Raimi's superhero film Spider-Man 3 (2007). She went on to appear as Kate Connor in the action film Terminator Salvation (2009) and as Victoria in the fantasy film The Twilight Saga: Eclipse (2010), both of which were financially successful but garnered mixed reviews from critics. Howard's roles as a \"fair-weather\" girlfriend in the comedy-drama 50/50 (2011) and as a racist socialite in the period-drama The Help (2011) brought her praise. Recognition of Howard widened when she co-starred as Claire Dearing in the adventure film Jurassic World (2015), and its sequels Jurassic World: Fallen Kingdom (2018) and Jurassic World Dominion (2022), the first two of which rank as her most-commercially-successful films. She also portrayed a forest ranger in the adventure film Pete's Dragon (2016) and Sheila Dwight, Elton John's mother, in the biopic Rocketman (2019), voicing Yaddle in Tales of the Jedi (2022). Howard's work as a director includes the documentary Dads (2019), and episodes of the Disney+ space fantasy series The Mandalorian (2019\u2013) and The Book of Boba Fett (2022). Her father is actor and filmmaker Ron Howard and she is married to actor Seth Gabel, with whom she has two children."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Dakota_Fanning",
+            "nome": "Dakota Fanning",
+            "resumo": "Hannah Dakota Fanning (born February 23, 1994) is an American actress. She rose to prominence at the age of seven for her performance as Lucy Dawson in the drama film I Am Sam (2001), for which she received a Screen Actors Guild Award nomination at the age of eight, making her the youngest nominee in SAG history. Fanning played major roles as a child actress in the films Uptown Girls (2003), The Cat in the Hat (2003), Man on Fire (2004), War of the Worlds (2005), Dreamer (2005), and Charlotte's Web (2006), and the eponymous character in Coraline (2009). Fanning followed with more mature roles, playing Lewellen in Hounddog (2007), Lily in The Secret Life of Bees (2008), Cherie Currie in The Runaways (2010) and Jane in The Twilight Saga (2009\u20132012). Throughout the 2010s, she continued appearing in independent productions such as the dramas Now Is Good (2012) and Night Moves (2013), the comedy-drama Very Good Girls (2013), and the biographical film Effie Gray (2014). In 2018, she appeared in the heist comedy Ocean's 8 and had a starring role in the period drama series The Alienist. She has since portrayed Manson girl Squeaky Fromme in the Quentin Tarantino film Once Upon a Time in Hollywood (2019) and First Daughter Susan Ford in the Showtime biographical drama series The First Lady (2022)."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Nikki_Reed",
+            "nome": "Nikki Reed",
+            "resumo": "Nicole Houston Reed (born May 17, 1988) is an American actress known for her portrayal of vampire Rosalie Hale in The Twilight Saga (2008\u20132012). She became known in 2003, after the release of the film Thirteen, directed by Catherine Hardwicke, for which she was credited with Hardwicke as a co-writer of the screenplay, and in which she played a lead role. The film earned Reed an Independent Spirit Award for Best Debut Performance, as well as several nominations."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Jackson_Rathbone",
+            "nome": "Jackson Rathbone",
+            "resumo": "Monroe Jackson Rathbone V (born December 14, 1984) is an American actor, singer, and musician best known for his role as Jasper Hale in The Twilight Saga film series. From 2008 to 2012, he was the vocalist and occasional guitarist, bassist, drummer, and keyboardist of the funk rock band 100 Monkeys."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Taylor_Lautner",
+            "nome": "Taylor Lautner",
+            "resumo": "Taylor Daniel Lautner (/\u02c8la\u028atn\u0259r/; born February 11, 1992) is an American actor. He is best known for playing shapeshifter Jacob Black in The Twilight Saga film series. Lautner began his acting career playing bit parts in comedy series such as The Bernie Mac Show (2003) and My Wife and Kids (2004), before having voice roles in television series like What's New, Scooby-Doo? (2005) and Danny Phantom (2005). In 2005, he appeared in the film Cheaper by the Dozen 2 and starred in The Adventures of Sharkboy and Lavagirl in 3-D. He also starred in the 2011 action film Abduction. From 2014 to 2018, Lautner starred in the BBC sitcom Cuckoo as the son of the titular character. In 2016, he played a leading role, Dr. Cassidy Cascade, in the second season of FOX black comedy series Scream Queens. The late 2000s saw Lautner become a teen idol and sex symbol, after extensively changing his physique to keep the role of Jacob Black in further Twilight installments, and generating media attention for his looks. In 2010, he was ranked second on Glamour's \"The 50 Sexiest Men of 2010\" list, and fourth on People's \"Most Amazing Bodies\" list. Also in the same year, Lautner was named the highest-paid teenage actor in Hollywood."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Ashley_Greene",
+            "nome": "Ashley Greene",
+            "resumo": "Ashley Michele Greene Khoury (born February 21, 1987) is an American actress. She is known for playing Alice Cullen in the film adaptations of Stephenie Meyer's Twilight novels."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Kellan_Lutz",
+            "nome": "Kellan Lutz",
+            "resumo": "Kellan Christopher Lutz (born March 15, 1985) is an American actor and model. He made his film debut in Stick It (2006), and is best known for playing Emmett Cullen in The Twilight Saga film series (2008\u20132012). He has since played Poseidon in the 2011 film Immortals, voiced the title character in the 2013 animated film Tarzan, played John Smilee in The Expendables 3 (2014), and Hercules in The Legend of Hercules (2014). He co-starred in the CBS thriller series FBI: Most Wanted (2020\u20132021)."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Kristen_Stewart",
+            "nome": "Kristen Stewart",
+            "resumo": "Kristen Jaymes Stewart (born April 9, 1990) is an American actress. The world's highest-paid actress in 2012, she has received various accolades, including a British Academy Film Award and a C\u00e9sar Award, in addition to nominations for an Academy Award and a Golden Globe Award. Born and raised in Los Angeles to parents who both worked in the entertainment industry, Stewart first gained notice at age 12 for her role as the daughter of Jodie Foster's character in David Fincher's thriller Panic Room (2002), which earned her a Young Artist Award nomination. She subsequently starred in Speak (2004), Catch That Kid (2004), Zathura: A Space Adventure (2005), and Into the Wild (2007). She went on to achieve global stardom for her role as Bella Swan in The Twilight Saga film series (2008\u20132012), which ranks among the highest-grossing film franchises; for the role, she was awarded the BAFTA Rising Star Award in 2010. After starring in the fantasy film Snow White and the Huntsman (2012), Stewart eschewed roles in big-budget films in favor of independent productions in the years following. She took on roles in the dramas Camp X-Ray (2014) and Still Alice (2014), and the science fiction romance Equals (2016). In 2015, she was acclaimed for her performance in Olivier Assayas' drama film Clouds of Sils Maria, which won her the C\u00e9sar Award for Best Supporting Actress. Stewart reunited with Assayas the following year in the supernatural thriller Personal Shopper (2016) and made her directorial debut with the short film Come Swim (2017). She returned to mainstream Hollywood with leading roles in the action film Charlie's Angels (2019) and the romantic comedy film Happiest Season (2020). Stewart's portrayal of Diana, Princess of Wales in Pablo Larra\u00edn's biographical drama Spencer (2021) earned her widespread critical acclaim and a nomination for the Academy Award for Best Actress."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Michael_Sheen",
+            "nome": "Michael Sheen",
+            "resumo": "Michael Christopher Sheen (born 5 February 1969) is a Welsh actor, television producer and political activist. After training at London's Royal Academy of Dramatic Art (RADA), he worked mainly in theatre throughout the 1990s with stage roles in Romeo and Juliet (1992), Don't Fool with Love (1993), Peer Gynt (1994), The Seagull (1995), The Homecoming (1997), and Henry V (1997). His performances in Amadeus at the Old Vic and Look Back in Anger at the National Theatre were nominated for Olivier Awards in 1998 and 1999, respectively. In 2003, he was nominated for a third Olivier Award for his performance in Caligula at the Donmar Warehouse. Sheen has become better known as a screen actor since the 2000s, in particular through his roles in various biographical films. For writer Peter Morgan, he starred in a trilogy of films as UK prime minister Tony Blair\u2014the television film The Deal in 2003, The Queen (2006), and The Special Relationship (2010)\u2014earning him nominations for both a BAFTA Award and an Emmy. He was also nominated for a BAFTA as the troubled comic actor Kenneth Williams in BBC Four's 2006 Fantabulosa!, and was nominated for a fourth Olivier Award in 2006 for portraying the broadcaster David Frost in Frost/Nixon, a role he revisited in the 2008 film adaptation of the play. He starred as the controversial football manager Brian Clough in The Damned United (2009). Since 2009, Sheen had a wider variety of roles. In 2009, he appeared in two fantasy films, Underworld: Rise of the Lycans and The Twilight Saga: New Moon, and in 2010, he made a four-episode guest appearance in the NBC comedy 30 Rock. He appeared in the science-fiction film Tron: Legacy (2010) and Woody Allen's romantic comedy Midnight in Paris (2011). He directed and starred in National Theatre Wales's The Passion. From late 2011 until early 2012, he played the title role in Hamlet at the Young Vic. He played a lead role in The Twilight Saga: Breaking Dawn Part 2 in 2012. In 2013, he received a Golden Globe nomination for his role in Showtime's television drama Masters of Sex. Sheen played an incarcerated serial killer surgeon in Fox's 2019 drama Prodigal Son (2019), Aziraphale in the 2019 BBC/Amazon Studios miniseries Good Omens, and appeared as Chris Tarrant in Quiz. He played himself in the quarantine comedy show Staged with Good Omens co-star David Tennant throughout the COVID-19 lockdown. Sheen is politically engaged, and in 2017 he returned his OBE after conducting research on Wales's relationship with England."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Rachelle_Lefevre",
+            "nome": "Rachelle Lefevre",
+            "resumo": "Rachelle Marie Lef\u00e8vre (/l\u0259\u02c8f\u025bv/, French: [\u0281a\u0283\u025bl ma\u0281i l\u0259f\u025bv\u0281]; born February 1, 1979) is a Canadian actress. She has starred in the television series Big Wolf on Campus and had recurring roles in What About Brian, Boston Legal, and Swingtown. She played the vampire Victoria in the first two films of the Twilight saga. In 2011, she starred in the ABC medical drama Off the Map, followed by the CBS series A Gifted Man (2011\u20132012) and Under the Dome (2013\u20132015)."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Rockline_Venkatesh",
+            "nome": "Rockline Venkatesh",
+            "resumo": "Thirupathi Narasimhalunaidu Venkatesh (born 23 March 1963), better known by his stage name Rockline Venkatesh, is an Indian actor and producer known for his works in Kannada, and Hindi cinemas. He is the founder and owner of the production and distribution company, Rockline Entertainments which has directed over five films as of 2012. In 2015 he co-produced Bajrangi Bhaijaan which earned the National Film Award for Best Popular Film Providing Wholesome Entertainment at the 63rd National Film Awards."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/P._J._Sarma",
+            "nome": "P. J. Sarma",
+            "resumo": "Pudipeddi Jogeswara Sarma was an Indian film dubbing artist, turned actor and writer, known for his works predominantly in Telugu cinema. He has worked for over 500 films as an actor and dubbing artist. He is the father of actors Sai Kumar, P. Ravi Shankar and Ayyappa P. Sarma. He died on 14 December 2014 of a heart attack at the age of 81."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Sai_Kumar_(Kannada_actor)",
+            "nome": "Sai Kumar (Kannada actor)"
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Franco_Nero",
+            "nome": "Franco Nero",
+            "resumo": "Francesco Clemente Giuseppe Sparanero (born 23 November 1941), known professionally as Franco Nero, is an Italian actor, producer, and director. His breakthrough role was as the title character in the Spaghetti Western film Django (1966), which made him a pop culture icon and launched an international career that includes over 200 leading and supporting roles in a wide variety of films and television programmes. During the 1960s and 1970s, Nero was actively involved in many popular Italian \"genre trends\", including poliziotteschi, gialli, and Spaghetti Westerns. His best-known films include The Bible: In the Beginning... (1966), Camelot (1967), The Day of the Owl (1968), The Mercenary (1968), Battle of Neretva (1969), Tristana (1970), Compa\u00f1eros (1970), Confessions of a Police Captain (1971), The Fifth Cord (1971), High Crime (1973), Street Law (1974), Keoma (1976), Hitch-Hike (1977), Force 10 from Navarone (1978), Enter the Ninja (1981), Die Hard 2 (1990), Letters to Juliet (2010), Cars 2 (2011), and John Wick: Chapter 2 (2017). Nero has had a long relationship with Vanessa Redgrave, which began during the filming of Camelot. They were married in 2006, and are the parents of the actor Carlo Gabriel Nero."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Liv_Ullmann",
+            "nome": "Liv Ullmann",
+            "resumo": "Liv Johanne Ullmann (born 16 December 1938) is a Norwegian actress and film director. Recognised as one of the greatest European actresses of all time, Ullmann is known as the muse and frequent partner of filmmaker Ingmar Bergman. She acted in many of his films, including Persona (1966), Cries and Whispers (1972), Scenes from a Marriage (1973), The Passion of Anna (1969), and Autumn Sonata (1978). Ullmann won a Golden Globe Award for Best Actress \u2013 Motion Picture Drama in 1972 for the film The Emigrants (1971) and has been nominated for another four. In 2000, she was nominated for the Palme d'Or for her second directorial feature film, Faithless. She has received two BAFTA Award nominations, and two nominations for the Academy Award for Best Actress, for The Emigrants (1971) and Ingmar Bergman's Face to Face (1976). On March 25, 2022, Ullmann was presented with an Honorary Academy Award in recognition of her \"bravery and emotional transparency that has gifted audiences with deeply affecting screen portrayals\"."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Olivia_de_Havilland",
+            "nome": "Olivia de Havilland",
+            "resumo": "Dame Olivia Mary de Havilland DBE (/d\u0259 \u02c8h\u00e6v\u026al\u0259nd/; July 1, 1916 \u2013 July 26, 2020) was a British-American actress. The major works of her cinematic career spanned from 1935 to 1988. She appeared in 49 feature films and was one of the leading actresses of her time. At the time of her death in 2020 at age 104, she was the oldest living and earliest surviving Academy Award winner and was widely considered as being the last surviving major star from the Golden Age of Hollywood cinema. Her younger sister was Oscar-winning actress Joan Fontaine. De Havilland first came to prominence with Errol Flynn as a screen couple in adventure films such as Captain Blood (1935) and The Adventures of Robin Hood (1938). One of her best-known roles is that of Melanie Hamilton in Gone with the Wind (1939), for which she received her first of five Oscar nominations, the only one for Best Supporting Actress. De Havilland departed from ing\u00e9nue roles in the 1940s and later distinguished herself for performances in Hold Back the Dawn (1941), To Each His Own (1946), The Snake Pit (1948), and The Heiress (1949), receiving nominations for Best Actress for each and winning for To Each His Own and The Heiress. She was also successful in work on stage and television. De Havilland lived in Paris from the 1950s and received honors such as the National Medal of the Arts, the L\u00e9gion d'honneur, and the appointment to Dame Commander of the Order of the British Empire at the age of 101. In addition to her film career, de Havilland continued her work in the theatre, appearing three times on Broadway, in Romeo and Juliet (1951), Candida (1952), and A Gift of Time (1962). She also worked in television, appearing in the successful miniseries Roots: The Next Generations (1979) and Anastasia: The Mystery of Anna (1986), for which she received a Primetime Emmy Award nomination and won the Golden Globe Award for Best Supporting Actress in a Television Movie or Series. During her film career, de Havilland also collected two New York Film Critics Circle Awards, the National Board of Review Award for Best Actress, and the Venice Film Festival Volpi Cup. For her contributions to the motion picture industry, she received a star on the Hollywood Walk of Fame. She and her sister remain the only siblings to have won major acting Academy Awards."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Vivek_(actor)",
+            "nome": "Vivek (actor)",
+            "resumo": "Vivekanandan (19 November 1961 \u2013 17 April 2021), known professionally as Vivek, was an Indian actor, comedian, television personality, playback singer and social activist who worked in the Tamil film industry. Introduced in films by director K. Balachander, he won three Filmfare Awards for Best Comedian in Tamil for his performances in the films, Run (2002), Saamy (2003) and Perazhagan (2004) and five Tamil Nadu State Film Awards for Best Comedian for the films, Unnaruge Naan Irundhal (1999), Run (2002), Parthiban Kanavu (2003), Anniyan (2005) and Sivaji (2007). His comedy style consisted of one-liners and word plays that featured social and political satire, which led to critics comparing him to N. S. Krishnan and earning him the nickname Chinna Kalaivanar. He died on 17 April 2021 due to cardiac arrest at the age of 59. In 2009, the Government of India awarded Vivek the Padma Shri award for his contribution to the arts. Sathyabama University conferred Vivek with an honorary doctorate for his contribution to society through cinema. As a television personality, Vivek hosted a number of events and interviewed media personalities, notably A. P. J. Abdul Kalam. Inspired by Kalam's environmentalism, Vivek founded the Green Kalam initiative in 2010 with the mission of planting one billion trees across Tamil Nadu."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Mukesh_(actor)",
+            "nome": "Mukesh (actor)",
+            "resumo": "Mukesh Madhavan (born 5 March 1957), known mononymously as Mukesh, is an Indian actor, film producer, television presenter, and politician who predominantly works in Malayalam cinema besides also having sporadically appeared in Tamil-language films. In a film career spanning four decades, he has acted in over 260 Malayalam films. His 1996 film Kaanaakkinaavu premiered at the IFFI and won the Nargis Dutt Award for Best Feature Film on National Integration. He co-produced Kadha Parayumbol (2007), which won the Kerala State Film Award for Best Film with Popular Appeal and Aesthetic Value. He also produced the 2012 film Thattathin Marayathu, which is considered one of the defining films of the Malayalam New Wave. He made his onscreen debut in the 1982 film Balloon in a minor role. He continued to do minor roles and rose to secondary lead roles in the following years. He rose to stardom after playing the lead in the comedy thriller film Ramji Rao Speaking (1989). By the early-1990s, he established himself as a bankable leading actor after starring in several successful comedy films in the early 1990's directed by Siddique-Lal. He continued to appear in successful comedy films throughout the 1990's, establishing himself as one of the major stars of the Malayalam film industry. Towards the 2000's he switched back to supporting roles. He was the chairman of the Kerala Sangeetha Nataka Academy. Mukesh is the current MLA representing the Kollam constituency of Kerala state."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Simran_(actress)",
+            "nome": "Simran (actress)",
+            "resumo": "Rishibala Naval (born 4 April 1976), known professionally as Simran, is an Indian actress, Producer, Dancer and TV personality who prominently works in Tamil films along with a few Telugu, Hindi, Malayalam and Kannada films."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Nassar_(actor)",
+            "nome": "Nassar (actor)",
+            "resumo": "M. Nassar (born 5 March 1958) is an Indian actor, director, producer, dubbing artist, singer and politician who mainly works in the Tamil and Telugu film industries he has also worked in few Malayalam, English and hindi films. He is the incumbent president of the Nadigar Sangam."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Sundar_C",
+            "nome": "Sundar C"
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Bharath_(actor)",
+            "nome": "Bharath (actor)",
+            "resumo": "Bharath Srinivasan (born 21 July 1983), known professionally as Bharath, is an Indian actor, who works predominantly in the Tamil film industry, along with a few films in Malayalam, Hindi and Telugu. He made his acting debut in 2003 with S. Shankar's Boys. He then appeared in the Jayaraj-directed Malayalam vigilante film 4 the People (2004) which was a musical hit and a blockbuster in Kerala. Then, he played the negative character in Chellamae (2004). He received his breakthrough as the lead in the Tamil film Kaadhal (2004). Some of his other notable films include Pattiyal (2006), Em Magan (2006), Veyil (2006), Pazhani (2008), Kanden Kadhalai (2009), Vaanam (2011), Ainthu Ainthu Ainthu (2013) and Kaalidas (2019)."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Erica_Fernandes",
+            "nome": "Erica Fernandes",
+            "resumo": "Erica Jennifer Fernandes is an Indian actress and model, who works in Indian television and films. She got her breakthrough with her television debut, portraying Dr. Sonakshi Bose in Kuch Rang Pyar Ke Aise Bhi. Erica has also acted in many films in South including Ninnindale and Galipatam. Erica is also known for her portrayal of Prerna Sharma in Kasautii Zindagii Kay."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Chandini_Sreedharan",
+            "nome": "Chandini Sreedharan",
+            "resumo": "Chandini Sreedharan is an Indian actress who appears mainly in Malayalam films, along with a few Tamil, Telugu and Kannada films. She made her acting debut with the 2013 Tamil film Ainthu Ainthu Ainthu. She's notable for her Malayalam films such as KL 10 Patthu (2015), Darvinte Parinamam (2016) and Comrade in America (2017)."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Meena_(actress)",
+            "nome": "Meena (actress)",
+            "resumo": "Meena Durairaj (born 16 September 1976), known professionally as Meena, is an Indian actress who predominantly works in the South Indian film industry as well as Hindi cinema. Meena has acted in Tamil, Telugu, Malayalam, Kannada, and Hindi films. In addition to acting, Meena is also a playback singer, TV judge, and occasional dubbing artist. She has received , including two Filmfare Awards South, three Tamil Nadu State Film Awards, two Nandi Award for Best Actress and Cinema Express Awards. In 1998, she was honoured with the Kalaimamani Award by Government of Tamil Nadu."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Ramesh_Aravind",
+            "nome": "Ramesh Aravind",
+            "resumo": "Ramesh Aravind is an Indian actor, director, screenwriter and television presenter who predominantly works in Kannada films and television. In a career of over 34 years, Aravind has been appeared in over 140 films in six languages, including Kannada, Tamil, Telugu, Malayalam and Hindi films. He has earned and been nominated for numerous awards during his career, including winning two Filmfare Awards for Best Actor and Karnataka State Awards for Best Actor and Best Story for his script in Hoomale, as well as Udaya TV and Suvarna TV Awards. He is also the brand ambassador of Cycle Agarbattis, Ramaraj, Silicon City School and Turbo Steel. He is the host of Weekend with Ramesh, which has had four successful seasons on Zee Kannada and also hosted Season 3 of Kannadada Kotiyadipathi, the Kannada version of Who Wants to Be a Millionaire. He was appointed by BBMP as the Awareness Ambassador for COVID-19. Ramesh Aravind is also the brand ambassador for the campaign to find the \"7 Wonders of Karnataka\". The campaign is by Suvarna TV & Kannada Prabha and is endorsed by Karnataka State Tourism Department. He is also the brand ambassador for Cyber Safe Karnataka started by Cyber Department of Karnataka He is also the Brand Ambassador for Sustainable Planning & Development Goals India which is colloboareted with United Nations. His movies - Anuraga Sangama, Karpoorada Gombe, Namoora Mandara Hoove, Amrutavarshini, America America, Ulta Palta, O Mallige, Mungarina Minchu, Tutta Mutta successfully completed a 100-day run, consecutively, that year. in 2022 he was given honorary doctorate degree by Rani Channamma University for his contribution to field of cinema In the year 2022, he was awarded the \"Dr. Shivarama Karanth Huttora Prashasti\" or the \"Dr. Shivarama Karanth Award\" This award is presented to him considering his services on a national level as an actor, director and resource person. His journey in filmland continues to this day in all aspects of filmmaking - as director of comedy film Rama Shama Bhama and as an actor in cult movies like Aptamitra, Pushpaka Vimana, Shivaji Surathkal and 100. He is presently acting in Shivaji Suratkal 2."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Malashri",
+            "nome": "Malashri",
+            "resumo": "Malashri (born 10 August 1973) is an Indian actress. She has predominantly worked in Kannada films and was the topmost heroine in the 1990s. She has also worked in Telugu and Tamil cinema. Malashri was popular for playing diverse roles in women-centric movies many of which were highly successful at the box-office. She was popularly called Kanasina Rani (\"Dream Girl\") in the media. Malashri made her debut as a heroine with the Kannada film Nanjundi Kalyana (1989). Her portrayal of a haughty, shrewish woman won her accolades and heralded her as a top actress of Kannada Cinema. She established herself as the topmost heroine in Kannada cinema with films like Gajapathi Garvabhanga (1989), Policena Hendthi (1990), Kitturina Huli (1990), Rani Maharani (1990), Hrudaya Haadithu (1991), for which she won the Filmfare Award for Best Actress, Ramachaari (1991), Belli Kalungura (1992), Solillada Saradara (1993) and Gadibidi Aliya (1995). In 2015 she won her first Karnataka State Film Award for Best Actress for her action-oriented role in Ganga.In 1992, 19 movies starring her were released. With that, she broke the 24-year-old record of highest releases in Kannada in lead role in a single year surpassing Rajkumar who had 16 releases in 1968."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Dwarakish",
+            "nome": "Dwarakish",
+            "resumo": "Bungle Shama Rao Dwarakanath (born 19 August 1942), better known as Dwarakish (/\u02c8dw\u0251\u02d0rk\u026a\u0283/ DWAR-kish), is an Indian actor, director and producer in the Kannada film industry. He was given the name Dwarakish by Kannada film maker C. V. Shivashankar."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Harish_Kumar_(actor)",
+            "nome": "Harish Kumar (actor)",
+            "resumo": "Harish Kumar (born 1 August 1975) is an Indian actor and film producer. He has played the lead in multiple films. He is known for his works in Telugu and Hindi movies. His notable movies include Prem Qaidi, Coolie No. 1, Tirangaa, Prema Khaidi, Kranti Kshetra, Ravan Raaj: A True Story and Daisy. He won two Nandi Awards."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Eva_Dahlbeck",
+            "nome": "Eva Dahlbeck",
+            "resumo": "Eva Elisabet Dahlbeck (8 March 1920 \u2013 8 February 2008) was a Swedish stage, film, and television actress. She received a Cannes Film Festival Award for Best Actress for her performance in the film Brink of Life (1958). Dahlbeck retired from acting in 1970 and became an author."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Karl-Arne_Holmsten",
+            "nome": "Karl-Arne Holmsten",
+            "resumo": "Karl-Arne Holmsten (14 August 1911 \u2013 22 February 1995) was a Swedish film actor. He appeared in more than 80 films between 1938 and 1968. He was born in Uppsala, Sweden and died in Liding\u00f6, Sweden."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Gunnel_Brostr\u00f6m",
+            "nome": "Gunnel Brostr\u00f6m",
+            "resumo": "Gunnel Brostr\u00f6m (1922\u20132012) was a Swedish stage, film and television actress. She also directed a number of television films from 1965 onwards. She was married to the journalist ."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Maya_Bulgakova",
+            "nome": "Maya Bulgakova",
+            "resumo": "Maya Grigoryevna Bulgakova (Russian: \u041c\u0430\u0301\u0439\u044f \u0413\u0440\u0438\u0433\u043e\u0301\u0440\u044c\u0435\u0432\u043d\u0430 \u0411\u0443\u043b\u0433\u0430\u0301\u043a\u043e\u0432\u0430) (19 May 1932 \u2013 7 October 1994) was a Soviet and Russian actress. She was one of the People's Artist of the RSFSR (1976)."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Anatoli_Romashin",
+            "nome": "Anatoli Romashin",
+            "resumo": "Anatoli Vladimirovich Romashin (Russian: \u0410\u043d\u0430\u0442\u043e\u0301\u043b\u0438\u0439 \u0412\u043b\u0430\u0434\u0438\u0301\u043c\u0438\u0440\u043e\u0432\u0438\u0447 \u0420\u043e\u043c\u0430\u0301\u0448\u0438\u043d; 1931\u20132000) was a Soviet and Russian film and theater actor, director. He won the USSR State Prize (1977) and was a People's Artist of the RSFSR (1982)."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Yekaterina_Vasilyeva",
+            "nome": "Yekaterina Vasilyeva",
+            "resumo": "Yekaterina Sergeyevna Vasilyeva (Russian: \u0415\u043a\u0430\u0442\u0435\u0440\u0438\u043d\u0430 \u0421\u0435\u0440\u0433\u0435\u0301\u0435\u0432\u043d\u0430 \u0412\u0430\u0441\u0438\u043b\u044c\u0435\u0432\u0430; born 15 August 1945 in Moscow) is a Soviet and Russian theater and film actress. She performed in more than ninety films since 1967. Vasilyeva was married to the late director Sergei Solovyov and playwright Mikhail Roshchin."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Yevgeny_Steblov",
+            "nome": "Yevgeny Steblov",
+            "resumo": "Yevgeny Yurievich Steblov (Russian: \u0415\u0432\u0433\u0435\u0301\u043d\u0438\u0439 \u042e\u0301\u0440\u044c\u0435\u0432\u0438\u0447 \u0421\u0442\u0435\u0431\u043b\u043e\u0301\u0432; born December 8, 1945, Moscow) is a Soviet and Russian film and theater actor, honored as a People's Artist of Russia in 1993. He serves as First Deputy Chairman of the Union of Theatre Workers of the Russian Federation."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Mikhail_Ulyanov",
+            "nome": "Mikhail Ulyanov",
+            "resumo": "Mikhail Alexandrovich Ulyanov (Russian: \u041c\u0438\u0445\u0430\u0438\u043b \u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u043e\u0432\u0438\u0447 \u0423\u043b\u044c\u044f\u043d\u043e\u0432; 20 November 1927 \u2013 26 March 2007) was a Soviet and Russian actor who was one of the most recognized persons of the post-World War II Soviet theatre and cinema. He was named a People's Artist of the USSR in 1969 and a Hero of Socialist Labour in 1986 and received a special prize from the Venice Film Festival in 1982."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Zinaida_Slavina"
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Paul_Newman",
+            "nome": "Paul Newman",
+            "resumo": "Paul Leonard Newman (January 26, 1925 \u2013 September 26, 2008) was an American actor, film director, race car driver, philanthropist, and entrepreneur. He was the recipient of numerous awards, including an Academy Award, a BAFTA Award, three Golden Globe Awards, a Screen Actors Guild Award, a Primetime Emmy Award, a Silver Bear, a Cannes Film Festival Award, and the Jean Hersholt Humanitarian Award. Born in Cleveland Heights, Ohio, a suburb of Cleveland, Newman showed an interest in theater as a child and at age 10 performed in a stage production of Saint George and the Dragon at the Cleveland Play House. He received his Bachelor of Arts degree in drama and economics from Kenyon College in 1949. After touring with several summer stock companies including the Belfry Players, Newman attended the Yale School of Drama for a year before studying at the Actors Studio under Lee Strasberg. His first starring Broadway role was in William Inge's Picnic, and he starred in smaller roles for a few more films before receiving widespread attention and acclaim for his performances in Somebody Up There Likes Me (1956) and Cat on a Hot Tin Roof (1958), the latter of which also starred Elizabeth Taylor. Newman's major film roles include The Hustler (1961), Hud (1963), Harper (1966), Cool Hand Luke (1967), Butch Cassidy and the Sundance Kid (1969), The Life and Times of Judge Roy Bean (1972), The Sting (1973), The Towering Inferno (1974), Fort Apache, The Bronx (1981), and voice role of Doc Hudson in the first installment of Disney-Pixar's Cars as his final acting non-documentary role, with his archival voice recordings being used again in Cars 3 (2017), nine years after his death. A ten-time Oscar nominee, Newman was awarded an Academy Award for Best Actor for The Color of Money (1986). Newman won several national championships as a driver in Sports Car Club of America road racing, and his race teams won several championships in open-wheel IndyCar racing. He was a co-founder of Newman's Own, a food company from which he donated all post-tax profits and royalties to charity. As of May 2021, these donations have totaled over US$570 million. In 1988, Newman founded the SeriousFun Children's Network, a global family of summer camps and programs for children with a serious illness which has served 1.3 million children and family members since its inception. In 2006, Newman also co-founded Safe Water Network with John Whitehead, former chairman of Goldman Sachs, and Josh Weston, former chairman of ADP, to improve access to safe water to underserved communities around the world. Newman was married twice and fathered six children. He was the husband of Oscar-winning actress Joanne Woodward."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Everett_Sloane",
+            "nome": "Everett Sloane",
+            "resumo": "Everett H. Sloane (October 1, 1909 \u2013 August 6, 1965) was an American character actor who worked in radio, theatre, films, and television."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Pier_Angeli",
+            "nome": "Pier Angeli",
+            "resumo": "Pier Angeli (19 June 1932 \u2013 10 September 1971), also credited under her real name, Anna Maria Pierangeli, was an Italian-born television and film actress who starred in American, British and European films throughout her career. Her American motion picture debut was in the starring role of the film Teresa (1951), for which she won a Golden Globe Award for Young Star of the Year - Actress. She also worked as a singer and model."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Jonathan_Togo",
+            "nome": "Jonathan Togo",
+            "resumo": "Jonathan Frederick Togo (born August 25, 1977) is an American actor, best known for his role in CSI: Miami as Ryan Wolfe."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Nick_Offerman",
+            "nome": "Nick Offerman",
+            "resumo": "Nicholas David Offerman (born June 26, 1970) is an American actor, writer, comedian, producer, and carpenter. He is best known for his role as Ron Swanson in the NBC sitcom Parks and Recreation, for which he received the Television Critics Association Award for Individual Achievement in Comedy and was twice nominated for the Critics' Choice Television Award for Best Supporting Actor in a Comedy Series. Offerman is also known for his role in The Founder, in which he portrays Richard McDonald, one of the brothers who developed the fast-food chain McDonald's. His first major television role following the end of Parks and Recreation was as Karl Weathers in the second season of the FX black comedy crime drama series Fargo, for which he received a nomination for the Critics' Choice Television Award for Best Supporting Actor in a Movie/Miniseries. Since 2018, Offerman has co-hosted the NBC reality competition series, Making It, with Amy Poehler; he and Poehler have received two nominations for the Primetime Emmy Award for Outstanding Host for a Reality or Competition Program. Offerman served as an executive producer for the film The House of Tomorrow, in which he also starred. He has provided voice-work for The Lego Movie franchise, Hotel Transylvania 2, Ice Age: Collision Course, and the Sing film franchise and played Agent Powers on Gravity Falls. In 2020, Offerman hosted Have A Good Trip: Adventures in Psychedelics on Netflix."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Jess_Weixler",
+            "nome": "Jess Weixler",
+            "resumo": "Jess Weixler (born 1981 or 1982) is an American actress. She played Dawn O'Keefe in the comedy-horror film Teeth and Jordan in the comedy The Big Bad Swim."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Jacqueline_Pierreux",
+            "nome": "Jacqueline Pierreux",
+            "resumo": "Jacqueline Pierreux (15 January 1923 \u2013 10 March 2005) was a French film and television actress. From the early 1970s onwards she also enjoyed success as a producer.She was the wife of screenwriter Pierre L\u00e9aud and the mother of prolific film actor Jean-Pierre L\u00e9aud who starred in Francois Truffaut's The 400 Blows and Day For Night."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Nadine_Alari",
+            "nome": "Nadine Alari",
+            "resumo": "Nadine Alari (born Bernadette Nicole Fr\u00e9d\u00e9rique Bovarie; 23 February 1927 \u2013 24 November 2016) was a French film and television actress."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Denise_Provence",
+            "nome": "Denise Provence",
+            "resumo": "Denise Provence (1921\u20132011) was a French stage, film and television actress."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Vera_Carmi",
+            "nome": "Vera Carmi",
+            "resumo": "Vera Carmi (23 November 1914 \u2013 6 September 1969) was an Italian film actress. She appeared in more than 50 films between 1940 and 1956. She was born in Turin, Italy and died in Rome, Italy."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Enzo_Fiermonte",
+            "nome": "Enzo Fiermonte",
+            "resumo": "Enzo Fiermonte (17 July 1908 \u2013 22 March 1993), sometimes credited as William Bird, was an Italian actor and boxer."
+        },
+        {
+            "uri": "http://dbpedia.org/resource/Checco_Durante",
+            "nome": "Checco Durante",
+            "resumo": "Francesco \"Checco\" Durante (19 November 1893 \u2013 5 January 1976) was an Italian film actor. He appeared in 59 films between 1931 and 1973. He was born and died in Rome, Italy."
+        }
+    ]
+}
