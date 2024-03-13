@@ -18,10 +18,9 @@ for i in range(18):
                        dbo:musicComposer ?musician ;
                        dbo:runtime ?duration
         filter(lang(?title)='en') .
-    }} limit 2 offset {offset}
+    }} limit 1000 offset {offset}
     """
     
-
     headers = {
         "Accept": "application/sparql-results+json"
     }
@@ -54,8 +53,6 @@ data['filmes'] = filmes
 atores = []
 
 for filme in filmes:
-
-    print(filme['nome'])
 
     sparql_query = f"""
     SELECT DISTINCT ?actor ?name ?abstract WHERE {{
@@ -99,6 +96,6 @@ for filme in filmes:
         print(response.text)
 
 data['atores'] = atores
-f = open("filmes.json","w")
+f = open("cinema.json","w")
 json.dump(data, f, indent=4)
 f.close()
