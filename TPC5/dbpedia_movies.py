@@ -18,9 +18,9 @@ for i in range(18):
                        dbo:musicComposer ?musician ;
                        dbo:runtime ?duration
         filter(lang(?title)='en') .
-    }} limit 1000 offset {offset}
+    }} limit 10000 offset {offset}
     """
-    
+
     headers = {
         "Accept": "application/sparql-results+json"
     }
