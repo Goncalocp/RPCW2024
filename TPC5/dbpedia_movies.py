@@ -5,7 +5,7 @@ filmes = []
 
 sparql_endpoint = "http://dbpedia.org/sparql"
 
-for i in range(2):
+for i in range(18):
 
     offset = i*10000
     
@@ -19,7 +19,7 @@ for i in range(2):
         optional {{ ?movie dbo:musicComposer ?musician . }}
         optional {{ ?movie dbo:runtime ?duration . }}
         
-    }} limit 2 offset {offset}
+    }} limit 10000 offset {offset}
     """
 
     headers = {
