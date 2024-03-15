@@ -5,20 +5,21 @@ filmes = []
 
 sparql_endpoint = "http://dbpedia.org/sparql"
 
-for i in range(18):
+for i in range(2):
 
     offset = i*10000
     
     sparql_query = f"""
     SELECT DISTINCT ?movie ?title ?director ?writer ?musician ?duration WHERE {{
-        ?movie rdf:type <http://dbpedia.org/ontology/Film> ;
-                       rdfs:label ?title ;
-                       dbo:director ?director ;
-                       dbo:writer ?writer ;
-                       dbo:musicComposer ?musician ;
-                       dbo:runtime ?duration
-        filter(lang(?title)='en') .
-    }} limit 10000 offset {offset}
+        ?movie rdf:type <http://dbpedia.org/ontology/Film> .
+        optional {{ ?movie rdfs:label ?title .
+                    filter(lang(?title)='en') . }}
+        optional {{ ?movie dbo:director ?director . }}
+        optional {{ ?movie dbo:writer ?writer . }}
+        optional {{ ?movie dbo:musicComposer ?musician . }}
+        optional {{ ?movie dbo:runtime ?duration . }}
+        
+    }} limit 2 offset {offset}
     """
 
     headers = {
@@ -36,14 +37,18 @@ for i in range(18):
         results = response.json()
 
         for result in results["results"]["bindings"]:
-            filmes.append({
-                "uri": result["movie"]["value"],
-                "nome": result["title"]["value"],
-                "diretor": result["director"]["value"],
-                "escritor": result["writer"]["value"],
-                "musico": result["musician"]["value"],
-                "duracao": result["duration"]["value"]
-            })
+            filme = {"uri": result["movie"]["value"]}
+            if "title" in result:
+                filme["nome"] = result["title"]["value"]
+            if "director" in result:
+                filme["diretor"] = result["director"]["value"]
+            if "writer" in result:
+                filme["escritor"] = result["writer"]["value"]
+            if "musician" in result:
+                filme["musico"] = result["musician"]["value"]
+            if "duration" in result:
+                filme["duracao"] = result["duration"]["value"]
+            filmes.append(filme)
 
     else:
         print("Error:", response.status_code)
