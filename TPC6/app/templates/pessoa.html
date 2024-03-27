@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8"/>
+        <title>{{data.dados[0].person.value.split('/')[-1]}}</title>
+        <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/w3.css') }}"/>    
+    </header>
+    <body>
+        <div class="w3-card-4">
+            <header class="w3-container w3-teal">
+                <h1>Cinema</h1>
+                <h2>{% if data.dados[0].name.value %} {{ data.dados[0].name.value }} {% else %} {{ data.dados[0].person.value.split('/')[-1] }}  {% endif %}</h2>
+            </header>
+            <div class="w3-container">
+                <p><b>Id:</b>
+                    {{ data.dados[0].person.value }}
+                </p>
+                <p><b>Nome:</b>
+                    {% if data.dados[0].name.value %} {{ data.dados[0].name.value }} {% else %} - {% endif %}
+                </p>
+                <p><b>Data Nascimento:</b>
+                    {% if data.dados[0].bdate.value %} {{ data.dados[0].bdate.value }} {% else %} - {% endif %}
+                </p>
+                <p><b>Filmes:</b>
+                    {% for entry in data.dados %}
+                        <p> &emsp; &emsp; <a href="/filmes/{{entry.film.value.split('/')[-1]}}">{% if entry.title.value %} {{ entry.title.value }} {% else %} {{ entry.film.value.split('/')[-1] }} {% endif %}</a></p>
+                    {% endfor %}
+                </p>
+            </div>
+            <div>
+                <h6 style="text-align: right;"><a href="/">Página Inicial</a> | <a href="/filmes">Filmes</a> | <a href="/pessoas">Pessoas</a> &emsp;</h6>
+            </div>
+            <footer class="w3-container w3-teal w3-bottom">
+                <h5 style="text-align: center;">GCP - RPCW2024 em {{ data.data }}</h5>
+            </footer>
+        </div>
+    </body>
+</html>

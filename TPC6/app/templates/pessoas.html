@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8"/>
+        <title>Pessoas</title>
+        <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/w3.css') }}"/>    
+    </header>
+    <body>
+        <div class="w3-card-4">
+            <header class="w3-container w3-teal">
+                <h1>Cinema</h1>
+                <h2>Pessoas</h2>
+            </header>
+            <div class="w3-container">
+                <table class="w3-table-all">
+                    <tr>
+                        <th style="text-align: center;">Id</th>
+                        <th style="text-align: center;">Nome</th>
+                    </tr>
+                    {% for entry in data.dados %}
+                    <tr>
+                        <td style="text-align: center;"><a href="/pessoas/{{entry.person.value.split('/')[-1]}}"> {{entry.person.value.split('/')[-1]}} </a></td>
+                        {% set person_name = entry.name.value %}
+                        <td style="text-align: center;">{% if person_name %} {{ person_name }} {% else %} - {% endif %}</a></td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+            <div>
+                <h6 style="text-align: right;"><a href="/">Página Inicial</a> | <a href="/filmes">Filmes</a> &emsp;</h6>
+            </div>
+            <footer class="w3-container w3-teal">
+                <h5 style="text-align: center;">GCP - RPCW2024 em {{ data.data }}</h5>
+            </footer>
+        </div>
+    </body>
+</html>

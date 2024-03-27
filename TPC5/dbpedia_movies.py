@@ -7,7 +7,7 @@ sparql_endpoint = "http://dbpedia.org/sparql"
 
 for i in range(18):
 
-    offset = i*10000
+    offset = i*3000
     
     sparql_query = f"""
     SELECT DISTINCT ?movie ?title ?director ?writer ?musician ?duration WHERE {{
@@ -19,7 +19,7 @@ for i in range(18):
         optional {{ ?movie dbo:musicComposer ?musician . }}
         optional {{ ?movie dbo:runtime ?duration . }}
         
-    }} limit 10000 offset {offset}
+    }} limit 3000 offset {offset}
     """
 
     headers = {

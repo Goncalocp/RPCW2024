@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8"/>
+        <title>Cinema</title>
+        <Link rel="icon" href="{{ url_for('static',filename='favicon.png') }}"/>
+        <Link rel="stylesheet" href="{{ url_for('static',filename='styles/w3.css') }}"/>
+    </header>
+    <body>
+        <div class="w3-card-4">
+            <header class="w3-container w3-teal">
+                <h1>Cinema</h1>
+            </header>
+            
+            <div class="w3-container">
+                <ul class="w3-ul">
+                    <li><a href="/filmes">Filmes</a></li>
+                    <li><a href="/pessoas">Pessoas</a></li>
+                </ul>
+            </div>
+
+            <footer class="w3-container w3-teal w3-bottom">
+                <h5 style="text-align: center;">GCP - RPCW2024 em {{ data.data }}</h5>
+            </footer>
+        </div>
+    </body>
+</html>

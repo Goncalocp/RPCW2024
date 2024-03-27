@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8"/>
+        <title>{{data.dados.title}}</title>
+        <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/w3.css') }}"/>    
+    </header>
+    <body>
+        <div class="w3-card-4">
+            <header class="w3-container w3-teal">
+                <h1>Cinema</h1>
+                <h2>{{ data.dados.title }}</h2>
+            </header>
+            <div class="w3-container">
+                <p><b>Nome:</b>
+                    {{ data.dados.title }}
+                </p>
+                <p><b>Resumo:</b>
+                    {% if data.dados.abstract  | length > 0%}
+                        {%for abstract in data.dados.abstract %} 
+                            {{ abstract }}
+                        {% endfor %}
+                    {% else %}
+                        -
+                    {% endif %}
+                </p>
+                <p><b>Duração:</b>
+                    {% if data.dados.durations  | length > 0%}
+                        {%for duration in data.dados.durations %} 
+                            {{ duration }} s
+                        {% endfor %}
+                    {% else %}
+                        -
+                    {% endif %}
+                </p>
+                <p><b>Género:</b>
+                    {% if data.dados.genres  | length > 0%}
+                        {%for genre in data.dados.genres %} 
+                            {{ genre }}
+                        {% endfor %}
+                    {% else %}
+                        -
+                    {% endif %}
+                </p>
+                <p><b>Data de Lançamento:</b>
+                    {% if data.dados.dates  | length > 0%}
+                        {%for date in data.dados.dates %} 
+                            {{ date }}
+                        {% endfor %}
+                    {% else %}
+                        -
+                    {% endif %}
+                </p>
+                <p><b>País:</b>
+                    {% if data.dados.countries  | length > 0%}
+                        {%for country in data.dados.contries %} 
+                            {{ country }}
+                        {% endfor %}
+                    {% else %}
+                        -
+                    {% endif %}
+                </p>
+                <p><b>Elenco:</b>
+                    {% if data.dados.cast  | length > 0%}
+                        {%for actor in data.dados.cast %}
+                        {% set actor = actor.split('/')[-1] %} 
+                        <p> &emsp; &emsp; <a href="/pessoas/{{actor}}">{{ actor }}</a></p> 
+                        {% endfor %}
+                    {% else %}
+                        -
+                    {% endif %}
+                </p>
+                <p><b>Produtores:</b>
+                    {% if data.dados.producers  | length > 0%}
+                        {%for producer in data.dados.producers %}
+                        {% set producer = producer.split('/')[-1] %} 
+                        <p> &emsp; &emsp; <a href="/pessoas/{{producer}}">{{ producer }}</a></p> 
+                        {% endfor %}
+                    {% else %}
+                        -
+                    {% endif %}
+                </p>
+                <p><b>Diretores:</b>
+                    {% if data.dados.directors  | length > 0%}
+                        {%for director in data.dados.directors %}
+                        {% set director = director.split('/')[-1] %} 
+                        <p> &emsp; &emsp; <a href="/pessoas/{{director}}">{{ director }}</a></p> 
+                        {% endfor %}
+                    {% else %}
+                        -
+                    {% endif %}
+                </p>
+                <p><b>Compositores:</b>
+                    {% if data.dados.composers  | length > 0%}
+                        {%for composer in data.dados.composers %}
+                        {% set composer = composer.split('/')[-1] %} 
+                        <p> &emsp; &emsp; <a href="/pessoas/{{composer}}">{{ composer }}</a></p> 
+                        {% endfor %}
+                    {% else %}
+                        -
+                    {% endif %}
+                </p>
+                <p><b>Escritores:</b>
+                    {% if data.dados.writers  | length > 0%}
+                        {%for writer in data.dados.writers %}
+                        {% set writer = writer.split('/')[-1] %} 
+                        <p> &emsp; &emsp; <a href="/pessoas/{{writer}}">{{ writer }}</a></p> 
+                        {% endfor %}
+                    {% else %}
+                        -
+                    {% endif %}
+                </p>
+            </div>
+            <div>
+                <h6 style="text-align: right;"><a href="/">Página Inicial</a> | <a href="/filmes">Filmes</a> | <a href="/pessoas">Pessoas</a> &emsp;</h6>
+            </div>
+            <footer class="w3-container w3-teal w3-bottom">
+                <h5 style="text-align: center;">GCP - RPCW2024 em {{ data.data }}</h5>
+            </footer>
+        </div>
+    </body>
+</html>
