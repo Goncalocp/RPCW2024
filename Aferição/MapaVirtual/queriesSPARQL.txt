@@ -1,0 +1,76 @@
+1. Lista de cidades, ordenada alfabeticamente pelo nome
+
+PREFIX : <http://rpcw.di.uminho.pt/2024/mapaVirtual/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT distinct ?nomeCidade WHERE{
+    ?cidade rdf:type ?Cidade ;
+            :nome ?nomeCidade .
+} order by ?nomeCidade
+
+
+
+
+
+2. Distribuição das cidades por distrito: lista de distritos ordenada alfabeticamente em que para cada um se indica quantas cidades tem
+
+PREFIX : <http://rpcw.di.uminho.pt/2024/mapaVirtual/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?distrito (COUNT (distinct ?cidade) as ?ncidades) WHERE{
+    ?cidade :distrito ?distrito .
+} GROUP BY ?distrito
+ORDER BY ?distrito
+
+
+
+
+
+3. Que cidades têm ligações diretas com Braga? (Considera Braga como origem mas também como destino)
+
+PREFIX : <http://rpcw.di.uminho.pt/2024/mapaVirtual/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT DISTINCT ?cidade WHERE {
+    {
+        ?origem :distrito "Braga" .
+        ?ligacao :origem ?origem ;
+                  :destino ?destino .
+        ?destino rdf:type :Cidade ;
+                 :nome ?cidade .
+    } union {
+        ?destino :distrito "Braga" .
+        ?ligacao :origem ?origem ;
+                  :destino ?destino .
+        ?origem rdf:type :Cidade ;
+                :nome ?cidade .
+    }
+} order by (?cidade)
+
+
+
+
+
+4. Partindo de Braga, que cidades se conseguem visitar? (Apresenta uma lista de cidades ordenada alfabeticamente)
+
+PREFIX : <http://rpcw.di.uminho.pt/2024/mapaVirtual/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT DISTINCT ?nome WHERE {
+    ?cidade :distrito "Braga" .
+    ?s :origem ?cidade ;
+       :destino ?destino .
+    ?destino rdf:type :Cidade ;
+       :nome ?nome .
+} order by ?nome
+
+
+
+
+
+5. Através duma query CONSTRUCT cria uma ligação direta entre Braga e todas as cidades que se conseguem visitar a partir dela.
+
+6. Através duma query CONSTRUCT cria uma ligação direta entre cada uma das cidades e todas as cidades que se conseguem visitar a partir dela.
