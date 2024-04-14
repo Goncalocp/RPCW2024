@@ -1,0 +1,89 @@
+1. Quantos alunos estão registados?
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://rpcw.di.uminho.pt/2024/alunos/>
+select (count(?aluno) as ?numAlunos) where { 
+	?aluno rdf:type :Aluno .
+}
+
+
+
+
+
+2. Quantos alunos frequentam o curso "LCC"?
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://rpcw.di.uminho.pt/2024/alunos/>
+select (count(?aluno) as ?numAlunos) where { 
+	?aluno rdf:type :Aluno ;
+           :curso "LCC" .
+}
+
+
+
+
+
+3. Que alunos tiveram nota positiva no exame de época normal?
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://rpcw.di.uminho.pt/2024/alunos/>
+select ?idAluno ?nome ?curso ?nota where { 
+	?aluno rdf:type :Aluno ;
+           :id ?idAluno ;
+           :nome ?nome ;
+           :curso ?curso ;
+           :temExame ?exame .
+    ?exame rdf:type :Exame ;
+ 		   :epocaExame "normal" ;
+           :notaExame ?nota .
+    filter (?nota >= 9.5)
+} order by (?nome)
+
+
+
+
+
+4. Qual a distribuição dos alunos pelas notas do projeto?
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://rpcw.di.uminho.pt/2024/alunos/>
+
+select (count(?aluno) as ?numAlunos) ?nota where { 
+	?aluno rdf:type :Aluno ;
+           :projeto ?nota .
+} group by (?nota)
+order by (?nota)
+
+
+
+
+
+5. Quais os alunos mais trabalhadores durante o semestre?
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://rpcw.di.uminho.pt/2024/alunos/>
+
+select ?id ?nome ?curso (sum(?nota) as ?total) where { 
+	?aluno rdf:type :Aluno ;
+           :nome ?nome ;
+           :curso ?curso ;
+           :id ?id ;
+           :temTPC ?tpc .
+    ?tpc rdf:type :TPC ;
+         :notaTPC ?nota .
+} group by ?id ?nome ?curso 
+order by desc (?total) 
+
+
+
+
+6. Qual a distribuição dos alunos pelos vários cursos?
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://rpcw.di.uminho.pt/2024/alunos/>
+
+select ?curso (count(?aluno) as ?numAlunos) where { 
+	?aluno rdf:type :Aluno ;
+           :curso ?curso .
+} group by ?curso
+order by ?curso
