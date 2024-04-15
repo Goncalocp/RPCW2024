@@ -219,7 +219,8 @@ for person in root.findall("person"):
     ttl += f'\n    :idPessoa "{person_id}" ;'
     
     if person.find('name') != None:
-        ttl += f'\n    :nome "{person.find("name").text}" ;'
+        name = person.find('name').text.replace('"',"'")
+        ttl += f'\n    :nome "{name}" ;'
 
     for parent in person.findall('parent'):
         ref = parent.get('ref')
@@ -271,7 +272,8 @@ for person in root.findall("person"):
         ttl += '\n    :filho '
         children = person.findall('child')
         for i in range(0,len(children)):
-            ttl += f'"{children[i].text}" ,\n           '
+            name = children[i].text.replace('"',"'")
+            ttl += f'"{name}" ,\n           '
         ttl = ttl[:-13] + ";"
 
     if person.find('christeningdate') != None:
@@ -292,17 +294,22 @@ for family in root.findall('family'):
 :{family.find("id").text} rdf:type owl:NamedIndividual ,
     :Familia ;'''
 
+    ttl += f'\n    :idFamilia "{family.find("id").text}" ;'
+
     if family.find('husb') != None:
-        ttl += f'\n    :esposo "{family.find("husb").text}" ;'
+        name = family.find('husb').text.replace('"',"'")
+        ttl += f'\n    :esposo "{name}" ;'
 
     if family.find('wife') != None:
-        ttl += f'\n    :esposa "{family.find("wife").text}" ;'
+        name = family.find('wife').text.replace('"',"'")
+        ttl += f'\n    :esposa "{name}" ;'
 
     if family.find('chil') != None:
         ttl += '\n    :crianca '
         children = family.findall('chil')
         for i in range(0,len(children)):
-            ttl += f'"{children[i].text}" ,\n             '
+            name = children[i].text.replace('"',"'")
+            ttl += f'"{name}" ,\n             '
         ttl = ttl[:-15] + ";"
 
     if family.find('div') != None:
