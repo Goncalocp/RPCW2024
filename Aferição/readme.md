@@ -2,4 +2,4 @@
 
 **Aferição**
 
-* Resolução da ficha de aferição presente na Blackboard.
+* Resolução da ficha de aferição disponível na Blackboard.
