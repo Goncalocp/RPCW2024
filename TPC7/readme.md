@@ -2,4 +2,4 @@
 
 **TPC7**
 
-* Realização da ficha de aferição disponível na Blackboard. A resolução encontra-se na pasta [Aferição](Aferição).
+* Realização da ficha de aferição disponível na Blackboard. A resolução encontra-se na pasta [Aferição](../Aferição).
